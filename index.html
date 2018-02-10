@@ -1,817 +1,889 @@
 <!DOCTYPE html>
-<!--[if lt IE 8 ]>
-<html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]>
-<html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!-->
-<html class="no-js" lang="en"> <!--<![endif]-->
+<html>
 <head>
-	<meta charset="utf-8">
-	<title>Hi, I'm Nishchay</title>
-	<meta name="description" content="">
-	<meta name="author" content="Nishchay Kaushik">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-	<link rel="stylesheet" href="css/media-queries.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-
-	<script src="js/modernizr.js"></script>
-	<link rel="shortcut icon" href="favicon.png">
-
+	<title>Nishchay Kaushik</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style type="text/css">
-		.banner-text {
-			padding: 20px;
-			background: rgba(100, 100, 100, 0.20) !important;
+		body{
+			font-family: 'Roboto', sans-serif;
+			background: #e3e3e3;
+			margin: 0;
+		}
+		
+		.flex-col{
+			display: flex;
+			flex-direction: column;
+		}
+		.flex-row{
+			display: flex;
+			flex-direction: row;
+		}
+		.wrap{
+			display: flex;
+			flex-direction: row;
+			min-height: 99.5vh;
 		}
 
-		.about > span {
-			color: #eee !important;
-			-moz-animation: css 2s ease;
-			-webkit-animation: css 2s ease;
+		.col-2{
+			flex: 0.2;
+			border: 1px solid;
 		}
-
-		.php, .html5, .css, .angular {
-			max-width: 85%;
-			width: 85%;
-			-moz-animation: css 2s ease;
-			-webkit-animation: css 2s ease;
+		.col-3{
+			flex: 0.3;
 		}
-
-		.python {
-			max-width: 65%;
-			width: 65%;
-			-moz-animation: css 2s ease;
-			-webkit-animation: css 2s ease;
+		.col-3-5{
+			flex: 0.35;
 		}
-
-		.nodejs {
-			max-width: 55%;
-			width: 55%;
-			-moz-animation: css 2s ease;
-			-webkit-animation: css 2s ease;
+		.col-4{
+			flex: 0.4;
 		}
-
-		.ionic {
-			width: 80%;
-			max-width: 80%;
+		.col-50{
+			flex: 0.5;
 		}
-
-		.anim {
-			-moz-animation: css 2s ease;
-			-webkit-animation: css 2s ease;
+		.col-6{
+			flex: 0.6;
 		}
-
-		.laravel, .android {
-			max-width: 75%;
-			width: 75%;
-			-moz-animation: css 2s ease;
-			-webkit-animation: css 2s ease;
+		.col-7-5{
+			flex: 0.75;
 		}
-
-		.header .banner-text {
-			margin-top: -40px;
+		.col-7{
+			flex: 0.7;
 		}
-
-		.copyright {
-			color: #eee;
+		.col-8{
+			flex: 0.8;
 		}
-
-		.contact-head, .lead {
-			color: #eee;
+		.content-wrap{
+			margin: 40px 60px 10px;
+			background: #fff;
+			padding: 40px 20px;
+			box-shadow: 2px 3px 0px #CCC, -2px -2px 12px 0px #CCC;
+		}
+		.content-title, .content-body{
+			color: #807f80;			
+		}
+		.content-title{
+			font-weight: bold;
+			
+    		/*font-size: 29px;*/
+		}
+		.content-title > span{
+			font-size: 40px;
+			flex: 11;
+			font-weight: bold;
 			text-align: center;
+			vertical-align: middle;
+			align-self: center;
+		}
+		.content-title > h1{
+			flex: 85;
+		}
+		.left-20-gutter{
+		    padding-left: 20px;
+		}
+		.left-30-gutter{
+		    padding-left: 30px;
+		}
+		.left-80-gutter{
+		    padding-left: 80px;
+		}
+		.content-body{
+			margin: 10px;
+		}
+		.content-body > .card-item:not(:last-child):after{
+			right: -30px;
+		    content: '';
+		    border-bottom: 1px solid #ccc;
+		    position: absolute;
+		    width: 104%;
+		    padding: 0px 0 10px;
+		}
+		.card-item{
+			position: relative;
+		    margin: 20px 0px 20px 0px;
+    		padding: 0 25px 15px 0px;
+		}
+		.card-iteml::after{
+		    right: -4%;
+		    content: '';
+		    border-bottom: 1px solid #ccc;
+		    position: absolute;
+		    width: 94%;
+		}
+		.item-title{
+			margin: 10px 0;
+			font-weight: 400;
+			font-size: 24px; 
+		}
+		.item-extra-info{
+			color: #37a4dc;
+			text-transform: uppercase;
+			margin: 1px 0;
+		}
+		.item-description{
+			word-spacing: 3px;
+			line-height: 23px;
+    		letter-spacing: 0.2px;
+		}
+		.hobby-item{
+		    display: inline-block;
+			text-align: center;
+			margin-right: 30px; 
+		}
+		.hobby-icon{
+			margin: 1px;
+			color: #37a4dc;
+			font-size: 76px;
+		}
+		.hobby-name{
+			margin: 0;
+		}
+		.music{
+			color: #7d4012;
+		}
+		.travel{
+			color: #3768dc;
+		}
+		.video-games{
+			color: #439242;
+		}
+		.soccer{
+			background: url('soccer.svg');
+		    width: 76px;
+		    background-repeat: no-repeat;
+		    background-size: 76px;
+		}
+		.binge-watch{
+			color: #dc373d;
+		}
+		.skill-level-wrap{
+		    position: relative;
+			display: block;
+		    content: '';
+		    color: #37a4dc;
+		    height: 0px;
+		    border: 3px solid #d6d6d6;
+		    width: 500px;
+		    margin-left: 45px;
+		}
+		.skill-level-wrap::before{
+			display: block;
+			content: '';
+			color: #37a4dc;
+			height: 0px;
+			z-index: 1;
+			position: absolute;
+
+			/*animation-name: todoexpand;*/
+		    /*animation-fill-mode: all;*/
+		    /*animation-duration: 1s;*/
+			left: -3px;
+			top: -3px;
+			border: 3px solid #37a4dc;
+		}
+		.skill-level-wrap::after{
+		    box-shadow: 0px 0px 5px 2px rgba(208, 208, 208, 1);
+		    width: 0px;
+		    height: 0px;
+		    content: '';
+		    position: absolute;
+		    border-radius: 50%;
+		    border: 10px solid #ffffff;
+		    top: -10px;
+		    z-index: 3;
+
+		    /*animation-name: todocursor;*/
+		    /*animation-fill-mode: all;*/
+		    /*animation-delay: 0.5s;*/
+		    /*animation-duration: 1s;*/
+		}
+		.skill-item{
+			margin: 8px 0px 25px;
+    		padding: 0px 0 10px;
+		}
+		
+		.level-70 > .skill-level-wrap::before{
+			width: 70%;
+			animation-name: expand-70;
+			animation-duration: 1s; 
+		}
+		
+		.level-80 > .skill-level-wrap::before{
+			width: 80%;
+			animation-name: expand-80;
+			animation-duration: 1s; 
 		}
 
-		.fa-instagram:hover {
-			color: #fb3958;
+		.level-70 > .skill-level-wrap::after{
+			left: 70%;
+			animation-name: cursor-70;
+			animation-duration: 1s; 
+		}
+		.level-80 > .skill-level-wrap::after{
+			left: 80%;
+			animation-name: cursor-80;
+			animation-duration: 1s; 
 		}
 
-		.fa-facebook:hover {
-			color: #3b5998;
+		.anim-ex-90::before{
+			animation-name: expand-90;
+		}
+		.anim-ex-90::after{
+			animation-name: cursor-90;
+		}
+		.anim-ex-85::before{
+			animation-name: expand-85;
+		}
+		.anim-ex-85::after{
+			animation-name: cursor-85;
+		}
+		.anim-ex-80::before{
+			animation-name: expand-80;
+		}
+		.anim-ex-80::after{
+			animation-name: cursor-80;
+		}
+		.anim-ex-75::before{
+			animation-name: expand-75;
+		}
+		.anim-ex-75::after{
+			animation-name: cursor-75;
+		}
+		.anim-ex-70::before{
+			animation-name: expand-70;
+		}
+		.anim-ex-70::after{
+			animation-name: cursor-70;
 		}
 
-		.fa-linkedin:hover {
-			color: #007bb5;
+		@keyframes expand-90 {
+			0%{
+				width: 0%;
+			}
+			100%{
+				width: 90%;
+			}
+		}
+		
+		@keyframes expand-80 {
+			0%{
+				width: 0%;
+			}
+			100%{
+				width: 80%;
+			}
+		}
+		
+		@keyframes expand-70 {
+			0%{width: 0%;}
+			100%{width: 70%;}
+		}
+		
+		@keyframes cursor-70 {
+			0%{left: 0%;}
+			100%{left: 70%}
 		}
 
-		.fa-github:hover {
-			color: #aaa;
+
+		@keyframes expand-75 {
+			0%{width: 0%;}
+			100%{width: 75%;}
 		}
+		
+		@keyframes cursor-75 {
+			0%{left: 0%;}
+			100%{left: 75%}
+		}
+
+		@keyframes expand-85 {
+			0%{width: 0%;}
+			100%{width: 85%;}
+		}
+		
+		@keyframes cursor-85 {
+			0%{left: 0%;}
+			100%{left: 85%}
+		}
+
+		@keyframes cursor-80 {
+			0%{
+				left: 0%;
+			}
+			100%{
+				left: 80%;
+			}
+		}
+
+		@keyframes cursor-90 {
+			0%{
+				left: 0%;
+			}
+			100%{
+				left: 90%;
+			}
+		}
+
+
+		.skill-heading{
+			
+		}
+		.skill-heading > .item-title{
+			flex: 95;
+		}
+		.skill-icon{
+		    flex: 6;
+		    height: 40px;
+		    width: 40px;
+		    margin: 10px 10px 0px 0px;
+		}
+		.html5{
+			animation-name: html-js-css;
+			animation-duration: 4s;
+			animation-direction: normal;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+			animation-fill-mode: forwards;
+		}
+
+		@keyframes html-js-css{
+			0%{
+				background: url('html5.svg');
+				background-repeat: no-repeat;
+				background-size: 35px;
+			}
+			20%{
+				background: url('html5.svg');
+				background-repeat: no-repeat;
+				background-size: 35px;
+			}
+			40%{
+				background: url('js.svg');
+				background-repeat: no-repeat;
+				background-size: 35px;
+			}
+			60%{
+				background: url('js.svg');
+				background-repeat: no-repeat;
+				background-size: 35px;
+			}
+			70%{
+				background: url('css3.svg');
+				background-repeat: no-repeat;
+				background-size: 35px;
+			}
+			100%{
+				background: url('css3.svg');
+				background-repeat: no-repeat;
+				background-size: 35px;
+			}
+		}
+		.photo-block{
+			text-align: center;
+		    width: 100%;
+			background: transparent;/*#37a4dc;*/
+		    /*background: #37a4dc;*/
+		    padding: 20px 0 5px;
+		}
+		.photo-image{
+			width: 200px;
+		    border-radius: 50%;
+		    margin: 0 auto;
+		    box-shadow: 0px -1px 18px 0 #184f6b;
+		}
+		.photo-blocka::after{
+			border-width: 80px 14.7pc 0px 14.7pc;
+		    border-color: transparent #37a4dc green #37a4dc;
+		    border-style: solid;
+		    content: '';
+		    position: absolute;
+		    top: 80%;
+		    height: 22px;
+		    z-index: 3;
+		}
+		.information-col{
+			background: transparent;/*#37a4dc;*/
+			/*background: #37a4dc;*/
+			height: 100%;
+			color: #fff;
+			padding: 10px 30px 50px;
+		}
+		.about-info{
+			border-top: 1px solid #1b87c8;
+    		padding-top: 20px;
+		}
+		.about-item{
+			padding: 20px 0;
+		    margin: 10px 0 25px;
+			position: relative;
+		}
+		.about-item::after{
+			padding-top: 10px;
+		    width: 88%;
+		    content: '';
+		    border-bottom: 2px solid #1b87c8;
+		    position: absolute;
+		    top: 100%;
+		    right: -30px;
+		}
+		.about-item-icon{
+		    text-align: left;
+		    flex: 20;
+		    font-size: 45px;
+		}
+		.about-item-desc{
+		    flex: 75;
+    		line-height: 30px;
+		}
+		.about-item-big{
+			line-height: 45px;
+			font-size: 22px;
+		}
+		.line-24{
+			line-height: 24px
+		}
+		.about-gradient{
+			background: linear-gradient(260deg, #37a4dc, #0b5175);
+		}
+		.about-links{
+			color:#fff;
+			text-decoration: none;
+		}
+		.about-links:hover{
+			color:#ddd;
+		}
+		.skill-slider{
+		    color: #37a4dc;
+		    height: 0px;
+		    position: relative;
+		    border: 2px solid #015d9e;
+		    width: 100%;
+		    display: block;
+		}
+		.skill-slider::before{
+		    /*width: 70%;*/
+		    display: block;
+		    content: '';
+		    color: #37a4dc;
+		    height: 0px;
+		    z-index: 1;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+		    position: absolute;
+		    left: -3px;
+		    top: -2px;
+		    border: 2px solid #ffffff;
+			/*animation-name: expand-70;*/
+		}
+		.skill-slider::after{
+		    box-shadow: 0px 0px 2px 1px rgba(208, 208, 208, 1);
+		    width: 0px;
+		    height: 0px;
+		    content: '';
+		    position: absolute;
+		    border-radius: 50%;
+		    border: 10px solid #ffffff;
+		    top: -10px;
+			animation-duration: 1s;
+		    z-index: 3;
+		    animation-fill-mode: forwards;
+		    /*left: 70%;*/
+		}
+		.skill-list-item{
+			list-style: none;
+			padding-bottom: 30px;
+			font-size: 17px;
+		}
+		.skill-list-item:first-child{
+			margin-top: 30px;
+		}
+
+
+		@media only screen and (max-width: 1176px){
+			.wrap{
+				display: flex;
+				flex-direction: column;
+				min-height: 99.5vh;
+			}
+			.about-item-icon{
+				flex: 13;
+			}
+			.line-24, p {
+    			line-height: 28px;
+			}
+
+			.left-80-gutter{
+				padding-left: 55px;
+			}
+		}
+		@media only screen and (min-width: 1177px){
+			
+			.left-30-gutter{
+				padding-left: 5px;
+			}
+			.left-80-gutter{
+				padding-left: 65px;
+			}
+			.line-24 {
+    			line-height: 28px;
+			}
+		}
+
+
+		@media only screen and (max-width: 700px){
+			.left-30-gutter{
+				padding-left: 0px;
+			}
+			.content-wrap{
+				margin: 20px 10px; 
+			}
+			.content-title{
+				font-size: 16px;
+			}
+			.content-title > h1{
+				font-size: 20px;
+			}
+			.content-title > span {
+				flex: 15;
+				font-size: 24px;
+			}
+			.item-title{
+				font-size: 16px;
+			}
+			.left-80-gutter{
+				padding-left: 0px;
+			}
+			.content-body > *{
+				font-size: 15px;
+			}
+			.about-item-icon {
+			    text-align: left;
+			    flex: 20;
+			    font-size: 24px;
+			}
+			.about-item-big {
+			    line-height: 32px;
+			    font-size: 16px;
+			}
+			.about-item-desc {
+    			flex: 75;
+    			font-size: 18px;
+    		}
+    		.skill-list-item {
+			    list-style: none;
+			    padding-bottom: 20px;
+			    font-size: 16px;
+			}
+			.skill-slider{
+				border: 1px solid #015d9e;
+				background-color: #015d9e;
+			}
+			.skill-slider::before{
+				border-width: 1px;
+				background-color: #fff;
+			}
+			.skill-slider::after{
+				border-width: 5px;
+				top: -6px;
+				box-shadow: 0px 0px 2px 0px rgba(208, 208, 208, 1);
+			}
+    	}
+
+    	.social-links{
+    		flex: 1;
+    	}
+    	.social-links:hover{
+    		opacity: 0.9;
+    	}
+    	.social-links:hover > img{
+    		box-shadow: 0px 5px 6px 0px #dbdbdb;
+    		border-radius: 0%; 
+    	}
 	</style>
 </head>
-
 <body>
-
-<!-- Header
-================================================== -->
-<header id="home">
-
-	<nav id="nav-wrap">
-
-		<a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-		<a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-		<ul id="nav" class="nav">
-			<li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-			<li><a class="smoothscroll" href="#about">About</a></li>
-			<li><a class="smoothscroll" href="#resume">Resume</a></li>
-			<li><a class="smoothscroll" href="#portfolio">Works</a></li>
-			<li><a class="smoothscroll" href="#quotes">Quotes</a></li>
-			<li><a class="smoothscroll" href="#contact">Contact</a></li>
-		</ul> <!-- end #nav -->
-
-	</nav> <!-- end #nav-wrap -->
-
-	<div class="row banner">
-		<div class="banner-text">
-			<h1 class="responsive-headline">I'm Nishchay Kaushik.</h1>
-			<h3>I'm a Mumbai (India) based <span>PHP developer</span>, <span>React & Angular developer</span>, <span>Android Developer</span>
-				and <span>Ionic Developer</span>
-				<!--creating websites for self and-->
-				<!--as a freelance developer.-->
-			</h3>
-			<hr/>
-			<ul class="social">
-				<li><a href="http://fb.me/kaushiknishchay"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="https://www.linkedin.com/in/kaushiknishchay/">
-					<i class="fa fa-linkedin"></i></a></li>
-				<li><a href="http://instagr.am/kaushik.nishchay"><i class="fa fa-instagram"></i></a></li>
-				<li><a href="http://github.com/kaushiknishchay"><i class="fa fa-github"></i></a></li>
-			</ul>
-		</div>
-	</div>
-
-	<p class="scrolldown">
-		<a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-	</p>
-
-</header> <!-- Header End -->
-
-
-<!-- About Section
-================================================== -->
-<section id="about">
-
-	<div class="row">
-
-		<div class="three columns">
-
-			<img class="profile-pic"
-				 src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAMAAwDGAAwAAQAAAAAAAArKAAAAJDUxNmQ1ZWQ1LTkwOWUtNDhkOC04YzU0LTU4OTE1YjcxMGQzOQ.jpg"
-				 alt=""/>
-
-		</div>
-
-		<div class="nine columns main-col">
-
-			<h2>About Me</h2>
-
-			<p class="about"> I am from <span>Udaipur, Rajasthan</span>.
-				<br>I have been <span>developing website since 2012</span>. I have also been working as a freelance
-				website/android/hybrid app developer.
-				<br>I like to code and learn about different technologies. I know
-				<span>PHP, Angular 2, React.JS, Android, NodeJS, Ionic</span>
-				<br>When I'm not coding i <span>like to play football</span> (though i don't remember the last time i
-				did) or listen to songs.
-				I am also a <span>Binge watcher</span> and love watching TV Shows.
-				<!-- <br>Recently, I have also developed an interest in <span>Photography</span>. -->
-			</p>
-
-			<div class="row">
-
-				<div class="columns contact-details">
-
-					<h2>Contact Details</h2>
-					<p class="address">
-						<span>Nishchay Kaushik</span><br>
-						<span>Powai<br>
-						         Mumbai, Maharashtra, IN 400072
-                     </span>
-						<br>
-						<span>Email: <a href="mailto:n.kaushik.tech@gmail.com">n.kaushik.tech@gmail.com</a></span>
-					</p>
-
+	<div class="wrap">
+		<div class="col-3-5 flex-col about-gradient">
+			<div class="photo-block">
+				<img src="dummy.jpg" class="photo-image" />
+				<!-- <div>
+					<h2>Nishchay Kaushik</h2>
+					<p>FrontEnd, Backend, Mobile App Developer</p>
+				</div> -->
+			</div>
+			<div class="information-col">
+				<div>
+					<h2>Nishchay Kaushik</h2>
+					<p>FrontEnd, Backend, Mobile App Developer</p>
 				</div>
+				<div class="about-info left-30-gutter">
+					<div class="flex-row about-item">
+						<span class="material-icons about-item-icon">person</span>
+						<div class="about-item-desc">
+						I'm a Mumbai (India) based PHP developer, React &amp; Angular Developer, Android Developer and Ionic Developer.
 
-				<div class="columns download">
-					<p>
-						<a href="resume.pdf" target="_blank" class="button"><i class="fa fa-download"></i>My
-							Resume</a>
-					</p>
-				</div>
-
-			</div> <!-- end row -->
-
-		</div> <!-- end .main-col -->
-
-	</div>
-
-</section> <!-- About Section End-->
-
-
-<!-- Resume Section
-================================================== -->
-<section id="resume">
-
-	<div class="row education">
-
-		<div class="three columns header-col">
-			<h1><span>Education</span></h1>
-		</div>
-
-		<div class="nine columns main-col">
-
-			<div class="row item">
-
-				<div class="twelve columns">
-
-					<h3>Maharana Pratap University of Agriculture and Technology</h3>
-					<p class="info">Bachelor of Technology <span>&bull;</span> <em class="date">Aug 2016</em></p>
-
-					<p>
-						I completed my graduation in year 2016, in <b>Information Technology</b>
-						with a <b>7.01 CGPA</b>
-					</p>
-
-				</div>
-
-			</div> <!-- item end -->
-
-			<div class="row item">
-				<div class="twelve columns">
-					<h3>Higher Secondary Examination (12<sup>th</sup> board)</h3>
-					<p class="info">Passed with 74.6%
-					<p>
-				</div>
-			</div> <!-- item end -->
-
-			<div class="row item">
-				<div class="twelve columns">
-					<h3>Secondary Examination (10<sup>th</sup> board)</h3>
-					<p class="info">Passed with 9.0 CGPA
-					<p>
-				</div>
-			</div> <!-- item end -->
-
-		</div> <!-- main-col end -->
-
-	</div> <!-- End Education -->
-
-
-	<div class="row work">
-
-		<div class="three columns header-col">
-			<h1><span>Work</span></h1>
-		</div>
-
-		<div class="nine columns main-col">
-
-			<div class="row item">
-
-				<div class="twelve columns">
-
-					<h3>Tata Consultancy Services</h3>
-					<p class="info">Assistant System Engineer <span>&bull;</span> <em class="date">February 2017 -
-						Present</em></p>
-
-				</div>
-
-			</div> <!-- item end -->
-
-			<div class="row item">
-
-				<div class="twelve columns">
-
-					<h3>Freelance Developer</h3>
-					<p class="info">Web Developer <span>&bull;</span> <em class="date">September 2011 - February
-						2017</em></p>
-
-				</div>
-
-			</div> <!-- item end -->
-
-		</div> <!-- main-col end -->
-
-	</div> <!-- End Work -->
-
-
-	<div class="row skill">
-
-		<div class="three columns header-col">
-			<h1><span>Skills</span></h1>
-		</div>
-
-		<div class="nine columns main-col">
-
-
-			<div class="bars">
-
-				<ul class="skills">
-
-					<li><span class="bar-expand php"></span><em>PHP</em></li>
-					<li><span class="bar-expand html5"></span><em>HTML5 / CSS / JavaScript</em></li>
-					<li><span class="bar-expand angular anim"></span><em>Angular 2 / React.JS</em></li>
-					<li><span class="bar-expand ionic anim"></span><em>Ionic / Laravel</em></li>
-					<!--<li><span class="bar-expand laravel"></span><em>Laravel</em></li>-->
-					<li><span class="bar-expand android"></span><em>Android</em></li>
-					<li><span class="bar-expand python"></span><em>Python</em></li>
-					<li><span class="bar-expand nodejs"></span><em>NodeJS, Express.JS, MongoDB</em></li>
-
-				</ul>
-
-			</div><!-- end skill-bars -->
-
-		</div> <!-- main-col end -->
-
-	</div> <!-- End skills -->
-
-</section> <!-- Resume Section End-->
-
-
-<!-- Portfolio Section
-================================================== -->
-<section id="portfolio">
-
-	<div class="row">
-
-		<div class="twelve columns collapsed">
-
-			<h1>Check Out Some of My Works.</h1>
-
-			<!-- portfolio-wrapper -->
-			<div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-				<div class="columns portfolio-item">
-					<div class="item-wrap" style="border-radius:4px;">
-
-						<a href="#modal-01" title="">
-							<img alt="" src="images/portfolio/photowala.jpg">
-							<div class="overlay">
-								<div class="portfolio-item-meta">
-									<h5>Photowala</h5>
-									<p>NodeJS app</p>
-								</div>
-							</div>
-							<div class="link-icon"><i class="icon-plus"></i></div>
-						</a>
-
+						<p style="display: none;">I am from Udaipur, Rajasthan. I have been developing website since 2012. I have also been working as a freelance website/android/hybrid app developer. I like to code and learn about different technologies. I know PHP, Angular 2, React.JS, Android, NodeJS, Ionic.
+						When I'm not coding i like to play football (though i don't remember the last time i did) or listen to songs. I am also a Binge watcher and love watching TV Shows. </p>
 					</div>
-				</div> <!-- item end -->
-
-				<div class="columns portfolio-item">
-					<div class="item-wrap" style="border-radius:4px;">
-
-						<a href="#modal-02" title="">
-							<img alt="" src="images/portfolio/android.jpg">
-							<div class="overlay">
-								<div class="portfolio-item-meta">
-									<h5>Mobigo</h5>
-									<p>Android App</p>
-								</div>
-							</div>
-							<div class="link-icon"><i class="icon-plus"></i></div>
-						</a>
-
 					</div>
-				</div> <!-- item end -->
-
-				<div class="columns portfolio-item">
-					<div class="item-wrap" style="border-radius:4px;">
-
-						<a href="#modal-03" title="">
-							<img alt="" src="images/portfolio/smcsms.jpg">
-							<div class="overlay">
-								<div class="portfolio-item-meta">
-									<h5>SMCSMS</h5>
-									<p>PHP Website</p>
-								</div>
-							</div>
-							<div class="link-icon"><i class="icon-plus"></i></div>
-						</a>
-
+					<div class="flex-row about-item">
+						<span class="material-icons about-item-icon">phone</span>
+						<div class="about-item-desc about-item-big">
+							+91 - 7976334650
+							<br>
+							+91 - 9461546453
+						</div>
 					</div>
-				</div> <!-- item end -->
-
-				<div class="columns portfolio-item">
-					<div class="item-wrap" style="border-radius:4px;">
-
-						<a href="#modal-04" title="">
-							<img alt="" src="images/portfolio/dealsupto.png">
-							<div class="overlay">
-								<div class="portfolio-item-meta">
-									<h5>Dealsupto</h5>
-									<p>PHP Website</p>
-								</div>
-							</div>
-							<div class="link-icon"><i class="icon-plus"></i></div>
-						</a>
-
-					</div>
-				</div> <!-- item end -->
-
-				<div class="columns portfolio-item">
-					<div class="item-wrap" style="border-radius:4px;">
-
-						<a href="#modal-05" title="">
-							<img alt="" src="images/portfolio/handgesture.png">
-							<div class="overlay">
-								<div class="portfolio-item-meta">
-									<h5>Hand Gesture Recognition</h5>
-									<p>Software</p>
-								</div>
-							</div>
-							<div class="link-icon"><i class="icon-plus"></i></div>
-						</a>
-
-					</div>
-				</div> <!-- item end -->
-
-				<div class="columns portfolio-item">
-					<div class="item-wrap" style="border-radius:4px;">
-
-						<a href="#modal-06" title="">
-							<img alt="" src="images/portfolio/ioniccontacts.png">
-							<div class="overlay">
-								<div class="portfolio-item-meta">
-									<h5>Ionic App</h5>
-									<p>Developer</p>
-								</div>
-							</div>
-							<div class="link-icon"><i class="icon-plus"></i></div>
-						</a>
-
-					</div>
-				</div> <!-- item end -->
-
-				<div class="columns portfolio-item">
-					<div class="item-wrap" style="border-radius:4px;">
-
-						<a href="#modal-07" title="">
-							<img alt="" src="images/portfolio/picsquarer.jpg">
-							<div class="overlay">
-								<div class="portfolio-item-meta">
-									<h5>Picsquarer App</h5>
-									<p>App Developer</p>
-								</div>
-							</div>
-							<div class="link-icon"><i class="icon-plus"></i></div>
-						</a>
-
-					</div>
-				</div> <!-- item end -->
-
-				<div class="columns portfolio-item">
-					<div class="item-wrap" style="border-radius:4px;">
-
-						<img alt="" src="images/portfolio/comingsoon.png">
-						<div class="overlay">
-							<div class="portfolio-item-meta">
-								<h5>More projects coming soon</h5>
-
+					<div class="about-item">
+						<div class="flex-row" style="margin: 9px 0 9px;"">
+							<span class="material-icons about-item-icon">email</span>
+							<div class="about-item-desc about-item-big"><a href="mailto:n.kaushik.tech@gmail.com?" class="about-links">n.kaushik.tech@gmail.com</a></div>
+						</div>
+						<div class="flex-row" style="margin:20px 0 0;">
+							<span class="material-icons about-item-icon">http</span>
+							<div class="about-item-desc about-item-big">
+								<a href="http://kaushik.tech/" class="about-links">kaushik.tech</a>
 							</div>
 						</div>
-						<div class="link-icon"><i class="icon-plus"></i></div>
-
 					</div>
-				</div> <!-- item end -->
+					<div class="flex-row about-item">
+						<span class="material-icons about-item-icon">map</span>
+						<div class="about-item-desc about-item-big">
+								673, Hiran Magri <br>
+								Sector 11 <br>
+								Udaipur (Rajasthan) - 313001
+						</div>
+					</div>
+					<div class="flex-row about-item">
+						<span class="material-icons about-item-icon">laptop</span>
+						<div class="about-item-desc about-item-big">
+							Professional Skills
 
-			</div> <!-- portfolio-wrapper end -->
+							<li class="skill-list-item">HTML / CSS / JS
+								<span class="skill-slider anim-ex-90"></span>
+							</li>
+							<li class="skill-list-item">PHP / MySQL / Laravel
+								<span class="skill-slider anim-ex-90"></span>
+							</li>
+							<li class="skill-list-item">Angular 2 / React.JS
+								<span class="skill-slider anim-ex-85"></span>
+							</li>
+							<li class="skill-list-item">C, C++, Core Java
+								<span class="skill-slider anim-ex-75"></span>
+							</li>
+							<li class="skill-list-item">Python
+								<span class="skill-slider anim-ex-75"></span>
+							</li>
+							<li class="skill-list-item">Android Application Development
+								<span class="skill-slider anim-ex-75"></span>
+							</li>
+							<li class="skill-list-item">NodeJS / ExpressJS / MongoDB
+								<span class="skill-slider anim-ex-70"></span>
+							</li>
+						</div>
+					</div>
+					<div class="flex-row about-item">
+						<span class="material-icons about-item-icon">language</span>
+						<div class="about-item-desc about-item-big">
+							English
+							<p>Hindi</p>
+						</div>
+					</div>
+					<div class="flex-row about-item">
+						<span class="material-icons about-item-icon">palette</span>
+						<div class="about-item-desc about-item-big">
+							<li>Listening to Music</li>
+							<li>Travelling</li>
+							<li>Playing Computer Games</li>
+							<li>Photography</li>
+							<li>Binge Watching TV Series</li>
+							<li>Playing Football</li>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-7-5 flex-col">
+			<div class="content-wrap">
+				<div class="content-body flex-row" style="text-align: center;">
+					<a class="social-links" href="https://www.linkedin.com/in/kaushiknishchay/"><img src="linkeding.svg" width="48" height="48"></a>
+					<a class="social-links" href="http://instagr.am/kaushik.nishchay"><img src="insta.svg" width="48" height="48"></a>
+					<a class="social-links" href="http://github.com/kaushiknishchay"><img src="github.svg" width="48" height="48"></a>
+					<a class="social-links" href="http://fb.me/kaushiknishchay"><img src="fb.svg" width="48" height="48"></a>
+				</div>
+			</div>
+			<div class="content-wrap">
+				<div class="content-title flex-row">
+					<span class="material-icons">done_all</span>
+					<h1>Work Experiences</h1>
+				</div>
+				<div class="content-body left-80-gutter">
+					<div class="card-item">
+						<h2 class="item-title">Assistant System Engineer - Tata Consultancy Services</h2>
+						<p class="item-extra-info">Feb 2017 - Present</p>
+						<p class="item-description">
+							Development and Unit Testing and worked on OpenUI.
+						</p>
+					</div>
+					<div class="card-item">
+						<h2 class="item-title">Freelance Developer</h2>
+						<p class="item-extra-info"> 2011 - Jan 2017</p>
+						<p class="item-description">
+							<p>FullStack Developer and Android App Developer (Native &amp; Hybrid)</p>
 
-		</div> <!-- twelve columns end -->
-
-
-		<!-- Modal Popup
-		 --------------------------------------------------------------- -->
-
-		<div id="modal-01" class="popup-modal mfp-hide">
-
-			<img class="scale-with-grid" src="images/portfolio/modals/photowala.jpg" alt=""/>
-
-			<div class="description-box">
-				<h4>Photowala</h4>
-				<p>A simple app made on NodeJs + Express JS + MongoDB.</p>
-				<p><a href="http://github.com/kaushiknishchay/photowala" target="_blank">Visit</a></p>
-				<span class="categories"><i class="fa fa-tag"></i>Webdesign, WebDeveloping</span>
+							<p class="line-24"><b>Responsibilities</b> : 
+							Development of Web Applications using latest frontend / backend technologies. <br>
+							Have deep knowledge of designing and integrating Angular 2 Modules or use bootstrap.<br>
+							Have deep knowledge in PHP and in using Laravel framework for backend developement.<br>
+							Able to design and create Android Apps be it Native or Hybrid (Ionic) and publish them at Play-Store. <br>
+							Designing REST APIs to integrate in android apps. <br>
+							Implementing token based authentication in Node.JS.</p>
+							<p class="line-24">
+								<b>Key Working Areas</b> :
+								<ul>
+									<li class="line-24">Frontend : Angular 2/4, Angular Material, Bootstrap, HTML5, CSS3, JavaScript, TypeScript, React.JS, jQuery</li>
+									<li class="line-24">Backend : PHP, Node.JS</li>
+									<li class="line-24">App Development : Android Native, Ionic Framework (Hybrid App)</li>
+									<li class="line-24">Frameworks : Laravel (PHP), Express (NodeJS)</li>
+									<li class="line-24">Database : MySQL, MariaDB, Mongoose, MongoDB</li>
+									<li class="line-24">Software Version Control : Git</li>
+									<li class="line-24">Tools : Notepad++, Eclipse, Android Studio, PHPStorm, PyCharms, WebStorm</li>
+									<li class="line-24">Languages : Python, Java</li>
+								</ul>
+							</p>
+						</p>
+					</div>
+				</div>
 			</div>
 
-			<div class="link-box">
-				<a class="popup-modal-dismiss">Close</a>
+			<div class="content-wrap">
+				<div class="content-title flex-row">
+					<span class="material-icons">school</span>
+					<h1>Education</h1>
+				</div>
+				<div class="content-body left-80-gutter">
+					<div class="card-item">
+						<h2 class="item-title">Bachelor of Technology - Information Technology</h2>
+						<p class="item-extra-info">2012 - 2016</p>
+						<p class="item-description">OGPA Scored: 7.01 <br>College of Technology &amp; Engineering, Udaipur</p>
+					</div>
+					<div class="card-item">
+						<h2 class="item-title">12th - CBSE</h2>
+						<p class="item-extra-info">2012</p>
+						<p class="item-description">Percentage Scored: 74.6% <br> Maa Bharti School, Kota</p>
+					</div>
+					<div class="card-item">
+						<h2 class="item-title">10th - CBSE</h2>
+						<p class="item-extra-info">2010</p>
+						<p class="item-description">CGPA Scored: 9 <br> St. Anthony’s Sr. Sec. School, Udaipur</p>
+					</div>
+				</div>
 			</div>
 
-		</div><!-- modal-01 End -->
-
-
-		<div id="modal-02" class="popup-modal mfp-hide">
-
-			<img class="scale-with-grid" src="images/portfolio/modals/android.jpg" alt=""/>
-
-			<div class="description-box">
-				<h4>MobiGO</h4>
-				<p>An Android App Store.</p>
-				<span class="categories"><i class="fa fa-tag"></i>Software Developer</span>
+			<div class="content-wrap">
+				<div class="content-title flex-row">
+					<span class="material-icons">code</span>
+					<h1>Projects</h1>
+				</div>
+				<div class="content-body left-80-gutter">
+					<div class="card-item">
+						<h2 class="item-title">Siebel CRM</h2>
+						<p class="item-extra-info">Developer</p>
+						<p class="item-description"><b>Responsibility</b> : Development and Unit Testing and worked on OpenUI.</p>
+					</div>
+					<div class="card-item">
+						<h2 class="item-title">Hand Gesture Recognition</h2>
+						<p class="item-extra-info">Programmer</p>
+						<p class="item-description"><b>Details</b> : Created as part of college project. In this porject we were able to detec Hand Gesture and movement by using OpenCV library for Python and could perform actions based on the gesture detected eg., Mouse Left or Right Click.</p>
+					</div>
+					<div class="card-item">
+						<h2 class="item-title">PicSquare - Android Application</h2>
+						<p class="item-extra-info">Software Developer</p>
+						<p class="item-description">
+							<b>Details</b> : A sample Android Application which allows to convert images in square.
+							Developed as a part to test Image APIs of android and for knowledge purpose.
+							<p><b>Tools Used</b> : Android Studio, Android SDK</p>
+							<p><b>Programming Language</b>: Java</p>
+						</p>
+					</div>
+					<div class="card-item">
+						<h2 class="item-title">DealsUpto - PHP Website</h2>
+						<p class="item-extra-info">FullStack Developer</p>
+						<p class="item-description">
+							<b>Details</b> : Created a full fledged website which allows creating posts regarding various offers, 
+									in simple terms a blog post.
+									Created a admin Panel to allow modification or addition of various data, viz. Categories, Posts, User Comments etc.
+							<p><b>Tools Used</b> : PHPStorm, Notepad++</p>
+							<p><b>Technologies Used</b>: PHP, MySQL, HTML/CSS/JS, BootStrap</p>
+						</p>
+					</div>
+					<div class="card-item">
+						<h2 class="item-title">MobiGo - Android App</h2>
+						<p class="item-extra-info">Software Developer</p>
+						<p class="item-description">
+							<b>Details</b> : MobiGo was a android App Store which allowed users to download android apps.
+											Created the app using Java and integrated various 3rd Party libraries to enhance UI and functionality.
+											Created REST API in PHP.
+							<p><b>Tools Used</b> : Android Studio, Eclipse, PHPStorm, Notepad++, HeidiSQL</p>
+							<p><b>Technologies Used</b>: PHP, Java(Android), MySQL</p>
+						</p>
+					</div>
+				</div>
 			</div>
 
-			<div class="link-box">
-				<a class="popup-modal-dismiss">Close</a>
+			<div class="content-wrap" style="display: none;">
+				<div class="content-title  flex-row">
+					<span class="material-icons">computer</span>
+					<h1>Professional Skills</h1>
+				</div>
+				<div class="content-body left-80-gutter">
+					<div class="skill-item level-80">
+						<div class="skill-heading flex-row">
+							<span class="skill-icon html5"></span>
+							<h2 class="item-title">HTML / CSS / JS</h2>
+						</div>
+						<span class="skill-level-wrap"></span>
+					</div>
+					<div class="skill-item level-70">
+						<h2 class="item-title">HTML / CSS / JS</h2>
+						<span class="skill-level-wrap"></span>
+					</div>
+					
+				</div>
 			</div>
 
-		</div><!-- modal-02 End -->
+			<div class="content-wrap" style="display: none;">
+				<div class="content-title flex-row">
+					<span class="material-icons">palette</span>
+					<h1>Interests</h1>
+				</div>
+				<div class="content-body left-30-gutter">
+					<div class="hobby-item">
+						<!-- <h1 class="hobby-icon material-icons music">music_note</h1> -->
+						<h1 class="hobby-icon material-icons music">radio</h1>
+					</div>
+					<div class="hobby-item">
+						<!-- <h1 class="hobby-icon material-icons travel">airplanemode_active</h1> -->
+						<h1 class="hobby-icon material-icons travel">flight_takeoff</h1>
+					</div>
+					<div class="hobby-item">
+						<h1 class="hobby-icon material-icons video-games">videogame_asset</h1>
+					</div>
+					<div class="hobby-item">
+						<h1 class="hobby-icon material-icons photography">camera</h1>
+					</div>
+					<div class="hobby-item">
+						<h1 class="hobby-icon material-icons binge-watch">theaters</h1>
+					</div>
+					<div class="hobby-item">
+						<h1 class="hobby-icon material-icons soccer">&nbsp;</h1>
+					</div>
 
-
-		<div id="modal-03" class="popup-modal mfp-hide">
-
-			<img class="scale-with-grid" src="images/portfolio/modals/smcsms.jpg" alt=""/>
-
-			<div class="description-box">
-				<h4>SMCSMS</h4>
-				<p>A Web-based SMS Sending website.</p>
-				<span class="categories"><i class="fa fa-tag"></i>Designer, Web Developer</span>
+				</div>
 			</div>
-
-			<div class="link-box">
-				<a class="popup-modal-dismiss">Close</a>
-			</div>
-
-		</div><!-- modal-03 End -->
-
-		<div id="modal-04" class="popup-modal mfp-hide">
-
-			<img class="scale-with-grid" src="images/portfolio/modals/dealsupto.png" alt=""/>
-
-			<div class="description-box">
-				<h4>Dealsupto</h4>
-				<p>A e-Commerce catalog for best deals (freelance project).</p>
-				<span class="categories"><i class="fa fa-tag"></i>Designer, Web Developer</span>
-			</div>
-
-			<div class="link-box">
-				<a class="popup-modal-dismiss">Close</a>
-			</div>
-
-		</div><!-- modal-04 End -->
-
-
-		<div id="modal-05" class="popup-modal mfp-hide">
-
-			<img class="scale-with-grid" src="images/portfolio/modals/handgesture.png" alt=""/>
-
-			<div class="description-box">
-				<h4>Hand Gesture Recognition</h4>
-				<p>Hand gesture recognition using OpenCV python library (college project).</p>
-				<span class="categories"><i class="fa fa-tag"></i>Software Developer</span>
-			</div>
-
-			<div class="link-box">
-				<a class="popup-modal-dismiss">Close</a>
-			</div>
-
-		</div><!-- modal-05 End -->
-
-
-		<div id="modal-06" class="popup-modal mfp-hide">
-
-			<img class="scale-with-grid" src="images/portfolio/modals/ioniccontacts.png" alt=""/>
-
-			<div class="description-box">
-				<h4>Ionic App</h4>
-				<p>An android app made using Ionic Framework (freelance project).</p>
-				<span class="categories"><i class="fa fa-tag"></i>Software Developer</span>
-			</div>
-
-			<div class="link-box">
-				<a class="popup-modal-dismiss">Close</a>
-			</div>
-
-		</div><!-- modal-06 End -->
-
-
-		<div id="modal-07" class="popup-modal mfp-hide">
-
-			<img class="scale-with-grid" src="images/portfolio/modals/picsquarer.jpg" alt=""/>
-
-			<div class="description-box">
-				<h4>Picsquarer</h4>
-				<p>An android app to square images without cropping.</p>
-				<span class="categories"><i class="fa fa-tag"></i>Software Developer</span>
-			</div>
-
-			<div class="link-box">
-				<a class="popup-modal-dismiss">Close</a>
-			</div>
-
-		</div><!-- modal-06 End -->
-
-
-	</div> <!-- row End -->
-
-</section> <!-- Portfolio Section End-->
-
-
-<!-- Quotes Section
-================================================== -->
-<section id="quotes">
-
-	<div class="text-container">
-
-		<div class="row">
-
-			<div class="two columns header-col">
-
-				<h1><span>Quotes I Love</span></h1>
-
-			</div>
-
-			<div class="ten columns flex-container">
-
-				<div class="flexslider">
-
-					<ul class="slides">
-
-						<li>
-							<blockquote>
-								<p>You see but you don't observe.
-								</p>
-								<cite>Sherlock Holmes</cite>
-							</blockquote>
-						</li> <!-- slide ends -->
-
-						<li>
-							<blockquote>
-								<p>The only way to do Great work is to Love what you do.
-								</p>
-								<cite>Steve Jobs</cite>
-							</blockquote>
-						</li> <!-- slide ends -->
-
-					</ul>
-
-				</div> <!-- div.flexslider ends -->
-
-			</div> <!-- div.flex-container ends -->
-
-		</div> <!-- row ends -->
-
-	</div>  <!-- text-container ends -->
-
-</section> <!-- Testimonials Section End-->
-
-
-<!-- Contact Section
-================================================== -->
-<section id="contact">
-
-	<div class="row section-head">
-
-		<div class="two columns header-col">
-
-			<h1><span>Get In Touch.</span></h1>
 
 		</div>
-
-		<div class="ten columns">
-
-
-			<h2 class="contact-head">Feel like contacting ? </h2>
-			<p class="lead">
-				<br>Drop a text at either of my social media or email
-				me.
-			</p>
-
-		</div>
-
 	</div>
-
-	<div class="row">
-
-		<div class="eight columns" style="display:none;">
-
-			<!-- form -->
-			<form action="" method="post" id="contactForm" name="contactForm">
-				<fieldset>
-
-					<div>
-						<label for="contactName">Name <span class="required">*</span></label>
-						<input type="text" value="" size="35" id="contactName" name="contactName">
-					</div>
-
-					<div>
-						<label for="contactEmail">Email <span class="required">*</span></label>
-						<input type="text" value="" size="35" id="contactEmail" name="contactEmail">
-					</div>
-
-					<div>
-						<label for="contactSubject">Subject</label>
-						<input type="text" value="" size="35" id="contactSubject" name="contactSubject">
-					</div>
-
-					<div>
-						<label for="contactMessage">Message <span class="required">*</span></label>
-						<textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
-					</div>
-
-					<div>
-						<button class="submit">Submit</button>
-						<span id="image-loader">
-                        <img alt="" src="images/loader.gif">
-                     </span>
-					</div>
-
-				</fieldset>
-			</form> <!-- Form End -->
-
-			<!-- contact-warning -->
-			<div id="message-warning"> Error boy</div>
-			<!-- contact-success -->
-			<div id="message-success">
-				<i class="fa fa-check"></i>Your message was sent, thank you!<br>
-			</div>
-
-		</div>
-
-
-		<!--<div class="twelve columns footer-widgets">-->
-
-		<!--<div class="widget widget_contact">-->
-
-		<!--<h4>Address</h4>-->
-		<!--<p class="address">-->
-		<!--Nishchay Kaushik<br>-->
-		<!--Powai <br>-->
-		<!--Mumbai, Maharashtra, IN 400072<br>-->
-
-		<!--</p>-->
-
-		<!--</div>-->
-
-		<!--</div>-->
-
-	</div>
-
-</section> <!-- Contact Section End-->
-
-
-<!-- footer
-================================================== -->
-<footer>
-
-	<div class="row">
-
-		<div class="twelve columns">
-
-			<ul class="social-links">
-				<li><a href="http://fb.me/kaushiknishchay"><i class="fa fa-facebook"></i></a></li>
-				<!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
-				<!--<li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
-				<li><a href="https://www.linkedin.com/in/kaushiknishchay/"><i class="fa fa-linkedin"></i></a>
-				</li>
-				<li><a href="http://instagr.am/kaushik.nishchay"><i class="fa fa-instagram"></i></a></li>
-				<li><a href="http://github.com/kaushiknishchay"><i class="fa fa-github"></i></a></li>
-				<!--<li><a href="#"><i class="fa fa-dribbble"></i></a></li>-->
-				<!--<li><a href="#"><i class="fa fa-skype"></i></a></li>-->
-			</ul>
-
-			<ul class="copyright">
-				<li>&copy; Copyright 2017 Nishchay Kaushik</li>
-			</ul>
-
-		</div>
-
-		<div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
-	</div>
-
-</footer> <!-- Footer End-->
-
-<script>
-	(function (i, s, o, g, r, a, m) {
-		i['GoogleAnalyticsObject'] = r;
-		i[r] = i[r] || function () {
-					(i[r].q = i[r].q || []).push(arguments)
-				}, i[r].l = 1 * new Date();
-		a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0];
-		a.async = 1;
-		a.src = g;
-		m.parentNode.insertBefore(a, m)
-	})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-	ga('create', 'UA-102338317-1', 'auto');
-	ga('send', 'pageview');
-
-</script>
-<!-- Java Script
-================================================== -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
-<script src="js/jquery.flexslider.js"></script>
-<script src="js/waypoints.js"></script>
-<script src="js/jquery.fittext.js"></script>
-<script src="js/magnific-popup.js"></script>
-<script src="js/init.js"></script>
-
 </body>
-
 </html>
