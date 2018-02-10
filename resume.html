@@ -543,20 +543,20 @@
 				font-size: 16px;
 			}
 			.content-title > h1{
-				font-size: 18px;
+				font-size: 20px;
 			}
 			.content-title > span {
 				flex: 15;
 				font-size: 24px;
 			}
 			.item-title{
-				font-size: 15px;
+				font-size: 16px;
 			}
 			.left-80-gutter{
 				padding-left: 0px;
 			}
 			.content-body > *{
-				font-size: 14px;
+				font-size: 15px;
 			}
 			.about-item-icon {
 			    text-align: left;
@@ -565,15 +565,16 @@
 			}
 			.about-item-big {
 			    line-height: 32px;
-			    font-size: 14px;
+			    font-size: 16px;
 			}
 			.about-item-desc {
     			flex: 75;
+    			font-size: 18px;
     		}
     		.skill-list-item {
 			    list-style: none;
-			    padding-bottom: 15px;
-			    font-size: 14px;
+			    padding-bottom: 20px;
+			    font-size: 16px;
 			}
 			.skill-slider{
 				border: 1px solid #015d9e;
@@ -588,6 +589,17 @@
 				top: -6px;
 				box-shadow: 0px 0px 2px 0px rgba(208, 208, 208, 1);
 			}
+    	}
+
+    	.social-links{
+    		flex: 1;
+    	}
+    	.social-links:hover{
+    		opacity: 0.9;
+    	}
+    	.social-links:hover > img{
+    		box-shadow: 0px 5px 6px 0px #dbdbdb;
+    		border-radius: 0%; 
     	}
 	</style>
 </head>
@@ -694,6 +706,14 @@
 			</div>
 		</div>
 		<div class="col-7-5 flex-col">
+			<div class="content-wrap">
+				<div class="content-body flex-row" style="text-align: center;">
+					<a class="social-links" href="https://www.linkedin.com/in/kaushiknishchay/"><img src="linkeding.svg" width="48" height="48"></a>
+					<a class="social-links" href="http://instagr.am/kaushik.nishchay"><img src="insta.svg" width="48" height="48"></a>
+					<a class="social-links" href="http://github.com/kaushiknishchay"><img src="github.svg" width="48" height="48"></a>
+					<a class="social-links" href="http://fb.me/kaushiknishchay"><img src="fb.svg" width="48" height="48"></a>
+				</div>
+			</div>
 			<div class="content-wrap">
 				<div class="content-title flex-row">
 					<span class="material-icons">done_all</span>
