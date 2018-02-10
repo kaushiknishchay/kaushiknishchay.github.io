@@ -533,6 +533,9 @@
 
 
 		@media only screen and (max-width: 700px){
+			.left-30-gutter{
+				padding-left: 0px;
+			}
 			.content-wrap{
 				margin: 20px 10px; 
 			}
@@ -555,7 +558,37 @@
 			.content-body > *{
 				font-size: 14px;
 			}
-		}
+			.about-item-icon {
+			    text-align: left;
+			    flex: 20;
+			    font-size: 24px;
+			}
+			.about-item-big {
+			    line-height: 32px;
+			    font-size: 14px;
+			}
+			.about-item-desc {
+    			flex: 75;
+    		}
+    		.skill-list-item {
+			    list-style: none;
+			    padding-bottom: 15px;
+			    font-size: 14px;
+			}
+			.skill-slider{
+				border: 1px solid #015d9e;
+				background-color: #015d9e;
+			}
+			.skill-slider::before{
+				border-width: 1px;
+				background-color: #fff;
+			}
+			.skill-slider::after{
+				border-width: 5px;
+				top: -6px;
+				box-shadow: 0px 0px 2px 0px rgba(208, 208, 208, 1);
+			}
+    	}
 	</style>
 </head>
 <body>
@@ -605,12 +638,10 @@
 					</div>
 					<div class="flex-row about-item">
 						<span class="material-icons about-item-icon">map</span>
-						<div class="about-item-desc">
-							<span style="font-size: 22px;">
+						<div class="about-item-desc about-item-big">
 								673, Hiran Magri <br>
 								Sector 11 <br>
 								Udaipur (Rajasthan) - 313001
-							</span>
 						</div>
 					</div>
 					<div class="flex-row about-item">
