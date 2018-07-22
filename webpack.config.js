@@ -4,7 +4,7 @@ const webpack = require('webpack');
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: { main: './index.jsx' },
-  output: { path: `${__dirname}/docs/`, filename: 'bundle.js' },
+  output: { path: `${__dirname}/`, filename: 'bundle.js' },
   resolve: {
     extensions: ['.js', '.jsx'],
   },
@@ -23,7 +23,7 @@ module.exports = {
     ],
   },
   devServer: {
-    contentBase: path.resolve(__dirname, './docs'),
+    contentBase: path.resolve(__dirname, './'),
     stats: 'errors-only', // log only errors on console
     open: true, // open browser on running server
     port: process.env.PORT || 3000, // server on port
