@@ -27,7 +27,7 @@ body {
   box-sizing: border-box;
   padding: 0rem;
   margin: 0;
-  background: #2B455F;
+  //background: #2B455F;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -46,7 +46,7 @@ ul {
   border-radius: 2em;
   background: #cd486b;
   color: #fff;
-  font-size: 0.61em;
+  font-size: 14px;
   box-shadow: 0px 0px 5px #2b2b2b;
   text-shadow: none;
   &:hover {
@@ -63,11 +63,14 @@ section {
   scroll-behavior: smooth; /* <----- THE SECRET ---- */
 }
 
-.last--updated{
-  float: right;
+.last--updated {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
   color: #fff;
   font-size: 14px;
 }
+
 
 .content {
   background: $color-dark-blue;
@@ -169,6 +172,7 @@ section {
     box-shadow: 0px 10px 20px #4e4e508c;
     z-index: 2;
     background-image: url('/assets/media/bg.png');
+    position: relative;
 
     > .main--heading {
       font-size: 4em;
@@ -186,6 +190,8 @@ section {
       font-size: 1.5em;
       color: $color-light-blue;
       text-shadow: 4px 4px 15px #171717;
+      padding-bottom: 30px;
+
       @media screen and (max-width: 500px) {
         font-size: 1.8em;
       }
@@ -196,6 +202,9 @@ section {
     }
     @media screen and (max-width: 700px) {
       padding: 4rem 5rem;
+    }
+    @media screen and (max-width: 400px) {
+      padding: 4rem 5rem 0;
     }
   }
   > .light--content {
@@ -382,19 +391,24 @@ section {
             overflow: scroll;
           }
           @media screen and (max-width: 899px) {
-            font-size: 0.9em;
+            font-size: 1em;
           }
           @media screen and (max-width: 500px) {
-            font-size: 1.4em;
+            font-size: 1.6em;
             overflow: scroll;
           }
         }
-
+        @media screen and (min-width: 900px) {
+          width: calc(50vw - 150px);
+        }
+        @media screen and (min-width: 701px) and (max-width: 900px) {
+          width: calc(50vw - 130px);
+        }
         @media screen and (max-width: 700px) {
           width: calc(100vw - 200px);
         }
-        @media screen and (min-width: 900px) {
-          width: calc(50vw - 200px);
+        @media screen and (max-width: 700px) {
+          width: calc(100vw - 140px);
         }
       }
 

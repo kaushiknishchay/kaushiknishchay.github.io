@@ -464,18 +464,17 @@ the gesture detected e.g., Mouse Left or Right Click.
                 Download Resume
               </a>
             </p>
-
-            {
-              lastUpdated
-              && (
-                <span className="last--updated">
-                Last Updated at:
-                  {' '}
-                  {lastUpdated || ''}
-                </span>
-              )
-            }
           </div>
+          {
+            lastUpdated
+            && (
+              <span className="last--updated">
+                Last Updated at:
+                {' '}
+                {lastUpdated || ''}
+                </span>
+            )
+          }
         </div>
 
         <section id="experiences" className="light--content">

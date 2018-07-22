@@ -14,7 +14,7 @@ const ParticleBg = () => (
             value_area: 800,
           },
         },
-        line_linked: {
+        line_lginked: {
           shadow: {
             enable: true,
             color: '#3CA9D1',
