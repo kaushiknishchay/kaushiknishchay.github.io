@@ -10,7 +10,7 @@
     "start": "webpack-dev-server --config ./webpack.dev.js --mode development",
     "lint": "(eslint --ext=js --ext=jsx . ) && echo Lint Passed! ALL Clear! ❤",
     "precommit": "yarn lint",
-    "git": "git add . && git cz",
+    "git": "yarn build:prod && git add . && git cz",
     "git-push": "yarn git && git push origin master"
   },
   "devDependencies": {

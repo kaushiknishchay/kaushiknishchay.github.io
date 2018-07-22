@@ -459,7 +459,7 @@ the gesture detected e.g., Mouse Left or Right Click.
               <a
                 href="./resume_new.pdf"
                 className="download_cv"
-                onClick="ga('send', 'event', 'Download', 'resume', 'version 1');"
+                onclick="ga('send', 'event', 'Download', 'resume', 'version 1');"
               >
                 Download Resume
               </a>

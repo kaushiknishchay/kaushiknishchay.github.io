@@ -628,26 +628,40 @@ section {
   margin: auto;
   padding: 4em 2em;
 
+  @media screen and (max-width: 500px) {
+    padding: 2em 0
+  }
+
   > div {
     color: #333131;
-    font-size: 24px;
+    font-size: 1.5em;
     margin-bottom: 2em;
     padding-bottom: 10px;
     border-bottom: 1px dashed #ddd;
     display: flex;
     line-height: 40px;
+
+    flex-direction: row;
+
     > span {
+      flex-basis: 100px;
       color: #464599;
-      font-size: 20px;
+      font-size: 1em;
       font-weight: bold;
       margin-right: 10%;
-      min-width: 100px;
       display: inline-block;
       text-align: right;
+      @media screen and (min-width: 769px) {
+        flex-basis: 120px;
+      }
+      @media screen and (max-width: 500px) {
+        margin-right: 10px;
+        flex-basis: 70px;
+      }
     }
 
     > span.email, span.address, span.phone, span.hobbies {
-      font-size: 25px;
+      font-size: 1em;
       > i.fas.fa-phone {
         transform: rotate(110deg);
       }
@@ -659,7 +673,8 @@ section {
     }
 
     > a {
-      color: $color-pink
+      color: $color-pink;
+      word-break: break-word;
     }
   }
 }
