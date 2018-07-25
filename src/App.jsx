@@ -59,13 +59,13 @@ export default class App extends Component {
           desc: `
           FullStack Developer and Android App Developer (Native & Hybrid)
           <br/><br/>
-          <b>Responsibilities :</b> 
+          <b>Responsibilities :</b>
           <br/>
           <ul class="desc__list">
           <li>
             Development of Web Applications using latest frontend / backend technologies.
           </li>
-          <li> 
+          <li>
             Have deep knowledge of designing and integrating Angular 2 Modules or use bootstrap.
           </li>
           <li>
@@ -73,7 +73,7 @@ export default class App extends Component {
           </li>
           <li>
             Able to design and create Android Apps be it Native or Hybrid (Ionic) and publish them at Play-Store.
-          </li> 
+          </li>
           <li>
             Designing REST APIs to integrate in android apps.
           </li>
@@ -81,7 +81,7 @@ export default class App extends Component {
             Implementing token based authentication in Node.JS.
           </li>
           </ul>
-          
+
           <br/><br/>
           <b>Key Working Areas :</b>
           <ul class="desc__list">
@@ -158,45 +158,74 @@ export default class App extends Component {
           position: 'React native developer',
           type: 'react',
           desc: `
-            <b>Responsibility</b> : 
+            <b>Responsibility</b> :
             An internal CodeBrahma React Native app with reusable and customizable components.
             <br><br>
-            <b>Technologies Used : </b> 
+            <b>Technologies Used : </b>
             React.JS, React Native, Styled Components, Redux, Redux Sagas`,
         }, {
           name: 'Hacker News App',
           position: 'React native developer',
           type: 'react',
+          link: 'https://github.com/kaushiknishchay/hackerNewsApp',
           desc: `
-          <b>Responsibility</b> : 
-          React Native app built using the 
+          <b>Responsibility</b> :
+          React Native app built using the
           Hacker News API
           to show Top, New and Best stories.
           <br><br>
-          <b>Technologies Used : </b> 
-          React.JS, React Native, RxJS, Redux, 
+          <b>Technologies Used : </b>
+          React.JS, React Native, RxJS, Redux,
           Reselect, Normalizr`,
+        }, {
+          name: 'Github API',
+          position: 'React developer',
+          type: 'react',
+          link: 'https://github.com/kaushiknishchay/Github-API-React',
+          desc: `
+          <b>Responsibility</b> :<br>
+          React Web app built which<br>
+          - List public events for the signed-in user.<br>
+          - Allows repository and user searching.<br>
+          - List public events for un-auth user<br>
+          Write test cases for the components.
+          <br><br>
+          <b>Technologies Used : </b>
+          React.JS, RxJS, Redux,
+          Reselect, Normalizr`,
+        }, {
+          name: 'React + Firebase Todo App',
+          position: 'React + Firebase developer',
+          type: 'firebase',
+          link: 'https://github.com/kaushiknishchay/Firebase-Todo-App',
+          desc: `
+            <b>Responsibility</b> :
+            React web todo app connected to realtime firebase database, which saves the created todos to the db.
+            <br><br>
+            <b>Technologies Used : </b>
+            React.JS, Firebase, Redux, styled-components`,
         }, {
           name: 'Cloud Backup App',
           position: 'React native developer',
           type: 'react',
+          link: 'https://github.com/kaushiknishchay/heyCloudyReactNative',
           desc: `
-            <b>Responsibility</b> : 
+            <b>Responsibility</b> :
             React Native app which backup photos on device to a local server using a scheduled service.
             <br><br>
-            <b>Technologies Used : </b> 
+            <b>Technologies Used : </b>
             React.JS, React Native, RxJS, Redux, Redux Sagas, Realm`,
         }, {
           name: 'Siebel CRM',
           position: 'Siebel Developer',
           type: 'siebel',
-          desc: `<b>Responsibility</b> : 
+          desc: `<b>Responsibility</b> :
                 Created Workflows, WebServices etc. and worked on OpenUI.`,
         }, {
           name: 'Hand Gesture Recognition',
           position: 'Programmer',
           type: 'python',
-          desc: `<b>Details</b> : 
+          desc: `<b>Details</b> :
                 Detecting Hand Gesture and movement by using OpenCV library for Python and perform actions based on
 the gesture detected e.g., Mouse Left or Right Click.
           <br><br>
@@ -206,13 +235,13 @@ the gesture detected e.g., Mouse Left or Right Click.
           position: 'Android Developer',
           type: 'android',
           desc: `
-            <b>Details</b> : 
+            <b>Details</b> :
              A sample Android Application which
              allows to convert images in square.
              Developed as a part to test Image
              APIs of android and for knowledge purpose.
           <br><br>
-          <b>Tools Used</b> : 
+          <b>Tools Used</b> :
              Android Studio
           <br><br>
           <b>Programming Language</b> : Java
@@ -222,13 +251,13 @@ the gesture detected e.g., Mouse Left or Right Click.
           position: 'Android Developer',
           type: 'android',
           desc: `
-            <b>Details</b> : 
+            <b>Details</b> :
              MobiGo was an Android App Store which allowed users to download android apps. Created the app using Java and integrated various 3rd Party libraries to enhance UI and functionality. Created REST API in PHP.
           <br><br>
-          <b>Tools Used</b> : 
+          <b>Tools Used</b> :
              Android Studio, PHPStorm, Notepad++, HeidiSQL
           <br><br>
-          <b>Programming Language</b> : 
+          <b>Programming Language</b> :
               Java
           `,
         }, {
@@ -236,13 +265,13 @@ the gesture detected e.g., Mouse Left or Right Click.
           position: 'FullStack Developer (PHP)',
           type: 'php',
           desc: `
-            <b>Details</b> : 
+            <b>Details</b> :
              Created a full fledged website which allows creating posts regarding various offers, in simple terms a blog post. Created an admin Panel to allow modification or addition of various data, viz. Categories, Posts, User Comments etc.
           <br><br>
-          <b>Tools Used</b> : 
+          <b>Tools Used</b> :
              PHPStorm, Notepad++
           <br><br>
-          <b>Technologies Used</b> : 
+          <b>Technologies Used</b> :
               PHP, MySQL, HTML/CSS/JS, BootStrap
           `,
         }, {
@@ -250,7 +279,7 @@ the gesture detected e.g., Mouse Left or Right Click.
           position: 'FullStack Developer (PHP)',
           type: 'php',
           desc: `
-            <b>Details</b> : 
+            <b>Details</b> :
               PicturesOfJoy was a photograph showcasing
               website. Its frontend was build using
               React.JS + Redux, for Backend PHP Laravel
@@ -258,24 +287,25 @@ the gesture detected e.g., Mouse Left or Right Click.
               Panel created using the same, and has token
               based authentication.
           <br><br>
-          <b>Tools Used</b> : 
+          <b>Tools Used</b> :
              WebStorm, PHPStorm, Notepad++, HeidiSQL
           <br><br>
-          <b>Technologies Used</b> : 
-              PHP, MySQL, React.JS, Redux, ES6 JavaScript 
+          <b>Technologies Used</b> :
+              PHP, MySQL, React.JS, Redux, ES6 JavaScript
           `,
         }, {
           name: 'Kaushik.tech',
           position: 'Web Developer (React)',
           type: 'react',
+          link: 'https://github.com/kaushiknishchay/kaushiknishchay.github.io',
           desc: `
-            <b>Details</b> : 
+            <b>Details</b> :
              Responsive Personal Website created using React.JS
           <br><br>
-          <b>Tools Used</b> : 
+          <b>Tools Used</b> :
              WebStorm
           <br><br>
-          <b>Technologies Used</b> : 
+          <b>Technologies Used</b> :
               React.JS, HTML/CSS/JS
          `,
         },
@@ -298,7 +328,7 @@ the gesture detected e.g., Mouse Left or Right Click.
           desc: `
             Maa Bharti School, Kota
             <br><br>
-            Percentage Scored: 74.6% 
+            Percentage Scored: 74.6%
           `,
         }, {
           title: '10th',
@@ -459,7 +489,7 @@ the gesture detected e.g., Mouse Left or Right Click.
               <a
                 href="./resume_new.pdf"
                 className="download_cv"
-                onclick="ga('send', 'event', 'Download', 'resume', 'version 1');"
+                onClick="ga('send', 'event', 'Download', 'resume', 'version 1');"
               >
                 Download Resume
               </a>
@@ -472,7 +502,7 @@ the gesture detected e.g., Mouse Left or Right Click.
                 Last Updated at:
                 {' '}
                 {lastUpdated || ''}
-                </span>
+              </span>
             )
           }
         </div>
@@ -547,15 +577,16 @@ the gesture detected e.g., Mouse Left or Right Click.
           <div className="projects--content">
             {
               projectsList.map(({
-                name, position, type, desc,
+                name, position, type, desc, link,
               }) => (
                 <ProjectItem
-                  type={type}
-                  key={name}
-                  title={name}
-                  subTitle={position}
-                  desc={desc}
-                />
+                    type={type}
+                    key={name}
+                    title={name}
+                    subTitle={position}
+                    desc={desc}
+                    link={link}
+                  />
               ))}
           </div>
         </section>
@@ -657,7 +688,7 @@ the gesture detected e.g., Mouse Left or Right Click.
           <p>
             &copy; Kaushik.tech
             <span>
-2017 - 2018
+              2017 - 2018
             </span>
           </p>
         </footer>
