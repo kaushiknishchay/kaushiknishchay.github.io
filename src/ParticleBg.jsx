@@ -8,17 +8,17 @@ const ParticleBg = () => (
     params={{
       particles: {
         number: {
-          value: 15,
+          value: 12,
           densityq: {
             enable: false,
             value_area: 800,
           },
         },
-        line_linked: {
+        line_linkedd: {
           shadow: {
             enable: true,
             color: '#3CA9D1',
-            blur: 5,
+            blur: 1,
           },
         },
       },
