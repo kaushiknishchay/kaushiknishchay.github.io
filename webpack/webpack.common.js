@@ -9,11 +9,12 @@ const devMode = process.env.NODE_ENV !== 'production';
 
 
 module.exports = {
-  context: path.resolve(__dirname, 'src'),
+  context: path.resolve(__dirname, '..', 'src'),
   entry: './index.jsx',
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, ''),
+    path: path.resolve(__dirname, '..'),
+    chunkFilename: './assets/js/[name].js',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -30,7 +31,7 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['env', 'react'],
-            plugins: ['transform-class-properties'],
+            plugins: ['syntax-dynamic-import', 'transform-class-properties'],
           },
         },
       },
@@ -52,7 +53,7 @@ module.exports = {
       {
         // setup for auto compiling and injecting styles in index.html
         test: /\.(sass|scss)$/,
-        include: [path.resolve(__dirname, 'src')],
+        include: [path.resolve(__dirname, '..', 'src')],
         use: [
           devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
           {
@@ -93,9 +94,10 @@ module.exports = {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(['docs']),
+    new CleanWebpackPlugin(['./assets/js']),
     new HtmlWebpackPlugin({
       template: 'index.html',
+      filename: '../index.html',
     }),
     new MiniCssExtractPlugin({
       filename: devMode ? '[name].css' : '[name].[hash].css',

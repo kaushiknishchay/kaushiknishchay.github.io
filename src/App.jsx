@@ -1,11 +1,30 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Loadable from 'react-loadable';
 
 import './assets/scss/styles.scss';
-import Timeline from './Timeline';
-import ParticleBg from './ParticleBg';
-import SkillBar from './SkillBar';
-import ProjectItem from './ProjectItem';
+import Loading from './Loading';
+
+
+const Timeline = Loadable({
+  loader: () => import(/* webpackChunkName: "Timeline" */ './Timeline'),
+  loading: Loading,
+});
+
+const ParticleBg = Loadable({
+  loader: () => import(/* webpackChunkName: "ParticleBg" */ './ParticleBg'),
+  loading: Loading,
+});
+
+const SkillBar = Loadable({
+  loader: () => import(/* webpackChunkName: "SkillBar" */ './SkillBar'),
+  loading: Loading,
+});
+
+const ProjectItem = Loadable({
+  loader: () => import(/* webpackChunkName: "ProjectItem" */ './ProjectItem'),
+  loading: Loading,
+});
 
 
 export default class App extends Component {
@@ -413,8 +432,8 @@ the gesture detected e.g., Mouse Left or Right Click.
 
   render() {
     /*
-    updated_at
-    */
+                  updated_at
+                  */
     const {
       socialLinks,
       introText,
@@ -499,7 +518,7 @@ the gesture detected e.g., Mouse Left or Right Click.
             lastUpdated
             && (
               <span className="last--updated">
-                Last Updated at:
+                                Last Updated at:
                 {' '}
                 {lastUpdated || ''}
               </span>
@@ -580,13 +599,13 @@ the gesture detected e.g., Mouse Left or Right Click.
                 name, position, type, desc, link,
               }) => (
                 <ProjectItem
-                    type={type}
-                    key={name}
-                    title={name}
-                    subTitle={position}
-                    desc={desc}
-                    link={link}
-                  />
+                  type={type}
+                  key={name}
+                  title={name}
+                  subTitle={position}
+                  desc={desc}
+                  link={link}
+                />
               ))}
           </div>
         </section>
@@ -609,14 +628,14 @@ the gesture detected e.g., Mouse Left or Right Click.
           <div className="personal-info--content">
             <div>
               <span>
-                Full Name
+                                Full Name
               </span>
               Nishchay Kaushik
             </div>
 
             <div>
               <span>
-                D.O.B
+                                D.O.B
               </span>
               8 March 1996
             </div>
@@ -688,7 +707,7 @@ the gesture detected e.g., Mouse Left or Right Click.
           <p>
             &copy; Kaushik.tech
             <span>
-              2017 - 2018
+                            2017 - 2018
             </span>
           </p>
         </footer>
