@@ -6,7 +6,7 @@ require('dotenv').config();
 module.exports = merge(commonConfig, {
   mode: 'development',
   devServer: {
-    contentBase: path.resolve(__dirname, '../'),
+    contentBase: path.resolve(__dirname, '..'),
     stats: 'errors-only', // log only errors on console
     open: true, // open browser on running server
     port: process.env.PORT || 3000, // server on port

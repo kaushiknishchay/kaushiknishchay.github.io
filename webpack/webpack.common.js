@@ -7,13 +7,14 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const devMode = process.env.NODE_ENV !== 'production';
 
+const projectRoot = path.resolve(__dirname, '..');
 
 module.exports = {
-  context: path.resolve(__dirname, '..', 'src'),
+  context: path.resolve(projectRoot, 'src'),
   entry: './index.jsx',
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, '..'),
+    path: path.resolve(projectRoot),
     chunkFilename: './assets/js/[name].js',
   },
   resolve: {
@@ -53,7 +54,7 @@ module.exports = {
       {
         // setup for auto compiling and injecting styles in index.html
         test: /\.(sass|scss)$/,
-        include: [path.resolve(__dirname, '..', 'src')],
+        include: [path.resolve(projectRoot, 'src')],
         use: [
           devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
           {
@@ -94,10 +95,10 @@ module.exports = {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(['./assets/js']),
+    new CleanWebpackPlugin(['./assets/js/']),
     new HtmlWebpackPlugin({
       template: 'index.html',
-      filename: '../index.html',
+      filename: './index.html',
     }),
     new MiniCssExtractPlugin({
       filename: devMode ? '[name].css' : '[name].[hash].css',
