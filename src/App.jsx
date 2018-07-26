@@ -4,6 +4,10 @@ import Loadable from 'react-loadable';
 
 import './assets/scss/styles.scss';
 import Loading from './Loading';
+import Skills from './constants/skills';
+import experiences from './constants/experiences';
+import education from './constants/education';
+import projects from './constants/projects';
 
 
 const Timeline = Loadable({
@@ -56,310 +60,16 @@ export default class App extends Component {
           url: 'https://github.com/kaushiknishchay',
         },
       ],
+      experiences,
 
-      experiences: [
-        {
-          title: 'Software Developer',
-          subTitle: 'CodeBrahma Technologies',
-          date: 'MARCH 2018 - PRESENT',
-          desc: 'Working as a React.JS and React Native developer.',
-        },
-        {
-          title: 'Assistant System Engineer',
-          subTitle: 'Tata Consultancy Services',
-          date: 'FEB 2017 - MARCH 2018',
-          desc:
-            'Oracle Siebel Developer. Unit Tested and worked on Siebel OpenUI Framework.',
-        },
-        {
-          title: 'Freelance Developer',
-          subTitle: '',
-          date: '2011 - JAN 2017',
-          desc: `
-          FullStack Developer and Android App Developer (Native & Hybrid)
-          <br/><br/>
-          <b>Responsibilities :</b>
-          <br/>
-          <ul class="desc__list">
-          <li>
-            Development of Web Applications using latest frontend / backend technologies.
-          </li>
-          <li>
-            Have deep knowledge of designing and integrating Angular 2 Modules or use bootstrap.
-          </li>
-          <li>
-            Have deep knowledge in PHP and in using Laravel framework for backend development.
-          </li>
-          <li>
-            Able to design and create Android Apps be it Native or Hybrid (Ionic) and publish them at Play-Store.
-          </li>
-          <li>
-            Designing REST APIs to integrate in android apps.
-          </li>
-          <li>
-            Implementing token based authentication in Node.JS.
-          </li>
-          </ul>
+      frontEndSkills: Skills.frontEndSkills,
+      backEndSkills: Skills.backEndSkills,
+      programmingSkills: Skills.programmingSkills,
 
-          <br/><br/>
-          <b>Key Working Areas :</b>
-          <ul class="desc__list">
-          <li>
-          Frontend : Angular 2/4, Angular Material, Bootstrap, HTML5, CSS3, JavaScript, TypeScript, React.JS, jQuery
-          </li>
-          <li>Backend : PHP, Node.JS</li>
-          <li>App Development : Android Native, Ionic Framework (Hybrid App)</li>
-          <li>Frameworks : Laravel (PHP), Express (NodeJS)</li>
-          <li>Database : MySQL, MariaDB, Mongoose, MongoDB</li>
-          <li>Software Version Control : Git</li>
-          <li>Tools : Notepad++, Eclipse, Android Studio, PHPStorm, PyCharms, WebStorm</li>
-          <li>Languages : Python, Java</li>
-          </ul>
-        `,
-        },
-      ],
+      projectsList: projects,
 
-      frontEndSkills: [
-        {
-          name: 'HTML / CSS / JS',
-          percent: '90',
-          color: '#f47721',
-        },
-        {
-          name: 'React.JS + Redux',
-          percent: '90',
-          color: '#00aeff',
-        },
-        {
-          name: 'Angular 2',
-          percent: '70',
-          color: '#8a0e25',
-        },
-      ],
-      backEndSkills: [
-        {
-          name: 'PHP / MySQL / Laravel',
-          percent: '85',
-          color: '#b84592',
-        },
-        {
-          name: 'NodeJS / ExpressJS / MongoDB',
-          percent: '70',
-          color: '#7fbb00',
-        },
-      ],
-      programmingSkills: [
-        {
-          name: 'React Native',
-          percent: '90',
-          color: '#1c79c0',
-        },
-        {
-          name: 'C, C++, Core Java',
-          percent: '75',
-          color: '#788cb6',
-        },
-        {
-          name: 'Python',
-          percent: '75',
-          color: '#ffcc2f',
-        },
-        {
-          name: 'Android',
-          percent: '75',
-          color: '#76b852',
-        },
-      ],
+      education,
 
-      projectsList: [
-        {
-          name: 'CB React Components',
-          position: 'React native developer',
-          type: 'react',
-          desc: `
-            <b>Responsibility</b> :
-            An internal CodeBrahma React Native app with reusable and customizable components.
-            <br><br>
-            <b>Technologies Used : </b>
-            React.JS, React Native, Styled Components, Redux, Redux Sagas`,
-        }, {
-          name: 'Hacker News App',
-          position: 'React native developer',
-          type: 'react',
-          link: 'https://github.com/kaushiknishchay/hackerNewsApp',
-          desc: `
-          <b>Responsibility</b> :
-          React Native app built using the
-          Hacker News API
-          to show Top, New and Best stories.
-          <br><br>
-          <b>Technologies Used : </b>
-          React.JS, React Native, RxJS, Redux,
-          Reselect, Normalizr`,
-        }, {
-          name: 'Github API',
-          position: 'React developer',
-          type: 'react',
-          link: 'https://github.com/kaushiknishchay/Github-API-React',
-          desc: `
-          <b>Responsibility</b> :<br>
-          React Web app built which<br>
-          - List public events for the signed-in user.<br>
-          - Allows repository and user searching.<br>
-          - List public events for un-auth user<br>
-          Write test cases for the components.
-          <br><br>
-          <b>Technologies Used : </b>
-          React.JS, RxJS, Redux,
-          Reselect, Normalizr`,
-        }, {
-          name: 'React + Firebase Todo App',
-          position: 'React + Firebase developer',
-          type: 'firebase',
-          link: 'https://github.com/kaushiknishchay/Firebase-Todo-App',
-          desc: `
-            <b>Responsibility</b> :
-            React web todo app connected to realtime firebase database, which saves the created todos to the db.
-            <br><br>
-            <b>Technologies Used : </b>
-            React.JS, Firebase, Redux, styled-components`,
-        }, {
-          name: 'Cloud Backup App',
-          position: 'React native developer',
-          type: 'react',
-          link: 'https://github.com/kaushiknishchay/heyCloudyReactNative',
-          desc: `
-            <b>Responsibility</b> :
-            React Native app which backup photos on device to a local server using a scheduled service.
-            <br><br>
-            <b>Technologies Used : </b>
-            React.JS, React Native, RxJS, Redux, Redux Sagas, Realm`,
-        }, {
-          name: 'Siebel CRM',
-          position: 'Siebel Developer',
-          type: 'siebel',
-          desc: `<b>Responsibility</b> :
-                Created Workflows, WebServices etc. and worked on OpenUI.`,
-        }, {
-          name: 'Hand Gesture Recognition',
-          position: 'Programmer',
-          type: 'python',
-          desc: `<b>Details</b> :
-                Detecting Hand Gesture and movement by using OpenCV library for Python and perform actions based on
-the gesture detected e.g., Mouse Left or Right Click.
-          <br><br>
-          <b>Programming Language</b> : Python`,
-        }, {
-          name: 'PicSquare',
-          position: 'Android Developer',
-          type: 'android',
-          desc: `
-            <b>Details</b> :
-             A sample Android Application which
-             allows to convert images in square.
-             Developed as a part to test Image
-             APIs of android and for knowledge purpose.
-          <br><br>
-          <b>Tools Used</b> :
-             Android Studio
-          <br><br>
-          <b>Programming Language</b> : Java
-          `,
-        }, {
-          name: 'MobiGo',
-          position: 'Android Developer',
-          type: 'android',
-          desc: `
-            <b>Details</b> :
-             MobiGo was an Android App Store which allowed users to download android apps. Created the app using Java and integrated various 3rd Party libraries to enhance UI and functionality. Created REST API in PHP.
-          <br><br>
-          <b>Tools Used</b> :
-             Android Studio, PHPStorm, Notepad++, HeidiSQL
-          <br><br>
-          <b>Programming Language</b> :
-              Java
-          `,
-        }, {
-          name: 'DealsUpto',
-          position: 'FullStack Developer (PHP)',
-          type: 'php',
-          desc: `
-            <b>Details</b> :
-             Created a full fledged website which allows creating posts regarding various offers, in simple terms a blog post. Created an admin Panel to allow modification or addition of various data, viz. Categories, Posts, User Comments etc.
-          <br><br>
-          <b>Tools Used</b> :
-             PHPStorm, Notepad++
-          <br><br>
-          <b>Technologies Used</b> :
-              PHP, MySQL, HTML/CSS/JS, BootStrap
-          `,
-        }, {
-          name: 'PicturesOfJoy',
-          position: 'FullStack Developer (PHP)',
-          type: 'php',
-          desc: `
-            <b>Details</b> :
-              PicturesOfJoy was a photograph showcasing
-              website. Its frontend was build using
-              React.JS + Redux, for Backend PHP Laravel
-              framework was used. It also has an Admin
-              Panel created using the same, and has token
-              based authentication.
-          <br><br>
-          <b>Tools Used</b> :
-             WebStorm, PHPStorm, Notepad++, HeidiSQL
-          <br><br>
-          <b>Technologies Used</b> :
-              PHP, MySQL, React.JS, Redux, ES6 JavaScript
-          `,
-        }, {
-          name: 'Kaushik.tech',
-          position: 'Web Developer (React)',
-          type: 'react',
-          link: 'https://github.com/kaushiknishchay/kaushiknishchay.github.io',
-          desc: `
-            <b>Details</b> :
-             Responsive Personal Website created using React.JS
-          <br><br>
-          <b>Tools Used</b> :
-             WebStorm
-          <br><br>
-          <b>Technologies Used</b> :
-              React.JS, HTML/CSS/JS
-         `,
-        },
-      ],
-
-      education: [
-        {
-          title: 'Bachelor of Technology',
-          subTitle: 'Information Technology',
-          date: '2012 - 2016',
-          desc: `
-            College of Technology & Engineering, Udaipur
-            <br><br>
-            OGPA Scored: 7.0
-          `,
-        }, {
-          title: '12th',
-          subTitle: 'CBSE',
-          date: '2012',
-          desc: `
-            Maa Bharti School, Kota
-            <br><br>
-            Percentage Scored: 74.6%
-          `,
-        }, {
-          title: '10th',
-          subTitle: 'CBSE',
-          date: '2010',
-          desc: `
-            St. Anthony’s Sr. Sec. School, Udaipur
-            <br><br>
-            CGPA: 9.0
-          `,
-        },
-      ],
       lastUpdated: null,
     };
     window.addEventListener('load', this.callbackFunc);
@@ -596,8 +306,8 @@ the gesture detected e.g., Mouse Left or Right Click.
           <div className="projects--content">
             {
               projectsList.map(({
-                name, position, type, desc, link,
-              }) => (
+                                  name, position, type, desc, link,
+                                }) => (
                 <ProjectItem
                   type={type}
                   key={name}

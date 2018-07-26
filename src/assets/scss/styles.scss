@@ -607,6 +607,13 @@ section {
       background-position: 95% 20px;
     }
 
+    &.nodejs {
+      background-image: url(/assets/media/nodejs.svg);
+      background-size: 70px;
+      background-repeat: no-repeat;
+      background-position: 95% 20px;
+    }
+
     &:hover {
       box-shadow: 2px 2px 10px #b5c9c9;
     }
