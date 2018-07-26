@@ -1,10 +1,11 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+// const webpack = require('webpack');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-const extractPlugin = new ExtractTextPlugin({ filename: './assets/css/app.css' });
+const devMode = process.env.NODE_ENV !== 'production';
 
 
 module.exports = {
@@ -39,30 +40,41 @@ module.exports = {
         use: ['html-loader'],
       },
       {
+        test: /\.css$/,
+        include: [
+          'src',
+        ],
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+        ],
+      },
+      {
         // setup for auto compiling and injecting styles in index.html
-        test: /\.(css|scss)$/,
-        include: [path.resolve(__dirname, 'src', 'assets', 'scss')],
-        use: extractPlugin.extract({
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                sourceMap: true,
-              },
+        test: /\.(sass|scss)$/,
+        include: [path.resolve(__dirname, 'src')],
+        use: [
+          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
             },
-            {
-              loader: 'sass-loader',
-              options: {
-                sourceMap: true,
-              },
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
             },
-          ],
-          fallback: 'style-loader',
-        }),
+          },
+        ],
       },
       // file-loader(for images)
       {
         test: /\.(jpg|png|gif|svg)$/,
+        include: [
+          'src',
+        ],
         use: [
           {
             loader: 'file-loader',
@@ -85,6 +97,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'index.html',
     }),
-    extractPlugin,
+    new MiniCssExtractPlugin({
+      filename: devMode ? '[name].css' : '[name].[hash].css',
+      chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
+    }),
   ],
 };

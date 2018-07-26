@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server -d --config webpack.dev.js",
     "build": "webpack -d --config webpack.dev.js",
-    "build:prod": "webpack -p --config webpack.prod.js",
+    "build:prod": "webpack -p --progress --config webpack.prod.js --mode production",
     "start": "webpack-dev-server --config ./webpack.dev.js --mode development",
     "lint": "(eslint --ext=js --ext=jsx . ) && echo Lint Passed! ALL Clear! ❤",
     "precommit": "yarn lint",
@@ -42,6 +42,8 @@
     "eslint-plugin-react": "^7.10.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "html-webpack-plugin": "^3.1.0",
+    "mini-css-extract-plugin": "^0.4.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.0",
     "prop-types": "^15.6.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

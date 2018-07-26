@@ -4,6 +4,7 @@ const commonConfig = require('./webpack.common.js');
 require('dotenv').config();
 
 module.exports = merge(commonConfig, {
+  mode: 'development',
   devServer: {
     contentBase: path.resolve(__dirname, './docs'),
     stats: 'errors-only', // log only errors on console
