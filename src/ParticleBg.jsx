@@ -14,6 +14,13 @@ const ParticleBg = () => (
             value_area: 800,
           },
         },
+        shape: {
+          type: 'circle',
+          stroke: {
+            width: 2,
+            color: '#fff',
+          },
+        },
         line_linkedd: {
           shadow: {
             enable: true,

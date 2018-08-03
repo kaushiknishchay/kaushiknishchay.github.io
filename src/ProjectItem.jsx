@@ -6,19 +6,19 @@ const ProjectItem = ({
   title, subTitle, desc, type, link,
 }) => (
   <div className={`project--item ${type || ''}`}>
-      <h3 className="project--item__heading">
-        {title}
-      </h3>
-      <span
-        className="project--item__sub-heading"
-      >
-        {subTitle}
-      </span>
-      <p
-        className="project--item__desc"
-        dangerouslySetInnerHTML={{ __html: desc || '' }}
-      />
-      {
+    <h3 className="project--item__heading">
+      {title}
+    </h3>
+    <span
+      className="project--item__sub-heading"
+    >
+      {subTitle}
+    </span>
+    <p
+      className="project--item__desc"
+      dangerouslySetInnerHTML={{ __html: desc || '' }}
+    />
+    {
         link
         && (
           <span className="project--item__link">
@@ -28,10 +28,12 @@ const ProjectItem = ({
           </span>
         )
       }
-    </div>
+  </div>
 );
 ProjectItem.defaultProps = {
   link: null,
+  desc: '',
+  type: '',
 };
 
 ProjectItem.propTypes = {
