@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import React, { Component } from 'react';
 import axios from 'axios';
 import Loadable from 'react-loadable';
@@ -5,8 +6,8 @@ import Loadable from 'react-loadable';
 import './assets/scss/styles.scss';
 import Loading from './Loading';
 import Skills from './constants/skills';
-import experiences from './constants/experiences';
-import education from './constants/education';
+import experiencesList from './constants/experiences';
+import educationList from './constants/education';
 import projects from './constants/projects';
 
 
@@ -60,7 +61,7 @@ export default class App extends Component {
           url: 'https://github.com/kaushiknishchay',
         },
       ],
-      experiences,
+      experiences: experiencesList,
 
       frontEndSkills: Skills.frontEndSkills,
       backEndSkills: Skills.backEndSkills,
@@ -68,7 +69,7 @@ export default class App extends Component {
 
       projectsList: projects,
 
-      education,
+      education: educationList,
 
       lastUpdated: null,
     };
@@ -90,6 +91,7 @@ export default class App extends Component {
       })
       .catch((err) => {
         console.log(err);
+        // pass
       });
   }
 
@@ -99,7 +101,7 @@ export default class App extends Component {
       '.timeline--container > ul.timeline--line > li > .timeline_item--content',
     );
 
-    for (let i = 0; i < items.length; i++) {
+    for (let i = 0; i < items.length; i += 1) {
       if (
         this.elementInViewport2(items[i])
         || this.isElementInViewport(items[i])
@@ -306,8 +308,8 @@ export default class App extends Component {
           <div className="projects--content">
             {
               projectsList.map(({
-                                  name, position, type, desc, link,
-                                }) => (
+                name, position, type, desc, link,
+              }) => (
                 <ProjectItem
                   type={type}
                   key={name}

@@ -35,7 +35,7 @@ SkillBar.propTypes = {
   percent: PropTypes.oneOfType([
     PropTypes.number,
     PropTypes.string]).isRequired,
-  color: PropTypes.string,
+  color: PropTypes.string.isRequired,
   // width: PropTypes.number.isRequired,
 };
 

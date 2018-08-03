@@ -8,7 +8,7 @@
     "build": "webpack -d --config=webpack/webpack.dev.js",
     "build:prod": "webpack -p --progress --config=webpack/webpack.prod.js --mode production",
     "start": "webpack-dev-server --config=webpack/webpack.dev.js --mode development",
-    "lint": "(eslint --ext=js --ext=jsx . ) && echo Lint Passed! ALL Clear! ❤",
+    "lint": "(eslint --ext=js --ext=jsx src ) && echo Lint Passed! ALL Clear! ❤",
     "precommit": "yarn lint",
     "commit": "yarn build:prod && git add . && git cz",
     "git-push": "yarn git && git push origin master"
