@@ -686,14 +686,17 @@ section {
 
   > div {
     color: #333131;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-bottom: 2em;
     padding-bottom: 10px;
     border-bottom: 1px dashed #ddd;
     display: flex;
     line-height: 40px;
-
     flex-direction: row;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.5em;
+    }
 
     > span {
       flex-basis: 100px;
