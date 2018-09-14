@@ -14,14 +14,14 @@ export default [
         React.JS, React Native, Styled Components, Redux, Redux Sagas
         `,
   }, {
-    name: 'ShareMarketIndia',
+    name: 'Opening Bell',
     position: 'React Native Developer',
     type: 'react',
     link: 'https://github.com/kaushiknishchay/ShareMarketIndia',
     desc:
       `
         <b>Responsibility</b> :
-        A demo app which list stocks and index from NSE (India).<br>
+        A react native app which list stocks and indices from NSE & BSE (India).<br>
         Shows charts for Indices/Stocks<br>
         Search the stocks and Save favorite Stocks<br>
         <br><br>
