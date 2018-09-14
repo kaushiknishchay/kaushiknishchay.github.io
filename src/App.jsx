@@ -143,9 +143,6 @@ export default class App extends Component {
   };
 
   render() {
-    /*
-                  updated_at
-                  */
     const {
       socialLinks,
       introText,
@@ -230,7 +227,7 @@ export default class App extends Component {
             lastUpdated
             && (
               <span className="last--updated">
-                                Last Updated at:
+                Last Updated at:
                 {' '}
                 {lastUpdated || ''}
               </span>
@@ -340,14 +337,14 @@ export default class App extends Component {
           <div className="personal-info--content">
             <div>
               <span>
-                                Full Name
+                Full Name
               </span>
               Nishchay Kaushik
             </div>
 
             <div>
               <span>
-                                D.O.B
+                D.O.B
               </span>
               8 March 1996
             </div>
@@ -369,8 +366,6 @@ export default class App extends Component {
                 <i className="fas fa-phone" />
               </span>
               +91 - 7976334650
-              <br />
-              +91 - 9461546453
               <br />
             </div>
 
@@ -419,7 +414,7 @@ export default class App extends Component {
           <p>
             &copy; Kaushik.tech
             <span>
-                            2017 - 2018
+              2017 - 2018
             </span>
           </p>
         </footer>

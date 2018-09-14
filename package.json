@@ -11,7 +11,7 @@
     "lint": "(eslint --ext=js --ext=jsx src ) && echo Lint Passed! ALL Clear! ❤",
     "precommit": "yarn lint",
     "commit": "yarn build:prod && git add . && git cz",
-    "git-push": "yarn git && git push origin master"
+    "git-push": "git push origin master"
   },
   "devDependencies": {
     "babel": "^6.23.0",
