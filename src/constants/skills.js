@@ -24,7 +24,7 @@ export default {
     },
     {
       name: 'NodeJS / ExpressJS / MongoDB',
-      percent: '70',
+      percent: '75',
       color: '#7fbb00',
     },
   ],
