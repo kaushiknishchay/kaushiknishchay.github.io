@@ -1,5 +1,31 @@
 export default [
   {
+    name: 'YouTube Slack Bot',
+    position: 'FullStack Developer',
+    type: 'nodejs',
+    desc:
+      `
+        <b>Responsibility</b> :
+        A slack bot with NodeJS backend, which gives trending videos list and allows to search videos inside slack app.
+        <br><br>
+        <b>Technologies Used : </b>
+        Node.JS
+        `,
+  },
+  {
+    name: 'NodeJS + Socket.IO',
+    position: 'FullStack Developer',
+    type: 'nodejs',
+    desc:
+      `
+        <b>Responsibility</b> :
+        A realtime node js project which shows order and notifies when new order are placed in real time.
+        <br><br>
+        <b>Technologies Used : </b>
+        Node.JS, React.JS, Socket.IO
+        `,
+  },
+  {
     name: 'Restaurant App',
     position: 'React native developer',
     type: 'react',
