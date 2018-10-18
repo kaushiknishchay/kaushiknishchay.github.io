@@ -13,9 +13,9 @@ module.exports = {
   context: path.resolve(projectRoot, 'src'),
   entry: './index.jsx',
   output: {
-    filename: '[name].bundle.js',
+    filename: '[name].[hash].bundle.js',
     path: path.resolve(projectRoot),
-    chunkFilename: './assets/js/[name].js',
+    chunkFilename: './assets/js/[name].[hash].js',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -60,10 +60,7 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              modules: true,
               sourceMap: true,
-              importLoaders: 1,
-              localIdentName: '[sha1:hash:hex:4]'
             },
           },
           {
