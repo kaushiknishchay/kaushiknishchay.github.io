@@ -21,12 +21,13 @@ module.exports = merge(commonConfig, {
   optimization: {
     minimizer: [
       new UglifyJSPlugin({
-        sourceMap: true,
+        sourceMap: false,
         cache: true,
         parallel: true,
         uglifyOptions: {
           compress: {
             inline: false,
+            drop_console: true,
           },
         },
       }),
