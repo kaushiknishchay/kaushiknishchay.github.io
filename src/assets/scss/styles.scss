@@ -8,6 +8,15 @@ $color-instagram: #cd486b;
 $color-smoke-white: #d8dbdc;
 $color-white: #F8FBFC;
 
+@keyframes grow-width {
+  from {
+    width: 150px;
+  }
+  to {
+    width: 10px;
+  }
+}
+
 html {
   @media screen and (max-width: 768px) {
     font-size: 80%;
@@ -236,6 +245,10 @@ section {
         height: 4px;
         transform: translateX(-50%);
         background: $color-underline;
+        animation-name: grow-width;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
       }
     }
   }
@@ -263,6 +276,10 @@ section {
         height: 4px;
         transform: translateX(-50%);
         background: #89ba16;
+        animation-name: grow-width;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
       }
     }
   }
@@ -347,7 +364,7 @@ section {
         padding: 1em 2em;
         background: #FFFFFF;
         color: $color-white;
-        border-radius: 0.5em;
+        border-radius: 0.15em;
         //border: 1px solid #dcdcdc;
         box-shadow: 2px 2px 2px #dcdcdc;
 
@@ -377,6 +394,7 @@ section {
         > .timeline_item--desc {
           color: #333;
           font-size: 1em;
+          line-height: 1.8em;
           @media screen and (min-width: 900px) {
             font-size: 0.9em;
             overflow: scroll;
@@ -417,7 +435,6 @@ section {
       }
     }
 
-
     &.dark {
       > li {
         box-shadow: 2px 2px 7px rgb(8, 26, 67);
@@ -438,7 +455,6 @@ section {
         }
       }
     }
-
 
     > li.in-view {
       &:after {
@@ -571,7 +587,7 @@ section {
     min-height: 150px;
     //border: 1px solid #ccc;
     background-color: #fff;
-    border-radius: 6px;
+    border-radius: 3px;
     transition: all 0.2s ease-in-out;
     position: relative;
     box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2);
