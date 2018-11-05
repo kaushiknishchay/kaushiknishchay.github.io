@@ -1,5 +1,18 @@
 export default [
   {
+    name: 'Weather App',
+    position: 'React Native Developer',
+    type: 'react',
+    desc:
+      `
+        <b>Responsibility</b> :
+        A react native app which uses the DarkSky weather API to show weather info at the current location (using GPS).
+        <br><br>
+        <b>Technologies Used : </b>
+        React Native, Style Components
+        `,
+  },
+  {
     name: 'YouTube Slack Bot',
     position: 'FullStack Developer',
     type: 'nodejs',
