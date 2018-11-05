@@ -3,6 +3,7 @@ export default [
     name: 'Weather App',
     position: 'React Native Developer',
     type: 'react',
+    link: 'https://github.com/kaushiknishchay/WeatherApp',
     desc:
       `
         <b>Responsibility</b> :
