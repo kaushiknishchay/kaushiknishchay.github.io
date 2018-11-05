@@ -3,7 +3,7 @@ export default [
     title: 'Software Developer',
     subTitle: 'CodeBrahma Technologies',
     date: 'MARCH 2018 - PRESENT',
-    desc: 'Working as a React.JS and React Native developer.',
+    desc: 'Working as a React.JS developer to create WebApps and PWAs and as a React Native developer to create mobile apps both for Android and iOS.',
   },
   {
     title: 'Assistant System Engineer',
