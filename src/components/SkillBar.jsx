@@ -6,7 +6,7 @@ const SkillBar = ({
   name, percent, color,
 }) => (
   <div
-    className="skillbar clearfix"
+    className="skillcard clearfix"
   >
     <div
       className="skillbar-title"

@@ -517,6 +517,25 @@ section {
   }
 }
 
+.skill-part {
+  flex-direction: column;
+  padding: 2em;
+  > .item {
+    margin: 20px 0;
+    width: 100%;
+    > .heading {
+      font-size: 24px;
+      text-align: center;
+    }
+    > .row {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
 .skillbar {
   position: relative;
   display: block;
@@ -529,28 +548,70 @@ section {
   transition-property: width, background-color;
   margin-left: auto;
   margin-right: auto;
+
+  > .skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+    background: #6adcfa;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    > span {
+      display: block;
+      background: rgba(0, 0, 0, 0.2);
+      padding: 0 20px;
+      height: 35px;
+      line-height: 35px;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+  }
 }
 
-.skillbar-title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-weight: bold;
-  font-size: 13px;
-  color: #fff;
-  background: #6adcfa;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-
-.skillbar-title span {
-  display: block;
-  background: rgba(0, 0, 0, 0.2);
-  padding: 0 20px;
-  height: 35px;
-  line-height: 35px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
+.skillcard {
+  position: relative;
+  width: 230px;
+  height: 250px;
+  border-radius: 8px;
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 1em;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  > .skillbar-title {
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    > span {
+      display: block;
+      height: 35px;
+      line-height: 35px;
+      padding: 15px 10px;
+      font-size: 15px;
+    }
+  }
+  > .skill-bar-percent {
+    transform: translate(50%, -50%);
+    position: absolute;
+    right: 50%;
+    top: 40%;
+    font-size: 3em;
+    height: 35px;
+    line-height: 35px;
+    color: rgb(255, 255, 255);
+    > span {
+      font-size: 20px;
+      vertical-align: super;
+    }
+  }
 }
 
 .skillbar-bar {

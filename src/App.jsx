@@ -3,31 +3,17 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Loadable from 'react-loadable';
 
-import './assets/scss/styles.scss';
 import Loading from './Loading';
-import Skills from './constants/skills';
-import experiencesList from './constants/experiences';
-import educationList from './constants/education';
-import projects from './constants/projects';
+import './assets/scss/styles.scss';
+import AboutSection from './sections/AboutSection';
+import ProjectSection from './sections/ProjectSection';
+import SkillCardSection from './sections/SkillCardSection';
+import EducationSection from './sections/EducationSection';
+import ExperienceSection from './sections/ExperienceSection';
 
-
-const Timeline = Loadable({
-  loader: () => import(/* webpackChunkName: "Timeline" */ './Timeline'),
-  loading: Loading,
-});
 
 const ParticleBg = Loadable({
   loader: () => import(/* webpackChunkName: "ParticleBg" */ './ParticleBg'),
-  loading: Loading,
-});
-
-const SkillBar = Loadable({
-  loader: () => import(/* webpackChunkName: "SkillBar" */ './SkillBar'),
-  loading: Loading,
-});
-
-const ProjectItem = Loadable({
-  loader: () => import(/* webpackChunkName: "ProjectItem" */ './ProjectItem'),
   loading: Loading,
 });
 
@@ -61,15 +47,6 @@ export default class App extends Component {
           url: 'https://github.com/kaushiknishchay',
         },
       ],
-      experiences: experiencesList,
-
-      frontEndSkills: Skills.frontEndSkills,
-      backEndSkills: Skills.backEndSkills,
-      programmingSkills: Skills.programmingSkills,
-
-      projectsList: projects,
-
-      education: educationList,
 
       lastUpdated: null,
     };
@@ -146,12 +123,6 @@ export default class App extends Component {
     const {
       socialLinks,
       introText,
-      experiences,
-      projectsList,
-      frontEndSkills,
-      backEndSkills,
-      programmingSkills,
-      education,
       lastUpdated,
     } = this.state;
 
@@ -235,184 +206,19 @@ export default class App extends Component {
           }
         </div>
 
-        <section id="experiences" className="light--content">
-          <h3 className="content--title">
-            Experiences
-          </h3>
+        <ExperienceSection />
 
-          <Timeline data={experiences} />
-          <br />
-          <br />
-        </section>
+        <SkillCardSection />
 
-        <section id="skills" className="dark--content">
-          <h3 className="content--title">
-            Skills
-          </h3>
+        <ProjectSection />
 
-          <div className="content--body">
-            <div className="col">
-              <h2>
-                Frontend
-              </h2>
-              <br />
-              {frontEndSkills.map(({ name, percent, color }) => (
-                <SkillBar
-                  key={name}
-                  percent={percent}
-                  name={name}
-                  color={color}
-                />
-              ))}
-            </div>
-            <div className="col">
-              <h2>
-                Backend
-              </h2>
-              <br />
-              {backEndSkills.map(({ name, percent, color }) => (
-                <SkillBar
-                  key={name}
-                  percent={percent}
-                  name={name}
-                  color={color}
-                />
-              ))}
-            </div>
-            <div className="col">
-              <h2>
-                Programming / Mobile
-              </h2>
-              <br />
-              {programmingSkills.map(({ name, percent, color }) => (
-                <SkillBar
-                  key={name}
-                  percent={percent}
-                  name={name}
-                  color={color}
-                />
-              ))}
-            </div>
-          </div>
-          <br />
-          <br />
-        </section>
-        <section id="projects" className="light--content">
-          <h3 className="content--title">
-            Projects
-          </h3>
+        <EducationSection />
 
-          <div className="projects--content">
-            {
-              projectsList.map(({
-                name, position, type, desc, link,
-              }) => (
-                <ProjectItem
-                  type={type}
-                  key={name}
-                  title={name}
-                  subTitle={position}
-                  desc={desc}
-                  link={link}
-                />
-              ))}
-          </div>
-        </section>
+        <AboutSection />
 
-        <section id="education" className="dark--content">
-          <h3 className="content--title">
-            Education
-          </h3>
-
-          <Timeline dark data={education} />
-          <br />
-          <br />
-        </section>
-
-        <section id="info" className="light--content">
-          <h3 className="content--title">
-            Personal Info
-          </h3>
-
-          <div className="personal-info--content">
-            <div>
-              <span>
-                Full Name
-              </span>
-              Nishchay Kaushik
-            </div>
-
-            <div>
-              <span>
-                D.O.B
-              </span>
-              8 March 1996
-            </div>
-
-            <div>
-              <span className="email">
-                <i className="fas fa-at" />
-              </span>
-              <a
-                href="mailto:n.kaushik.tech@gmail.com?"
-                className="about-links"
-              >
-                n.kaushik.tech@gmail.com
-              </a>
-            </div>
-
-            <div>
-              <span className="phone">
-                <i className="fas fa-phone" />
-              </span>
-              +91 - 7976334650
-              <br />
-            </div>
-
-            <div>
-              <span className="address">
-                <i className="fas fa-map-marker" />
-              </span>
-              673, Hiran Magri
-              <br />
-              Sector 11
-              <br />
-              Udaipur (Rajasthan) - 313001
-            </div>
-
-            <div>
-              <span className="address">
-                <i className="fas fa-futbol" />
-              </span>
-              <ul className="hobby--list">
-                <li>
-                  Listening to Music
-                </li>
-                <li>
-                  Travelling
-                </li>
-                <li>
-                  Playing Computer Games
-                </li>
-                <li>
-                  Photography
-                </li>
-                <li>
-                  Binge Watching TV Series
-                </li>
-                <li>
-                  Playing Football
-                </li>
-              </ul>
-            </div>
-
-          </div>
-          <br />
-          <br />
-        </section>
         <footer>
           <p>
-            &copy; Kaushik.tech
+            &copy; kaushik.tech
             <span>
               2017 - 2018
             </span>
