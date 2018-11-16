@@ -581,73 +581,76 @@ section {
   color: #333;
 
   > .project--item {
-    width: calc(28% - 2em);
+    width: calc(28% - 1em);
     padding: 1em 1em 1.5em;
-    margin: 1em;
+    margin: 1em 1em 3em 1em;
     min-height: 150px;
     //border: 1px solid #ccc;
     background-color: #fff;
-    border-radius: 3px;
+    border-radius: 6px;
     transition: all 0.2s ease-in-out;
     position: relative;
-    box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2);
-
-    &.react {
-      background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png);
-      background-size: 70px;
-      background-repeat: no-repeat;
-      background-position: 100% 10px;
-    }
-
-    &.python {
-      background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg);
-      background-size: 40px;
-      background-repeat: no-repeat;
-      background-position: 95% 10px;
-    }
-
-    &.siebel {
-      background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/71/Siebel_Systems_logo.svg);
-      background-size: 60px;
-      background-repeat: no-repeat;
-      background-position: 95% 30px;
-    }
-
-    &.android {
-      background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg);
-      background-size: 40px;
-      background-repeat: no-repeat;
-      background-position: 95% 10px;
-    }
-
-    &.php {
-      background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg);
-      background-size: 50px;
-      background-repeat: no-repeat;
-      background-position: 95% 20px;
-    }
-
-    &.firebase {
-      background-image: url(/assets/media/firebase.svg);
-      background-size: 30px;
-      background-repeat: no-repeat;
-      background-position: 95% 20px;
-    }
-
-    &.nodejs {
-      background-image: url(/assets/media/nodejs.svg);
-      background-size: 70px;
-      background-repeat: no-repeat;
-      background-position: 95% 20px;
-    }
+    box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.05);
 
     &:hover {
-      box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.4);
+      box-shadow: 4px 4px 6px 0 rgba(3, 30, 49, 0.08);
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 10px;
+      top: -40px;
+      width: 60px;
+      max-width: 210px;
+      height: 60px;
+      background: white;
+      border-radius: 100px;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      border: 1px solid #f9f9f9;
+      box-shadow: 2px 2px 9px #f3f3f3;
+    }
+
+    &.react::before {
+      background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png);
+      background-size: 70px;
+    }
+
+    &.python::before {
+      background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg);
+      background-size: 40px;
+    }
+
+    &.siebel::before {
+      background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/71/Siebel_Systems_logo.svg);
+      background-size: 80%;
+    }
+
+    &.android::before {
+      background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg);
+      background-size: 40px;
+    }
+
+    &.php::before {
+      background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg);
+      background-size: 50px;
+    }
+
+    &.firebase::before {
+      background-image: url(/assets/media/firebase.svg);
+      background-size: 30px;
+    }
+
+    &.nodejs::before {
+      background-image: url(/assets/media/nodejs.svg);
+      background-size: 70%;
     }
 
     > .project--item__heading {
       margin: 0.5em 0 0.5em 0;
-      font-size: 1.5em;
+      font-size: 1.3em;
       color: #155484;
       width: 90%;
     }
