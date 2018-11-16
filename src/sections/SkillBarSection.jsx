@@ -1,9 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import SkillBar from '../components/SkillBar';
+import Skills from '../constants/skills';
 
 
-const SkillBarSection = ({ frontEndSkills, backEndSkills, programmingSkills }) => (
+const { frontEndSkills, backEndSkills, programmingSkills } = Skills;
+
+const SkillBarSection = () => (
   <section id="skills" className="dark--content">
     <h3 className="content--title">
       Skills
@@ -57,12 +59,6 @@ const SkillBarSection = ({ frontEndSkills, backEndSkills, programmingSkills }) =
     <br />
   </section>
 );
-
-SkillBarSection.propTypes = {
-  frontEndSkills: PropTypes.array.isRequired,
-  backEndSkills: PropTypes.array.isRequired,
-  programmingSkills: PropTypes.array.isRequired,
-};
 
 
 export default SkillBarSection;

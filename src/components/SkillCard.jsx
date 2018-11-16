@@ -1,3 +1,4 @@
+/* eslint-disable no-mixed-operators,no-bitwise */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -51,7 +52,9 @@ const SkillCard = ({
     </div>
     <div className="skill-bar-percent">
       {percent}
-      <span>%</span>
+      <span>
+%
+      </span>
     </div>
   </div>
 );
