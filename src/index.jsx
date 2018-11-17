@@ -1,6 +1,12 @@
 import React from 'react';
 import { render } from 'react-dom';
-import App from './App';
+import Loadable from 'react-loadable';
+import Loading from './Loading';
 
 
-render(<App />, document.getElementById('app'));
+const MainApp = Loadable({
+  loader: () => import(/* webpackChunkName: "ParticleBg" */ './App'),
+  loading: Loading,
+});
+
+render(<MainApp />, document.getElementById('app'));
