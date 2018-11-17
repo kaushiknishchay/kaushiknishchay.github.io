@@ -16,13 +16,6 @@ const AboutSection = () => (
       </div>
 
       <div>
-        <span>
-                D.O.B
-        </span>
-          8 March 1996
-      </div>
-
-      <div>
         <span className="email">
           <i className="fas fa-at" />
         </span>
@@ -40,17 +33,6 @@ const AboutSection = () => (
         </span>
           +91 - 7976334650
         <br />
-      </div>
-
-      <div>
-        <span className="address">
-          <i className="fas fa-map-marker" />
-        </span>
-          673, Hiran Magri
-        <br />
-          Sector 11
-        <br />
-          Udaipur (Rajasthan) - 313001
       </div>
 
       <div>
@@ -82,6 +64,10 @@ const AboutSection = () => (
     </div>
     <br />
     <br />
+
+    <div className="text-right">
+      *Images used on the website belong to their respective owners.
+    </div>
   </section>
 );
 

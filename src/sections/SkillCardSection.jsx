@@ -4,7 +4,7 @@ import Skills from '../constants/skills';
 import Loading from '../Loading';
 
 
-const SkillBar = Loadable({
+const SkillCard = Loadable({
   loader: () => import(/* webpackChunkName: "SkillCard" */ '../components/SkillCard'),
   loading: Loading,
 });
@@ -12,7 +12,7 @@ const SkillBar = Loadable({
 const { frontEndSkills, backEndSkills, programmingSkills } = Skills;
 
 const SkillCardSection = () => (
-  <section id="skills" className="dark--content">
+  <section id="skills" className="light--content">
     <h3 className="content--title">
       Skills
     </h3>
@@ -24,8 +24,11 @@ const SkillCardSection = () => (
         </h2>
         <br />
         <div className="row">
-          {frontEndSkills.map(({ name, percent, color }) => (
-            <SkillBar
+          {frontEndSkills.map(({
+            name, percent, color, type,
+          }) => (
+            <SkillCard
+              type={type}
               key={name}
               percent={percent}
               name={name}
@@ -40,8 +43,11 @@ const SkillCardSection = () => (
         </h2>
         <br />
         <div className="row">
-          {backEndSkills.map(({ name, percent, color }) => (
-            <SkillBar
+          {backEndSkills.map(({
+            name, percent, color, type,
+          }) => (
+            <SkillCard
+              type={type}
               key={name}
               percent={percent}
               name={name}
@@ -56,8 +62,11 @@ const SkillCardSection = () => (
         </h2>
         <br />
         <div className="row">
-          {programmingSkills.map(({ name, percent, color }) => (
-            <SkillBar
+          {programmingSkills.map(({
+            name, percent, color, type,
+          }) => (
+            <SkillCard
+              type={type}
               key={name}
               percent={percent}
               name={name}

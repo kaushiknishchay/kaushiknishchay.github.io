@@ -37,10 +37,10 @@ const shade = (color, percent) => {
 
 
 const SkillCard = ({
-  name, percent, color,
+  name, percent, color, type,
 }) => (
   <div
-    className="skillcard clearfix"
+    className={`skillcard clearfix ${type}`}
     style={{ backgroundImage: `linear-gradient(${(color || '#88cd2a')}, ${shade((color || '#88cd2a'), -0.25)}, ${shade((color || '#88cd2a'), -0.45)})` }}
   >
     <div
@@ -65,6 +65,7 @@ SkillCard.propTypes = {
     PropTypes.number,
     PropTypes.string]).isRequired,
   color: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
   // width: PropTypes.number.isRequired,
 };
 

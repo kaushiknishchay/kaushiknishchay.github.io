@@ -10,11 +10,11 @@ const Timeline = Loadable({
 });
 
 const EducationSection = () => (
-  <section id="education" className="dark--content">
+  <section id="education" className="light--content">
     <h3 className="content--title">
       Education
     </h3>
-    <Timeline dark data={educationList} />
+    <Timeline data={educationList} />
     <br />
     <br />
   </section>

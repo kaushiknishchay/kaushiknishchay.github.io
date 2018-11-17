@@ -10,6 +10,7 @@ import ProjectSection from './sections/ProjectSection';
 import SkillCardSection from './sections/SkillCardSection';
 import EducationSection from './sections/EducationSection';
 import ExperienceSection from './sections/ExperienceSection';
+import HeaderBar from './components/HeaderBar';
 
 
 const ParticleBg = Loadable({
@@ -29,24 +30,6 @@ export default class App extends Component {
         PHP & Angular Developer,
         Python, Android Developer and Ionic Developer.
       `,
-
-      socialLinks: [
-        {
-          name: 'kaushiknishchay',
-          icon: 'fa-linkedin',
-          url: 'https://linkedin.com/in/kaushiknishchay',
-        },
-        {
-          name: 'kaushik.nishchay',
-          icon: 'fa-instagram',
-          url: 'https://instagram.com/kaushik.nishchay',
-        },
-        {
-          name: 'kaushiknishchay',
-          icon: 'fa-github',
-          url: 'https://github.com/kaushiknishchay',
-        },
-      ],
 
       lastUpdated: null,
     };
@@ -121,78 +104,39 @@ export default class App extends Component {
 
   render() {
     const {
-      socialLinks,
       introText,
       lastUpdated,
     } = this.state;
 
     return (
       <div className="content">
-        <div className="header-bar">
-          <div className="header-bar--links">
-            <ul className="header-bar--links__list">
-              <li className="header-bar--links__item">
-                <a href="#experiences">
-                  Experiences
-                </a>
-              </li>
-              <li className="header-bar--links__item">
-                <a href="#skills">
-                  Skills
-                </a>
-              </li>
-              <li className="header-bar--links__item">
-                <a href="#projects">
-                  Projects
-                </a>
-              </li>
-              <li className="header-bar--links__item">
-                <a href="#education">
-                  Education
-                </a>
-              </li>
-              <li className="header-bar--links__item">
-                <a href="#info">
-                  Info
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="social--icons">
-            {socialLinks.map(link => (
-              <div key={link.icon} className="social--icon__item">
-                <a href={link.url}>
-                  <i className={`fab ${link.icon}`} />
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-
         <ParticleBg />
-        <div className="heading--title">
-          <h1 className="main--heading">
-            Nishchay Kaushik
-          </h1>
-          <h4 className="sub--heading">
-            Software Developer
-          </h4>
+        <div className="header-wrap">
+          <HeaderBar />
+          <div className="heading--title">
+            <h1 className="main--heading">
+              Nishchay Kaushik
+            </h1>
+            <h4 className="sub--heading">
+              Software Developer
+            </h4>
 
-          <div className="description">
-            {introText}
-            <p
-              style={{
-                marginTop: '3em',
-              }}
-            >
-              <a
-                href="./resume_new.pdf"
-                className="download_cv"
-                onClick="ga('send', 'event', 'Download', 'resume', 'version 1');"
+            <div className="description">
+              {introText}
+              <p
+                style={{
+                  marginTop: '3em',
+                }}
               >
-                Download Resume
-              </a>
-            </p>
+                <a
+                  href="./resume_new.pdf"
+                  className="download_cv"
+                  onClick="ga('send', 'event', 'Download', 'resume', 'version 1');"
+                >
+                  Download Resume
+                </a>
+              </p>
+            </div>
           </div>
           {
             lastUpdated

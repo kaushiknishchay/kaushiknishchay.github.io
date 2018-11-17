@@ -1,8 +1,11 @@
 $color-dark-blue: #2B455F;
-$color-pink: #e21d62;
-$color-underline: #f36287;
+$color-pink: #b929bd;
+$color-pink-dark: #9d24a0;
+$color-underline: #bf27bd;
 $color-light-blue: #c9dff7;
 $color-blue: #5f8fc6;
+
+$color-head-desc: #68676b;
 
 $color-instagram: #cd486b;
 $color-smoke-white: #d8dbdc;
@@ -32,10 +35,13 @@ html {
   }
 }
 
-body {
+* {
   box-sizing: border-box;
-  padding: 0rem;
+  padding: 0;
   margin: 0;
+}
+
+body {
   //background: #2B455F;
   font-family: 'Nunito', sans-serif;
 }
@@ -53,13 +59,14 @@ ul {
 .download_cv {
   padding: 1em 3em;
   border-radius: 2em;
-  background: #cd486b;
+  background: #706dc2;
   color: #fff;
-  font-size: 14px;
-  box-shadow: 0px 0px 5px #2b2b2b;
+  font-size: 15px;
+  box-shadow: 4px 4px 13px #7965c2ad;
   text-shadow: none;
+  font-weight: 800;
   &:hover {
-    box-shadow: 0px 0px 20px 5px #2b2b2b;
+    box-shadow: 0px 0px 20px 0px #7965c2ad;
   }
 }
 
@@ -72,16 +79,40 @@ section {
   scroll-behavior: smooth; /* <----- THE SECRET ---- */
 }
 
+.text-right {
+  text-align: right;
+}
+
 .last--updated {
   position: absolute;
-  bottom: 30px;
-  right: 30px;
-  color: #fff;
+  bottom: -20px;
+  right: 40px;
+  color: #333232;
   font-size: 14px;
 }
 
+@media screen and (min-width: 1024px) {
+  section#skills {
+    position: relative;
+    &::before {
+      content: '';
+      background-repeat: no-repeat;
+      width: 500px;
+      max-width: 50%;
+      height: calc(80% - 10px);
+      margin: 0 0 10px 0;
+      border-radius: 3% 100% 70% 0% / 0% 69% 30% 100%;
+      background-image: linear-gradient(45deg, #4390de 0%, #c140bd 100%);
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
 .content {
-  background: $color-dark-blue;
+  //background: $color-dark-blue;
   color: $color-smoke-white;
   //border-radius: 0.5em;
   box-shadow: 7px 7px 120px 0px #3c3c3c;
@@ -100,24 +131,96 @@ section {
       height: calc(100vh - 12rem);
     }
   }
+
+  .header-wrap {
+    background-color: #fcfcfc;
+    position: relative;
+    &::before {
+      content: '';
+      background-repeat: no-repeat;
+      width: 600px;
+      max-width: 50%;
+      height: calc(100% - 10px);
+      margin: 0 0 10px 0;
+      border-radius: 46% 0% 53% 47% / 27% 0% 19% 73%;
+      background-image: url("/assets/media/bg2.svg"), linear-gradient(45deg, #4d88c4 0%, #c30cbd 100%);
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-size: 70%, cover;
+      background-position: 110px, 100%;
+    }
+    @media screen and (max-width: 1024px) {
+      background: linear-gradient(45deg, #4d88c4 0%, #c30cbd 100%);
+      color: #fff;
+      &::before {
+        content: none;
+      }
+      .header-bar {
+        .header-bar--links {
+          .header-bar--links__item {
+            a {
+              color: #FFFFFF !important;
+            }
+          }
+        }
+      }
+      .heading--title {
+        max-width: 100%;
+        .main--heading {
+          background: -webkit-linear-gradient(45deg, hsla(210, 0%, 100%, 1) 0%, #ffffff 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .sub--heading {
+          color: #FFFFFF;
+        }
+        .description {
+          color: #FFFFFF;
+        }
+        .download_cv {
+          border: 1px solid whitesmoke;
+        }
+      }
+      .last--updated {
+        color: #fff;
+        bottom: 10px;
+      }
+    }
+  }
+
   .header-bar {
     z-index: 99;
-    padding: 1em 2em;
+    padding: 2em 2em 1em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
+    margin-bottom: 4em;
 
     @media screen and (max-width: 900px) {
+      //flex-direction: column;
+      //padding: 1em;
+    }
+
+    @media screen and (max-width: 610px) {
       flex-direction: column;
       padding: 1em;
+      > .social--icons {
+        flex: 1 !important;
+        > .social--icon__item {
+          margin-top: 1rem !important;
+        }
+      }
     }
 
     .header-bar--links {
-      flex: 3;
+      flex: 2;
+      z-index: 100;
       > .header-bar--links__list {
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         flex-direction: row;
         flex-wrap: wrap;
         > .header-bar--links__item {
@@ -125,16 +228,17 @@ section {
           padding: 0.5em 0em;
           text-transform: uppercase;
           display: inline-block;
-          text-shadow: 1px 1px 10px #222;
           > a {
-            padding: 0.5em 1em;
+            font-weight: 700;
+            color: #4c5192;
+            padding: 10px 1em;
           }
           &:hover {
             border-bottom: 2px solid $color-underline;
             border-radius: 0em;
             > a {
-              color: #ff7094;
-              text-shadow: none;
+              color: $color-underline;
+              padding: 8px 1em;
             }
           }
           @media screen and (max-width: 900px) {
@@ -148,7 +252,7 @@ section {
     }
 
     > .social--icons {
-      flex: 1;
+      flex: 0 0 200px;
       z-index: 99;
       display: flex;
       flex-direction: row;
@@ -156,9 +260,10 @@ section {
       align-items: center;
       > .social--icon__item {
         font-size: 30px;
-        margin: 1rem;
+        margin: 0 1rem 1rem;
         &:hover {
           > a {
+            color: #fff;
             > .fa-github {
               color: #777777;
             }
@@ -174,36 +279,35 @@ section {
     }
   }
 
-  > .heading--title {
-    padding: 3rem 10rem;
+  .heading--title {
+    max-width: 50%;
+    padding: 3em 0 3em 3em;
     min-height: calc(100vh - 12rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
     transition: all 0.5s ease-in-out;
-    box-shadow: 0px 10px 20px #4e4e508c;
+    //box-shadow: 0px 10px 20px #4e4e508c;
     z-index: 2;
-    background-image: url('/assets/media/bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
     position: relative;
-
     > .main--heading {
       font-size: 4em;
+      background: -webkit-linear-gradient(45deg, #4d88c4 0%, #c30cbd 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       color: #F8FBFC;
-      margin-bottom: 0rem;
+      margin: 0rem;
     }
     > .sub--heading {
       font-size: 2.2em;
-      text-shadow: 4px 4px 15px #292929;
-      color: #ff84a5;
+      color: #6e6ec2;
+      margin: 0.5em 0;
       letter-spacing: 1px;
-      //color: $color-instagram;
     }
     > .description {
       font-size: 1.5em;
-      color: $color-light-blue;
-      text-shadow: 4px 4px 15px #171717;
+      margin: 2em 0;
+      color: $color-head-desc;
       padding-bottom: 30px;
 
       @media screen and (max-width: 500px) {
@@ -224,11 +328,11 @@ section {
   > .light--content {
 
     border-radius: 0 0 0.5em 0.5em;
-    background: #f2f3f3;
+    background: #fcfcfc;
     padding: 2em 1em 4em;
 
     > .content--title {
-
+      margin: 1em auto;
       position: relative;
       color: $color-dark-blue;
       font-size: 30px;
@@ -255,7 +359,7 @@ section {
   > .dark--content {
 
     border-radius: 0 0 0.5em 0.5em;
-    background: #103152;
+    //background: #103152;
     padding: 2em 1em 4em;
 
     > .content--title {
@@ -327,7 +431,7 @@ section {
       &:nth-child(odd) div.timeline_item--content::before {
         left: -15px;
         border-width: 10px 15px 10px 0;
-        border-color: transparent #F45B69 transparent transparent;
+        border-color: transparent $color-pink transparent transparent;
       }
 
       &:nth-child(even) div.timeline_item--content {
@@ -342,11 +446,11 @@ section {
       &:nth-child(even) div.timeline_item--content::before {
         right: -15px;
         border-width: 10px 0 10px 15px;
-        border-color: transparent transparent transparent #F45B69;
+        border-color: transparent transparent transparent $color-pink;
         @media screen and (max-width: 700px) {
           left: -15px;
           border-width: 8px 16px 8px 0;
-          border-color: transparent #F45B69 transparent transparent;
+          border-color: transparent $color-pink transparent transparent;
         }
       }
 
@@ -365,11 +469,12 @@ section {
         background: #FFFFFF;
         color: $color-white;
         border-radius: 0.15em;
-        //border: 1px solid #dcdcdc;
-        box-shadow: 2px 2px 2px #dcdcdc;
+        margin-bottom: 10px;
+        border: 1px solid #f1f1f1;
+        box-shadow: 8px 5px 10px #dcdcdc80;
 
         &:hover {
-          box-shadow: 4px 4px 10px #c3c3c3;
+          box-shadow: 4px 4px 10px #c3c3c390;
         }
 
         > .timeline_item--title {
@@ -411,13 +516,13 @@ section {
           width: calc(50vw - 150px);
         }
         @media screen and (min-width: 701px) and (max-width: 900px) {
-          width: calc(50vw - 130px);
+          width: calc(50vw - 70px);
         }
         @media screen and (max-width: 700px) {
-          width: calc(100vw - 200px);
+          width: calc(100vw - 120px);
         }
         @media screen and (max-width: 500px) {
-          width: calc(100vw - 140px);
+          width: calc(100vw - 100px);
         }
       }
 
@@ -458,7 +563,7 @@ section {
 
     > li.in-view {
       &:after {
-        background: #F45B69;
+        background: $color-pink-dark;
       }
       &:nth-child(odd) div.timeline_item--content {
         transform: none;
@@ -521,10 +626,12 @@ section {
   flex-direction: column;
   padding: 2em;
   > .item {
+    z-index: 2;
     margin: 20px 0;
     width: 100%;
     > .heading {
       font-size: 24px;
+      color: #6d59b1;
       text-align: center;
     }
     > .row {
@@ -571,6 +678,32 @@ section {
   }
 }
 
+.skillcard.php {
+  &::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg);
+  }
+}
+
+.skillcard.react {
+  &::before {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png");
+    background-size: 160px;
+  }
+}
+
+.skillcard.html {
+  &::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg);
+  }
+}
+
+.skillcard.angular {
+  &::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg);
+    background-size: 120px;
+  }
+}
+
 .skillcard {
   position: relative;
   width: 230px;
@@ -584,6 +717,41 @@ section {
   justify-content: flex-end;
   display: flex;
   flex-direction: column;
+  box-shadow: 4px 4px 12px #0000005c;
+
+  &::before {
+    content: '';
+    width: 100%;
+    min-width: 230px;
+    height: 100%;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    background-position: 95% 10%;
+    position: absolute;
+  }
+
+  + .python {
+    &::before {
+      background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg);
+    }
+  }
+
+  + .android::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg);
+  }
+
+  + .java::before {
+    background-size: 50px;
+    background-position: 85% 10%;
+    background-image: url(https://upload.wikimedia.org/wikipedia/it/2/2e/Java_Logo.svg);
+  }
+
+  + .nodejs::before {
+    background-size: 160px;
+    background-image: url(/assets/media/nodejs.svg);
+  }
+
   > .skillbar-title {
     font-weight: bold;
     font-size: 13px;
@@ -592,7 +760,7 @@ section {
     border-bottom-right-radius: 5px;
     > span {
       display: block;
-      height: 35px;
+      //height: 35px;
       line-height: 35px;
       padding: 15px 10px;
       font-size: 15px;
@@ -651,7 +819,7 @@ section {
     border-radius: 6px;
     transition: all 0.2s ease-in-out;
     position: relative;
-    box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 6px 6px 20px 2px rgba(134, 134, 134, 0.08), -6px -6px 15px 2px rgba(134, 134, 134, 0.08);
 
     &:hover {
       box-shadow: 4px 4px 6px 0 rgba(3, 30, 49, 0.08);
@@ -710,20 +878,22 @@ section {
     }
 
     > .project--item__heading {
-      margin: 0.5em 0 0.5em 0;
+      margin: 0.5em 0 0 0;
       font-size: 1.3em;
       color: #155484;
       width: 90%;
     }
     > .project--item__sub-heading {
-      margin: 0.5em 0 0.5em 0;
+      margin: 0.5em 0 20px 0;
+      display: inline-block;
       font-size: 14px;
-      color: #e95950;
+      color: $color-pink-dark;
       text-transform: capitalize;
     }
     > .project--item__desc {
       font-size: 0.9em;
       line-height: 1.5em;
+      margin-bottom: 1em;
       @media screen and (max-width: 900px) {
         font-size: 1em;
       }
@@ -739,19 +909,19 @@ section {
     }
 
     @media screen and (max-width: 1000px) {
-      width: calc(45% - 2em);
+      width: calc(50% - 2em);
       font-size: 90%;
     }
     @media screen and (max-width: 800px) {
-      width: calc(44% - 2em);
+      //width: calc(50%);
       font-size: 110%;
     }
     @media screen and (min-width: 768px) and (max-width: 799px) {
-      width: calc(44% - 2em);
+      width: calc(50% - 2em);
       font-size: 100%;
     }
     @media screen and (max-width: 700px) {
-      width: calc(90% - 2em);
+      width: calc(100%);
     }
     @media screen and (max-width: 500px) {
       font-size: 160%;
