@@ -107,6 +107,7 @@ section {
       position: absolute;
       top: 0;
       left: 0;
+      box-shadow: 15px 10px 15px #ddd;
     }
   }
 }
@@ -150,6 +151,7 @@ section {
       right: 0;
       background-size: 70%, cover;
       background-position: 110px, 100%;
+      box-shadow: -15px 10px 15px #ddd;
     }
     @media screen and (max-width: 1024px) {
       background: linear-gradient(45deg, #4d88c4 0%, #c30cbd 100%);
@@ -632,13 +634,24 @@ section {
     > .heading {
       font-size: 24px;
       color: #6d59b1;
-      text-align: center;
+      text-align: right;
+      padding: 15px;
     }
     > .row {
       display: flex;
       text-align: center;
-      justify-content: center;
+      justify-content: flex-end;
       flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    > .item {
+      > .heading {
+        text-align: center;
+      }
+      > .row {
+        justify-content: center;
+      }
     }
   }
 }
@@ -704,9 +717,11 @@ section {
   }
 }
 
+$skillcard-width: 180px;
+
 .skillcard {
   position: relative;
-  width: 230px;
+  width: $skillcard-width;
   height: 250px;
   border-radius: 8px;
   transition: 0.4s linear;
@@ -722,7 +737,7 @@ section {
   &::before {
     content: '';
     width: 100%;
-    min-width: 230px;
+    min-width: $skillcard-width;
     height: 100%;
     background-size: 100px;
     background-repeat: no-repeat;

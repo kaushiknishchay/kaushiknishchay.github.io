@@ -21,13 +21,13 @@ export default {
   ],
   backEndSkills: [
     {
-      name: 'PHP / MySQL / Laravel',
+      name: 'PHP',
       percent: '85',
       color: '#b84592',
       type: 'php',
     },
     {
-      name: 'NodeJS / ExpressJS / MongoDB',
+      name: 'NodeJS',
       percent: '75',
       color: '#7fbb00',
       type: 'nodejs',
