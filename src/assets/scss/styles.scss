@@ -246,7 +246,7 @@ section#projects::before {
 
     @media screen and (max-width: 610px) {
       flex-direction: column;
-      padding: 1em;
+      padding: 3em 1em;
       > .social--icons {
         flex: 1 !important;
         > .social--icon__item {
