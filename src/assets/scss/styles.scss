@@ -76,6 +76,7 @@ ul {
 }
 
 section {
+  position: relative;
   scroll-behavior: smooth; /* <----- THE SECRET ---- */
 }
 
@@ -110,6 +111,38 @@ section {
       box-shadow: 15px 10px 15px #ddd;
     }
   }
+}
+
+section#experiences::before {
+    background-repeat: repeat-x;
+    content: '';
+    width: 39vw;
+    height: 39vw;
+    border-radius: 100%;
+    background-image: linear-gradient(#e0e1f3, #ffebff);
+    position: absolute;
+    top: 30%;
+    right: -15%;
+    transform: translateY(-50%);
+    min-width: 200px;
+    min-height: 200px;
+    box-shadow: -1090px 900px 0px 1em #ffdac430;
+}
+
+section#projects::before {
+    background-repeat: repeat-x;
+    content: '';
+    width: 39vw;
+    height: 39vw;
+    border-radius: 100%;
+    background-image: linear-gradient(#e0e1f3, #ebfffc);
+    position: absolute;
+    top: 30%;
+    left: -15%;
+    transform: translateY(-50%);
+    min-width: 200px;
+    min-height: 200px;
+    box-shadow: 70em 12em 0 -11em #b8bde42d, 30em 62em 0 -100px #b8bde42d;
 }
 
 .content {
@@ -724,8 +757,8 @@ $skillcard-width: 180px;
   width: $skillcard-width;
   height: 250px;
   border-radius: 8px;
-  transition: 0.4s linear;
-  transition-property: width, background-color;
+  transition: 100ms ease-in;
+  transition-property: width, background-color, box-shadow;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 1em;
@@ -733,7 +766,9 @@ $skillcard-width: 180px;
   display: flex;
   flex-direction: column;
   box-shadow: 4px 4px 12px #0000005c;
-
+  &:hover{
+    box-shadow: 8px 8px 8px #a6a3ab;
+  }
   &::before {
     content: '';
     width: 100%;
