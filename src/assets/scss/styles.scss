@@ -76,6 +76,7 @@ ul {
 }
 
 section {
+  overflow-x: hidden;
   position: relative;
   scroll-behavior: smooth; /* <----- THE SECRET ---- */
 }
