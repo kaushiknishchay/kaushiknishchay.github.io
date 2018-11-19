@@ -65,7 +65,7 @@ const AboutSection = () => (
     <br />
     <br />
 
-    <div className="text-right">
+    <div className="text-right disclaimer-black">
       *Images used on the website belong to their respective owners.
     </div>
   </section>
