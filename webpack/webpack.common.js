@@ -6,7 +6,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const devMode = process.env.NODE_ENV !== 'production';
-
 const projectRoot = path.resolve(__dirname, '..');
 
 module.exports = {
@@ -56,7 +55,13 @@ module.exports = {
         test: /\.(sass|scss|css)$/,
         include: [path.resolve(projectRoot, 'src')],
         use: [
-          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+          devMode ? 'style-loader' : {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: './assets/css/',
+              outputPath: './assets/css/',
+            },
+          },
           {
             loader: 'css-loader',
             options: {
@@ -103,8 +108,8 @@ module.exports = {
       filename: './index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: devMode ? '[name].css' : '[name].[hash].css',
-      chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
+      // filename: devMode ? '[name].css' : '[name].css',
+      chunkFilename: devMode ? '[id].css' : '[name].css',
     }),
   ],
 };

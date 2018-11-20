@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server -d --config=webpack/webpack.dev.js",
     "build": "webpack -d --config=webpack/webpack.dev.js",
-    "build:prod": "webpack -p --progress --config=webpack/webpack.prod.js --mode production",
+    "build:prod": "NODE_ENV=production webpack -p --progress --config=webpack/webpack.prod.js --mode production",
     "start": "webpack-dev-server --config=webpack/webpack.dev.js --mode development",
     "lint": "(eslint --ext=js --ext=jsx src ) && echo Lint Passed! ALL Clear! ❤",
     "precommit": "yarn lint",

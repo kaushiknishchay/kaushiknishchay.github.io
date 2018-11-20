@@ -63,10 +63,6 @@ module.exports = merge(commonConfig, {
     },
   },
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: devMode ? '[name].css' : '[name].[hash].css',
-      chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
-    }),
     new UglifyJSPlugin({
       sourceMap: false,
     }),
