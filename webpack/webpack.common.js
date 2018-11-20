@@ -14,7 +14,7 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(projectRoot),
-    chunkFilename: './assets/js/[name].[contenthash].js',
+    chunkFilename: './assets/js/[name].js',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -109,7 +109,7 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       // filename: devMode ? '[name].css' : '[name].css',
-      chunkFilename: devMode ? '[id].css' : '[name].css',
+      chunkFilename: devMode ? '[id].css' : './assets/css/app.css',
     }),
   ],
 };
