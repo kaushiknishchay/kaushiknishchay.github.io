@@ -53,20 +53,20 @@ module.exports = {
       },
       {
         // setup for auto compiling and injecting styles in index.html
-        test: /\.(sass|scss)$/,
+        test: /\.(sass|scss|css)$/,
         include: [path.resolve(projectRoot, 'src')],
         use: [
           devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
-              sourceMap: true,
+              sourceMap: false,
             },
           },
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: true,
+              sourceMap: false,
             },
           },
         ],
@@ -95,7 +95,9 @@ module.exports = {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(['./assets/js/']),
+    new CleanWebpackPlugin(['assets/js/*.*', 'main*.js'], {
+      root: projectRoot,
+    }),
     new HtmlWebpackPlugin({
       template: 'index.html',
       filename: './index.html',

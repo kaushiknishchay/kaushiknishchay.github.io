@@ -1,15 +1,23 @@
 const cacheName = 'kaushik-tech';
 const filesToCache = [
-  '/',
-  '/index.html',
   '/assets/media/bg2.svg',
+  '/assets/media/nodejs.svg',
+  '/assets/media/firebase.svg',
   '/assets/css/app.css',
+  '/assets/js/AboutSection.js',
+  '/assets/js/EducationSection.js',
+  '/assets/js/npm.css-loader.js',
+  '/assets/js/npm.fbjs.js',
+  '/assets/js/npm.prop-types.js',
+  '/assets/js/npm.react-particles-js.js',
+  '/assets/js/npm.style-loader.js',
   '/assets/js/ParticleBg.js',
-  '/assets/js/vendors~ParticleBg.js',
   '/assets/js/ProjectItem.js',
-  '/assets/js/Timeline.js',
+  '/assets/js/ProjectSection.js',
   '/assets/js/SkillBar.js',
   '/assets/js/SkillCard.js',
+  '/assets/js/SkillCardSection.js',
+  '/assets/js/Timeline.js',
 ];
 self.addEventListener('install', (e) => {
   console.log('[ServiceWorker] Install');

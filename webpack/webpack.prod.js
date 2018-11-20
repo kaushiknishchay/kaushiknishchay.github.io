@@ -1,9 +1,12 @@
 const merge = require('webpack-merge');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const webpack = require('webpack');
 const commonConfig = require('./webpack.common.js');
+
+const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = merge(commonConfig, {
   mode: 'production',
@@ -35,29 +38,38 @@ module.exports = merge(commonConfig, {
     ],
     runtimeChunk: false,
     splitChunks: {
-      chunks: 'all',
-      // maxSize: 10000,
+      // chunks: 'all',
+      minSize: 0,
       cacheGroups: {
         default: false,
         styles: {
           name: 'styles',
-          test: /\.css$/,
+          test: /\.(s|)css$/,
           chunks: 'all',
           enforce: true,
         },
-        commons: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendor_app',
+        vendor: {
           chunks: 'all',
-          minChunks: 6,
+          test: /[\\/]node_modules[\\/]/,
+          name(module) {
+            // get the name. E.g. node_modules/packageName/not/this/part.js
+            // or node_modules/packageName
+            const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
+            // npm package names are URL-safe, but some servers don't like @ symbols
+            return `npm.${packageName.replace('@', '')}`;
+          },
         },
       },
     },
   },
   plugins: [
-    // new UglifyJSPlugin({
-    //   sourceMap: true,
-    // }),
+    new MiniCssExtractPlugin({
+      filename: devMode ? '[name].css' : '[name].[hash].css',
+      chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
+    }),
+    new UglifyJSPlugin({
+      sourceMap: false,
+    }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'),
     }),
