@@ -5,7 +5,7 @@ import Loading from './Loading';
 
 
 const MainApp = Loadable({
-  loader: () => import(/* webpackChunkName: "ParticleBg" */ './App'),
+  loader: () => import(/* webpackChunkName: "MainApp" */ './App'),
   loading: Loading,
 });
 
