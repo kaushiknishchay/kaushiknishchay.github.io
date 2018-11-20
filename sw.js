@@ -1,5 +1,6 @@
 const cacheName = 'kaushik-tech';
 const filesToCache = [
+  '/',
   '/assets/css/app.css',
   '/assets/media/bg2.svg',
   '/assets/media/nodejs.svg',
