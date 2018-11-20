@@ -1,16 +1,16 @@
 const cacheName = 'kaushik-tech';
 const filesToCache = [
+  '/assets/css/app.css',
   '/assets/media/bg2.svg',
   '/assets/media/nodejs.svg',
   '/assets/media/firebase.svg',
   '/assets/css/app.css',
   '/assets/js/AboutSection.js',
   '/assets/js/EducationSection.js',
-  '/assets/js/npm.css-loader.js',
+  '/assets/js/MainApp.js',
   '/assets/js/npm.fbjs.js',
   '/assets/js/npm.prop-types.js',
   '/assets/js/npm.react-particles-js.js',
-  '/assets/js/npm.style-loader.js',
   '/assets/js/ParticleBg.js',
   '/assets/js/ProjectItem.js',
   '/assets/js/ProjectSection.js',
