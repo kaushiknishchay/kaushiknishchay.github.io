@@ -15,7 +15,7 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(projectRoot),
-    chunkFilename: './assets/js/[name].js',
+    chunkFilename: './assets/js/[name].[contenthash].js',
   },
   resolve: {
     extensions: ['.js', '.jsx'],

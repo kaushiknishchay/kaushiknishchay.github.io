@@ -42,12 +42,12 @@ module.exports = merge(commonConfig, {
       minSize: 0,
       cacheGroups: {
         default: false,
-        styles: {
-          name: 'styles',
-          test: /\.(s|)css$/,
-          chunks: 'all',
-          enforce: true,
-        },
+        // styles: {
+        //   name: 'styles',
+        //   test: /\.(s|)css$/,
+        //   chunks: 'all',
+        //   enforce: true,
+        // },
         vendor: {
           chunks: 'all',
           test: /[\\/]node_modules[\\/]/,
