@@ -1,17 +1,36 @@
 /* eslint-disable no-param-reassign */
 import React, { Component } from 'react';
-import axios from 'axios';
 import Loadable from 'react-loadable';
 
 import Loading from './Loading';
 import './assets/scss/styles.scss';
-import AboutSection from './sections/AboutSection';
-import ProjectSection from './sections/ProjectSection';
-import SkillCardSection from './sections/SkillCardSection';
-import EducationSection from './sections/EducationSection';
-import ExperienceSection from './sections/ExperienceSection';
 import HeaderBar from './components/HeaderBar';
 
+
+const AboutSection = Loadable({
+  loader: () => import(/* webpackChunkName: "AboutSection" */ './sections/AboutSection'),
+  loading: Loading,
+});
+
+const ProjectSection = Loadable({
+  loader: () => import(/* webpackChunkName: "ProjectSection" */ './sections/ProjectSection'),
+  loading: Loading,
+});
+
+const SkillCardSection = Loadable({
+  loader: () => import(/* webpackChunkName: "SkillCardSection" */ './sections/SkillCardSection'),
+  loading: Loading,
+});
+
+const EducationSection = Loadable({
+  loader: () => import(/* webpackChunkName: "EducationSection" */ './sections/EducationSection'),
+  loading: Loading,
+});
+
+const ExperienceSection = Loadable({
+  loader: () => import(/* webpackChunkName: "ExperienceSection" */ './sections/ExperienceSection'),
+  loading: Loading,
+});
 
 const ParticleBg = Loadable({
   loader: () => import(/* webpackChunkName: "ParticleBg" */ './ParticleBg'),
@@ -39,20 +58,16 @@ export default class App extends Component {
 
 
   componentDidMount() {
-    axios
-      .get('https://api.github.com/repos/kaushiknishchay/kaushiknishchay.github.io')
-      .then((res) => {
-        if (res.status === 200) {
-          const lastUpdated = res.data.updated_at;
-          this.setState({
-            lastUpdated: new Date(lastUpdated).toDateString(),
-          });
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-        // pass
+    fetch('https://api.github.com/repos/kaushiknishchay/kaushiknishchay.github.io').then(
+      resp => resp.json(),
+    ).then((response) => {
+      const lastUpdated = response.updated_at;
+      this.setState({
+        lastUpdated: new Date(lastUpdated).toDateString(),
       });
+    }).catch((ex) => {
+      console.error(ex);
+    });
   }
 
 

@@ -35,6 +35,8 @@ module.exports = merge(commonConfig, {
     ],
     runtimeChunk: false,
     splitChunks: {
+      chunks: 'all',
+      // maxSize: 10000,
       cacheGroups: {
         default: false,
         styles: {
@@ -47,7 +49,7 @@ module.exports = merge(commonConfig, {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendor_app',
           chunks: 'all',
-          minChunks: 2,
+          minChunks: 6,
         },
       },
     },

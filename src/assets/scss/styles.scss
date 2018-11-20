@@ -91,7 +91,7 @@ section {
 
 .last--updated {
   position: absolute;
-  bottom: -20px;
+  bottom: 0px;
   right: 40px;
   color: #333232;
   font-size: 14px;
@@ -174,12 +174,13 @@ section#projects::before {
   .header-wrap {
     background-color: #fcfcfc;
     position: relative;
+    padding-bottom: 30px;
     &::before {
       content: '';
       background-repeat: no-repeat;
       width: 600px;
       max-width: 50%;
-      height: calc(100% - 10px);
+      height: calc(100% - 20px);
       margin: 0 0 10px 0;
       border-radius: 46% 0% 53% 47% / 27% 0% 19% 73%;
       background-image: url("/assets/media/bg2.svg"), linear-gradient(45deg, #4d88c4 0%, #c30cbd 100%);
