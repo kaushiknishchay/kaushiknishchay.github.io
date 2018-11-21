@@ -4,6 +4,7 @@ const filesToCache = [
   '/assets/css/app.css',
   '/assets/media/bg2.svg',
   '/assets/media/nodejs.svg',
+  '/assets/media/education.svg',
   '/assets/media/firebase.svg',
   '/assets/css/app.css',
   '/assets/js/AboutSection.js',
