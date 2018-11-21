@@ -20,6 +20,15 @@ $color-white: #F8FBFC;
   }
 }
 
+@keyframes elevate {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 10px;
+  }
+}
+
 html {
   @media screen and (max-width: 768px) {
     font-size: 80%;
@@ -162,7 +171,11 @@ section#education::before {
     height: 500px;
     z-index: -1;
     background-size: contain;
-
+    animation-name: elevate;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
     @media screen and (max-width: 768px) {
       width: 400px;
       height: 400px;
