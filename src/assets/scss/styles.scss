@@ -43,6 +43,7 @@ html {
 
 body {
   //background: #2B455F;
+  background: #fcfcfc;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -148,6 +149,46 @@ section#projects::before {
   min-width: 200px;
   min-height: 200px;
   box-shadow: 70em 12em 0 -11em #b8bde42d, 30em 62em 0 -100px #b8bde42d;
+}
+
+section#education::before {
+    background-image: url("/assets/media/education.svg");
+    content: '';
+    position: absolute;
+    top: 00px;
+    left: -50px;
+    width: 500px;
+    background-repeat: no-repeat;
+    height: 500px;
+    z-index: -1;
+    background-size: contain;
+
+    @media screen and (max-width: 768px) {
+      width: 400px;
+      height: 400px;
+    }
+    @media screen and (max-width: 600px) {
+      width: 300px;
+      height: 300px;
+    }
+    @media screen and (max-width: 425px) {
+      width: 200px;
+      height: 200px;
+    }
+}
+
+section#contact-us::before {
+    background-image: url("/assets/media/emailbg.png");
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    z-index: -1;
+    background-size: 800px 600px;
+    background-position: 100% 100%;
 }
 
 .content {
@@ -369,7 +410,7 @@ section#projects::before {
   > .light--content {
 
     border-radius: 0 0 0.5em 0.5em;
-    background: #fcfcfc;
+    // background: #fcfcfc;
     padding: 2em 1em 4em;
 
     > .content--title {
