@@ -10,9 +10,9 @@ const Timeline = Loadable({
 });
 
 const ExperienceSection = () => (
-  <section id="experiences" className="light--content">
+  <section id="experiences" className="light--content" aria-label="Professional Experiences section">
     <h3 className="content--title">
-        Experiences
+      Experiences
     </h3>
     <Timeline data={experiencesList} />
     <br />

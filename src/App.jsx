@@ -32,10 +32,10 @@ const ExperienceSection = Loadable({
   loading: Loading,
 });
 
-const ParticleBg = Loadable({
-  loader: () => import(/* webpackChunkName: "ParticleBg" */ './ParticleBg'),
-  loading: Loading,
-});
+// const ParticleBg = Loadable({
+//   loader: () => import(/* webpackChunkName: "ParticleBg" */ './ParticleBg'),
+//   loading: Loading,
+// });
 
 
 export default class App extends Component {
@@ -125,16 +125,16 @@ export default class App extends Component {
 
     return (
       <div className="content">
-        <ParticleBg />
-        <div className="header-wrap">
+
+        <div className="header-wrap" role="main" aria-label="Nishchay Kaushik introduction.">
           <HeaderBar />
           <div className="heading--title">
             <h1 className="main--heading">
               Nishchay Kaushik
             </h1>
-            <h4 className="sub--heading">
+            <h2 className="sub--heading">
               Software Developer
-            </h4>
+            </h2>
 
             <div className="description">
               {introText}

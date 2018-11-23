@@ -4,6 +4,7 @@ import { Particles } from 'react-particles-js';
 
 const ParticleBg = () => (
   <Particles
+    aria-label="Particles effect background"
     className="particles--container"
     params={{
       particles: {

@@ -2,17 +2,17 @@ import React from 'react';
 
 
 const AboutSection = () => (
-  <section id="info" className="light--content">
+  <section id="info" className="light--content" aria-label="Personal Information">
     <h3 className="content--title">
-        Personal Info
+      Personal Info
     </h3>
 
     <div className="personal-info--content">
       <div>
         <span>
-                Full Name
+          Full Name
         </span>
-          Nishchay Kaushik
+        Nishchay Kaushik
       </div>
 
       <div>
@@ -23,7 +23,7 @@ const AboutSection = () => (
           href="mailto:n.kaushik.tech@gmail.com?"
           className="about-links"
         >
-            n.kaushik.tech@gmail.com
+          n.kaushik.tech@gmail.com
         </a>
       </div>
 
@@ -31,7 +31,7 @@ const AboutSection = () => (
         <span className="phone">
           <i className="fas fa-phone" />
         </span>
-          +91 - 7976334650
+        +91 - 7976334650
         <br />
       </div>
 
@@ -39,24 +39,24 @@ const AboutSection = () => (
         <span className="address">
           <i className="fas fa-futbol" />
         </span>
-        <ul className="hobby--list">
+        <ul className="hobby--list" aria-label="Hobbies">
           <li>
-              Listening to Music
+            Listening to Music
           </li>
           <li>
-              Travelling
+            Travelling
           </li>
           <li>
-              Playing Computer Games
+            Playing Computer Games
           </li>
           <li>
-              Photography
+            Photography
           </li>
           <li>
-              Binge Watching TV Series
+            Binge Watching TV Series
           </li>
           <li>
-              Playing Football
+            Playing Football
           </li>
         </ul>
       </div>

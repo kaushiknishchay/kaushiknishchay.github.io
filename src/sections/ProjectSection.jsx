@@ -11,7 +11,7 @@ const ProjectItem = Loadable({
 });
 
 const ProjectSection = () => (
-  <section id="projects" className="light--content">
+  <section id="projects" className="light--content" aria-label="Projects made section">
     <h3 className="content--title">
       Projects
     </h3>
@@ -21,15 +21,15 @@ const ProjectSection = () => (
         projectsList.map(({
           name, position, type, desc, link,
         }) => (
-          <ProjectItem
-            type={type}
-            key={name}
-            title={name}
-            subTitle={position}
-            desc={desc}
-            link={link}
-          />
-        ))
+            <ProjectItem
+              type={type}
+              key={name}
+              title={name}
+              subTitle={position}
+              desc={desc}
+              link={link}
+            />
+          ))
       }
     </div>
   </section>
