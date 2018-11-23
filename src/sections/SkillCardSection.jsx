@@ -27,14 +27,14 @@ const SkillCardSection = () => (
           {frontEndSkills.map(({
             name, percent, color, type,
           }) => (
-              <SkillCard
-                type={type}
-                key={name}
-                percent={percent}
-                name={name}
-                color={color}
-              />
-            ))}
+            <SkillCard
+              type={type}
+              key={name}
+              percent={percent}
+              name={name}
+              color={color}
+            />
+          ))}
         </div>
       </div>
       <div className="item">
@@ -46,14 +46,14 @@ const SkillCardSection = () => (
           {backEndSkills.map(({
             name, percent, color, type,
           }) => (
-              <SkillCard
-                type={type}
-                key={name}
-                percent={percent}
-                name={name}
-                color={color}
-              />
-            ))}
+            <SkillCard
+              type={type}
+              key={name}
+              percent={percent}
+              name={name}
+              color={color}
+            />
+          ))}
         </div>
       </div>
       <div className="item">
@@ -65,14 +65,14 @@ const SkillCardSection = () => (
           {programmingSkills.map(({
             name, percent, color, type,
           }) => (
-              <SkillCard
-                type={type}
-                key={name}
-                percent={percent}
-                name={name}
-                color={color}
-              />
-            ))}
+            <SkillCard
+              type={type}
+              key={name}
+              percent={percent}
+              name={name}
+              color={color}
+            />
+          ))}
         </div>
       </div>
     </div>

@@ -21,15 +21,15 @@ const ProjectSection = () => (
         projectsList.map(({
           name, position, type, desc, link,
         }) => (
-            <ProjectItem
-              type={type}
-              key={name}
-              title={name}
-              subTitle={position}
-              desc={desc}
-              link={link}
-            />
-          ))
+          <ProjectItem
+            type={type}
+            key={name}
+            title={name}
+            subTitle={position}
+            desc={desc}
+            link={link}
+          />
+        ))
       }
     </div>
   </section>
