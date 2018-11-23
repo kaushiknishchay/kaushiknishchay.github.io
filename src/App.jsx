@@ -66,7 +66,7 @@ export default class App extends Component {
         lastUpdated: new Date(lastUpdated).toDateString(),
       });
     }).catch((ex) => {
-      console.error(ex);
+      // console.error(ex);
     });
   }
 
