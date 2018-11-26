@@ -65,6 +65,16 @@ module.exports = merge(commonConfig, {
   plugins: [
     new UglifyJSPlugin({
       sourceMap: false,
+      parallel: true,
+      uglifyOptions: {
+        warnings: false,
+        mangle: true, // Note `mangle.properties` is `false` by default.
+        output: null,
+        toplevel: false,
+        nameCache: null,
+        ie8: false,
+        keep_fnames: false,
+      }
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'),

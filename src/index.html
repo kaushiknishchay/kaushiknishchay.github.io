@@ -9,6 +9,7 @@
     crossorigin="anonymous">
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#8325c5">
+  <meta name="mobile-web-app-capable" content="yes">
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/media/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/assets/media/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="76x76" href="/assets/media/apple-touch-icon-76x76.png">
@@ -77,6 +78,7 @@
     }
 
     .add-button-wrap {
+      display: none;
       border: 1px solid #eee;
       padding: 10px 23px;
       position: absolute;
@@ -157,6 +159,39 @@
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
   </script>
+  <script type="application/javascript">
+    let deferredPrompt;
+    let addBtn = document.getElementById('addBtn');
+    let addBtnWrap = document.getElementById('addBtnWrap');
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      // Prevent Chrome 67 and earlier from automatically showing the prompt
+      e.preventDefault();
+      // Stash the event so it can be triggered later.
+      deferredPrompt = e;
+      if (!addBtnWrap) {
+        addBtnWrap = document.getElementById('addBtnWrap');
+        addBtn = document.getElementById('addBtn');
+      }
+      // Update UI to notify the user they can add to home screen
+      addBtnWrap.style.display = 'block';
+      addBtn.addEventListener('click', (e) => {
+        // hide our user interface that shows our A2HS button
+        addBtnWrap.style.display = 'none';
+        // Show the prompt
+        deferredPrompt.prompt();
+        // Wait for the user to respond to the prompt
+        deferredPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            //console.log('User accepted the A2HS prompt');
+          } else {
+            //console.log('User dismissed the A2HS prompt');
+          }
+          deferredPrompt = null;
+        });
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -184,37 +219,6 @@
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-102338317-1', 'auto');
     ga('send', 'pageview');
-  </script>
-
-  <script type="application/javascript">
-    let deferredPrompt;
-    const addBtn = document.getElementById('addBtn');
-    const addBtnWrap = document.getElementById('addBtnWrap');
-    addBtnWrap.style.display = 'none';
-
-    window.addEventListener('beforeinstallprompt', (e) => {
-      // Prevent Chrome 67 and earlier from automatically showing the prompt
-      e.preventDefault();
-      // Stash the event so it can be triggered later.
-      deferredPrompt = e;
-      // Update UI to notify the user they can add to home screen
-      addBtnWrap.style.display = 'block';
-      addBtn.addEventListener('click', (e) => {
-        // hide our user interface that shows our A2HS button
-        addBtnWrap.style.display = 'none';
-        // Show the prompt
-        deferredPrompt.prompt();
-        // Wait for the user to respond to the prompt
-        deferredPrompt.userChoice.then((choiceResult) => {
-          if (choiceResult.outcome === 'accepted') {
-            //console.log('User accepted the A2HS prompt');
-          } else {
-            //console.log('User dismissed the A2HS prompt');
-          }
-          deferredPrompt = null;
-        });
-      });
-    });
   </script>
 </body>
 

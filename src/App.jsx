@@ -1,4 +1,4 @@
-/* eslint-disable no-param-reassign */
+/* eslint-disable no-param-reassign,jsx-a11y/label-has-for */
 import React, { Component } from 'react';
 import Loadable from 'react-loadable';
 
@@ -66,7 +66,7 @@ export default class App extends Component {
         lastUpdated: new Date(lastUpdated).toDateString(),
       });
     }).catch((ex) => {
-      // console.error(ex);
+      console.error(ex);
     });
   }
 
@@ -174,6 +174,42 @@ export default class App extends Component {
         <EducationSection />
 
         <AboutSection />
+
+        <section id="contact-us" className="light--content" aria-label="Contact Us" style={{ display: 'none' }}>
+          <h3 className="content--title">
+            Get In Touch
+          </h3>
+          <div className="contact-wrap">
+            <form>
+              <div className="form-row">
+                <label>
+                  Name
+                </label>
+                <input type="text" placeholder="What do people call you?" />
+              </div>
+              <div className="form-row">
+                <label>
+                  Email
+                </label>
+                <input type="text" placeholder="What's your email address?" />
+              </div>
+
+              <div className="form-row">
+                <label>
+                  Text
+                </label>
+                <textarea placeholder="How are you? What would you like to say?" rows="4" />
+              </div>
+
+              <div className="form-row">
+                <input type="button" value="Send" />
+              </div>
+            </form>
+          </div>
+          <div className="text-right disclaimer-black">
+            *Images used on the website belong to their respective owners.
+          </div>
+        </section>
 
         <footer>
           <p>

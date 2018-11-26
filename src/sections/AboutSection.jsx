@@ -60,13 +60,6 @@ const AboutSection = () => (
           </li>
         </ul>
       </div>
-
-    </div>
-    <br />
-    <br />
-
-    <div className="text-right disclaimer-black">
-      *Images used on the website belong to their respective owners.
     </div>
   </section>
 );

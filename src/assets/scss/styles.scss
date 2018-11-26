@@ -107,6 +107,70 @@ section {
   font-size: 14px;
 }
 
+.contact-wrap{
+  border-radius: 5px;
+  position: relative;
+  max-width: 60%;
+  margin: 6em auto;
+  padding: 4em;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 0px 0px 80px 0px #867ecc2e;
+  z-index: 22;
+
+  &::before {
+    background-image: url(/assets/media/emailbg.png);
+    background-position: 100% -30px;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .form-row{
+    margin-top: 1em;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    label{
+      font-size: 15px;
+      font-weight: 600;
+      color: hsla(211, 29%, 35%, 1);
+      margin-bottom: 10px;
+    }
+    input[type="text"], textarea{
+      line-height: 30px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+      padding: 5px 15px;
+      font-size: 13px;
+    }
+    input[type="button"], input[type="submit"]{
+      background: #5B59B8;
+      line-height: 30px;
+      border-radius: 4px;
+      border: none;
+      padding: 5px 15px;
+      width: 200px;
+      font-weight: 500;
+      margin-left: auto;
+      font-size: 15px;
+      color: #fff;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 80%;
+  }
+  @media screen and (max-width: 600px) {
+    max-width: 100%;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   section#skills {
     position: relative;
@@ -190,19 +254,6 @@ section#education::before {
     }
 }
 
-section#contact-us::before {
-    background-image: url("/assets/media/emailbg.png");
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    background-repeat: no-repeat;
-    height: 100%;
-    z-index: -1;
-    background-size: 800px 600px;
-    background-position: 100% 100%;
-}
 
 .content {
   //background: $color-dark-blue;
@@ -367,6 +418,12 @@ section#contact-us::before {
             }
             > .fa-linkedin {
               color: #5fbaea;
+            }
+            > .fa-envelope {
+              color: #cba9df;
+            }
+            > .fa-phone {
+              color: #5098f7;
             }
           }
         }
@@ -566,10 +623,10 @@ section#contact-us::before {
         border-radius: 0.15em;
         margin-bottom: 10px;
         border: 1px solid #f1f1f1;
-        box-shadow: 8px 5px 10px #a8a6bc4d;
+        box-shadow: 4px 4px 10px #a8a6bc4d;
 
         &:hover {
-          box-shadow: 4px 4px 10px #c3c3c390;
+          box-shadow: 8px 8px 10px #c3c3c346;
         }
 
         > .timeline_item--title {
@@ -827,7 +884,7 @@ $skillcard-width: 180px;
   flex-direction: column;
   box-shadow: 4px 4px 12px #0000005c;
   &:hover {
-    box-shadow: 8px 8px 8px #a6a3ab;
+    box-shadow: 8px 8px 8px #a6a3aba6;
   }
   &::before {
     content: '';
