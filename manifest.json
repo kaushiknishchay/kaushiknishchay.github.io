@@ -1,11 +1,12 @@
 {
   "name": "Nishchay Kaushik",
-  "short_name": "kaushik.tech",
+  "short_name": "Nishchay Kaushik",
   "theme_color": "#8325c5",
   "background_color": "#ffffff",
-  "display": "fullscreen",
+  "display": "standalone",
   "orientation": "portrait",
-  "Scope": "/",
+  "scope": "/",
+  "lang": "en-US",
   "start_url": "/",
   "icons": [
     {
