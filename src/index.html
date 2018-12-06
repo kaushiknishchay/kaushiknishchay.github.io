@@ -33,6 +33,9 @@
       navigator.serviceWorker.register('/sw.js')
         .then(function () {
           console.log('Service Worker Registered');
+        })
+        .catch(function (e) {
+          console.log('SW Error', e);
         });
     }
   </script>
