@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 const devMode = process.env.NODE_ENV !== 'production';
 const projectRoot = path.resolve(__dirname, '..');
@@ -100,6 +101,13 @@ module.exports = {
     ],
   },
   plugins: [
+    new CompressionPlugin({
+      filename: '[path].gz[query]',
+      algorithm: 'gzip',
+      test: /\.js$|\.css$|\.html$/,
+      threshold: 10240,
+      minRatio: 1,
+    }),
     new CleanWebpackPlugin(['assets/js/*.*', 'main*.js'], {
       root: projectRoot,
     }),
