@@ -35,12 +35,6 @@ export default {
   ],
   programmingSkills: [
     {
-      name: 'React Native',
-      percent: '90',
-      color: '#1c79c0',
-      type: 'react',
-    },
-    {
       name: 'C, C++, Core Java',
       percent: '70',
       color: '#788cb6',
@@ -51,6 +45,14 @@ export default {
       percent: '75',
       color: '#ffcc2f',
       type: 'python',
+    },
+  ],
+  mobileSkills: [
+    {
+      name: 'React Native',
+      percent: '90',
+      color: '#1c79c0',
+      type: 'react',
     },
     {
       name: 'Android',
