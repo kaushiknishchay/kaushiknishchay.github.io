@@ -5,6 +5,7 @@ import Loadable from 'react-loadable';
 import Loading from './Loading';
 import './assets/scss/styles.scss';
 import HeaderBar from './components/HeaderBar';
+import Footer from './sections/FooterSection';
 
 
 const AboutSection = Loadable({
@@ -174,51 +175,7 @@ export default class App extends Component {
         <EducationSection />
 
         <AboutSection />
-
-        <section id="contact-us" className="light--content" aria-label="Contact Us" style={{ display: 'none' }}>
-          <h3 className="content--title">
-            Get In Touch
-          </h3>
-          <div className="contact-wrap">
-            <form>
-              <div className="form-row">
-                <label>
-                  Name
-                </label>
-                <input type="text" placeholder="What do people call you?" />
-              </div>
-              <div className="form-row">
-                <label>
-                  Email
-                </label>
-                <input type="text" placeholder="What's your email address?" />
-              </div>
-
-              <div className="form-row">
-                <label>
-                  Text
-                </label>
-                <textarea placeholder="How are you? What would you like to say?" rows="4" />
-              </div>
-
-              <div className="form-row">
-                <input type="button" value="Send" />
-              </div>
-            </form>
-          </div>
-          <div className="text-right disclaimer-black">
-            *Images used on the website belong to their respective owners.
-          </div>
-        </section>
-
-        <footer>
-          <p>
-            &copy; kaushik.tech
-            <span>
-              2017 - 2018
-            </span>
-          </p>
-        </footer>
+        <Footer />
       </div>
     );
   }
