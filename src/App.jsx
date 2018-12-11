@@ -66,8 +66,8 @@ export default class App extends Component {
       this.setState({
         lastUpdated: new Date(lastUpdated).toDateString(),
       });
-    }).catch((ex) => {
-      console.error(ex);
+    }).catch(() => {
+      // Error
     });
   }
 
