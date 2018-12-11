@@ -12,20 +12,20 @@ export default {
       color: '#00aeff',
       type: 'react',
     },
-    {
-      name: 'Angular 2',
-      percent: '70',
-      color: '#8a0e25',
-      type: 'angular',
-    },
+    // {
+    //   name: 'Angular 2',
+    //   percent: '70',
+    //   color: '#8a0e25',
+    //   type: 'angular',
+    // },
   ],
   backEndSkills: [
-    {
-      name: 'PHP',
-      percent: '85',
-      color: '#b84592',
-      type: 'php',
-    },
+    // {
+    //   name: 'PHP',
+    //   percent: '85',
+    //   color: '#b84592',
+    //   type: 'php',
+    // },
     {
       name: 'NodeJS',
       percent: '75',
@@ -42,7 +42,7 @@ export default {
     },
     {
       name: 'C, C++, Core Java',
-      percent: '75',
+      percent: '70',
       color: '#788cb6',
       type: 'java',
     },
@@ -54,7 +54,7 @@ export default {
     },
     {
       name: 'Android',
-      percent: '75',
+      percent: '70',
       color: '#76b852',
       type: 'android',
     },
