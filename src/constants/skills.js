@@ -2,13 +2,13 @@ export default {
   frontEndSkills: [
     {
       name: 'HTML / CSS / JS',
-      percent: '90',
+      percent: '85',
       color: '#f47721',
       type: 'html',
     },
     {
       name: 'React.JS + Redux',
-      percent: '90',
+      percent: '80',
       color: '#00aeff',
       type: 'react',
     },
@@ -42,7 +42,7 @@ export default {
     },
     {
       name: 'Python',
-      percent: '75',
+      percent: '70',
       color: '#ffcc2f',
       type: 'python',
     },
@@ -50,7 +50,7 @@ export default {
   mobileSkills: [
     {
       name: 'React Native',
-      percent: '90',
+      percent: '80',
       color: '#1c79c0',
       type: 'react',
     },
