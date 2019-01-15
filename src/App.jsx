@@ -45,10 +45,8 @@ export default class App extends Component {
 
     this.state = {
       introText: `
-        I'm a Bengaluru (India) based React.JS,
-        React Native developer,
-        PHP & Angular Developer,
-        Python, Android Developer and Ionic Developer.
+        I'm a Bengaluru (India) based developer.
+        I work on React.JS, React Native, Node.JS, Python, Android, PHP, Angular.
       `,
 
       lastUpdated: null,
