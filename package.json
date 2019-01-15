@@ -1,5 +1,5 @@
 {
-  "name": "react-webpack-boilerplate",
+  "name": "kaushik-tech",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -49,6 +49,7 @@
     "prop-types": "^15.6.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-lite-ui": "^1.0.0",
     "react-loadable": "^5.4.0",
     "react-particles-js": "^2.2.0",
     "serve": "^9.4.0",
