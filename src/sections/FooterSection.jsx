@@ -12,7 +12,7 @@ const FooterSection = ({ children }) => (
     <p>
       &copy; kaushik.tech
       <span>
-          2017 - 2018
+          2017 - {(new Date()).getFullYear()}
       </span>
     </p>
   </footer>
