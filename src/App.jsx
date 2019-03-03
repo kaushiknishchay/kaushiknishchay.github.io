@@ -132,7 +132,7 @@ export default class App extends Component {
               Nishchay Kaushik
             </h1>
             <h2 className="sub--heading">
-              Software Developer
+              Software Development Engineer - I
             </h2>
 
             <div className="description">
