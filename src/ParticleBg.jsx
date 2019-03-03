@@ -31,6 +31,7 @@ const ParticleBg = () => (
         },
       },
     }}
-  />);
+  />
+);
 
 export default ParticleBg;
