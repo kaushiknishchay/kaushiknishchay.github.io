@@ -1,8 +1,14 @@
 export default [
   {
+    title: 'Software Development Engineer - I',
+    subTitle: 'HackerRank',
+    date: '2019 - PRESENT',
+    desc: 'Working on React.JS, Backbone.JS, CoffeeScript and a lot more.'
+  },
+  {
     title: 'Software Developer',
     subTitle: 'CodeBrahma Technologies',
-    date: 'MARCH 2018 - PRESENT',
+    date: 'MARCH 2018 - JANUARY 2019',
     desc: 'Worked as a React.JS developer to create WebApps and PWAs and as a React Native developer to create mobile apps both for Android and iOS.',
   },
   {
