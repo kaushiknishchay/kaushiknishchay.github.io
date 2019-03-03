@@ -43,9 +43,8 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        include: [
-          'src',
-        ],
+        include: /src/,
+        exclude: /node_modules/,
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
@@ -54,7 +53,8 @@ module.exports = {
       {
         // setup for auto compiling and injecting styles in index.html
         test: /\.(sass|scss|css)$/,
-        include: [path.resolve(projectRoot, 'src')],
+        include: path.resolve(projectRoot, 'src'),
+        exclude: /node_modules/,
         use: [
           devMode ? 'style-loader' : {
             loader: MiniCssExtractPlugin.loader,
@@ -80,9 +80,7 @@ module.exports = {
       // file-loader(for images)
       {
         test: /\.(jpg|png|gif|svg)$/,
-        include: [
-          'src',
-        ],
+        include: /src/,
         use: [
           {
             loader: 'file-loader',
@@ -93,11 +91,11 @@ module.exports = {
           },
         ],
       },
-      // file-loader(for fonts)
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: ['file-loader'],
-      },
+      // // file-loader(for fonts)
+      // {
+      //   test: /\.(woff|woff2|eot|ttf|otf)$/,
+      //   use: ['file-loader'],
+      // },
     ],
   },
   plugins: [
@@ -105,7 +103,7 @@ module.exports = {
       filename: '[path].gz[query]',
       algorithm: 'gzip',
       test: /\.js$|\.css$|\.html$/,
-      threshold: 10240,
+      threshold: (10240 / 4),
       minRatio: 1,
     }),
     new CleanWebpackPlugin(['assets/js/*.*', 'main*.js'], {
