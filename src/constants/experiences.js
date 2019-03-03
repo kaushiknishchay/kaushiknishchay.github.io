@@ -3,7 +3,7 @@ export default [
     title: 'Software Development Engineer - I',
     subTitle: 'HackerRank',
     date: '2019 - PRESENT',
-    desc: 'Working on React.JS, Backbone.JS, CoffeeScript and a lot more.'
+    desc: 'Working on React.JS, Backbone.JS, CoffeeScript and a lot more.',
   },
   {
     title: 'Software Developer',
