@@ -53,6 +53,7 @@ const SkillCard = ({
     <div className="skill-bar-percent">
       {percent}
       <span>
+
 %
       </span>
     </div>

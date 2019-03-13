@@ -8,12 +8,14 @@ const { frontEndSkills, backEndSkills, programmingSkills } = Skills;
 const SkillBarSection = () => (
   <section id="skills" className="dark--content">
     <h3 className="content--title">
+
       Skills
     </h3>
 
     <div className="content--body">
       <div className="col">
         <h2>
+
           Frontend
         </h2>
         <br />
@@ -28,6 +30,7 @@ const SkillBarSection = () => (
       </div>
       <div className="col">
         <h2>
+
           Backend
         </h2>
         <br />
@@ -42,6 +45,7 @@ const SkillBarSection = () => (
       </div>
       <div className="col">
         <h2>
+
           Programming / Mobile
         </h2>
         <br />

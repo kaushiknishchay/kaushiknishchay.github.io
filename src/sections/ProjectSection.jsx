@@ -13,6 +13,7 @@ const ProjectItem = Loadable({
 const ProjectSection = () => (
   <section id="projects" className="light--content" aria-label="Projects made section">
     <h3 className="content--title">
+
       Projects
     </h3>
 

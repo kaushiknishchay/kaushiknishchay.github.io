@@ -13,6 +13,7 @@ const Loading = () => (
     fontFamily: '\'Nunito\', sans-serif',
   }}
   >
+
     Loading...
   </div>
 );

@@ -12,6 +12,7 @@ const Timeline = Loadable({
 const EducationSection = () => (
   <section id="education" className="light--content" aria-label="Education qualification section">
     <h3 className="content--title">
+
       Education
     </h3>
     <Timeline data={educationList} />

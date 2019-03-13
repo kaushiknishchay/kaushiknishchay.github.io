@@ -23,6 +23,7 @@ const ProjectItem = ({
         && (
           <span className="project--item__link">
             <a href={link}>
+
               View More &rarr;
             </a>
           </span>

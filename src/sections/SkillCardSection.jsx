@@ -16,12 +16,14 @@ const {
 const SkillCardSection = () => (
   <section id="skills" className="light--content" aria-label="Technial Skills section">
     <h3 className="content--title">
+
       Skills
     </h3>
 
     <div className="content--body skill-part">
       <div className="item">
         <h2 className="heading">
+
           Frontend & Backend
         </h2>
         <br />
@@ -52,6 +54,7 @@ const SkillCardSection = () => (
       </div>
       <div className="item">
         <h2 className="heading">
+
           Programming
         </h2>
         <br />
@@ -71,6 +74,7 @@ const SkillCardSection = () => (
       </div>
       <div className="item">
         <h2 className="heading">
+
           Mobile
         </h2>
         <br />

@@ -130,9 +130,11 @@ export default class App extends Component {
           <div className="heading--title">
             <h1 className="main--heading">
 
+
               Nishchay Kaushik
             </h1>
             <h2 className="sub--heading">
+
 
               Software Development Engineer - I
             </h2>
@@ -150,6 +152,7 @@ export default class App extends Component {
                   onClick="ga('send', 'event', 'Download', 'resume', 'version 1');"
                 >
 
+
                   Download Resume
                 </a>
               </p>
@@ -159,6 +162,7 @@ export default class App extends Component {
             lastUpdated
             && (
               <span className="last--updated">
+
 
                 Last Updated at:
                 {' '}

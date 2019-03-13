@@ -8,12 +8,15 @@ const FooterSection = ({ children }) => (
     {children}
     <div className="disclaimer">
 
+
       Disclaimer: Images used on the website belong to their respective owners.
     </div>
     <p>
 
+
       &copy; kaushik.tech
       <span>
+
 
           2017 -
         {' '}

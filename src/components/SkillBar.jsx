@@ -25,6 +25,7 @@ const SkillBar = ({
     />
     <div className="skill-bar-percent">
       {percent}
+
       %
     </div>
   </div>
