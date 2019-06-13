@@ -13,7 +13,7 @@ module.exports = {
   context: path.resolve(projectRoot, 'src'),
   entry: './index.jsx',
   output: {
-    filename: '[name].bundle.js',
+    filename: './assets/[name].bundle.js',
     path: path.resolve(projectRoot),
     chunkFilename: './assets/js/[name].js',
   },
@@ -106,7 +106,7 @@ module.exports = {
       threshold: (10240 / 4),
       minRatio: 1,
     }),
-    new CleanWebpackPlugin(['assets/js/*.*', 'main*.js'], {
+    new CleanWebpackPlugin(['assets/js/*.*', 'main*.js', 'main*.js.gz'], {
       root: projectRoot,
     }),
     new HtmlWebpackPlugin({
