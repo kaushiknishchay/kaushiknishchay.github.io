@@ -8,7 +8,7 @@ module.exports = merge(commonConfig, {
   devServer: {
     contentBase: path.resolve(__dirname, '..'),
     stats: 'normal', // log only errors on console
-    open: true, // open browser on running server
+    open: false, // open browser on running server
     port: process.env.PORT || 3000, // server on port
     compress: true, // enable gzip compression
   },
