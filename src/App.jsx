@@ -57,16 +57,19 @@ export default class App extends Component {
 
 
   componentDidMount() {
-    fetch('https://api.github.com/repos/kaushiknishchay/kaushiknishchay.github.io').then(
-      resp => resp.json(),
-    ).then((response) => {
-      const lastUpdated = response.updated_at;
-      this.setState({
-        lastUpdated: new Date(lastUpdated).toDateString(),
+    fetch('https://api.github.com/repos/kaushiknishchay/kaushiknishchay.github.io')
+      .then(
+        resp => resp.json(),
+      )
+      .then((response) => {
+        const lastUpdated = response.updated_at;
+        this.setState({
+          lastUpdated: new Date(lastUpdated).toDateString(),
+        });
+      })
+      .catch(() => {
+        // Error
       });
-    }).catch(() => {
-      // Error
-    });
   }
 
 
@@ -128,16 +131,8 @@ export default class App extends Component {
         <div className="header-wrap" role="main" aria-label="Nishchay Kaushik introduction.">
           <HeaderBar />
           <div className="heading--title">
-            <h1 className="main--heading">
-
-
-              Nishchay Kaushik
-            </h1>
-            <h2 className="sub--heading">
-
-
-              Software Development Engineer - I
-            </h2>
+            <h1 className="main--heading">Nishchay Kaushik</h1>
+            <h2 className="sub--heading">Software Development Engineer - I</h2>
 
             <div className="description">
               {introText}
@@ -149,7 +144,7 @@ export default class App extends Component {
                 <a
                   href="./resume_new.pdf"
                   className="download_cv"
-                  onClick="ga('send', 'event', 'Download', 'resume', 'version 1');"
+                  onClick={"ga('send', 'event', 'Download', 'resume', 'version 1');"}
                 >
 
 
@@ -159,14 +154,9 @@ export default class App extends Component {
             </div>
           </div>
           {
-            lastUpdated
-            && (
+            lastUpdated && (
               <span className="last--updated">
-
-
-                Last Updated at:
-                {' '}
-                {lastUpdated || ''}
+                {`Last Updated at: ${lastUpdated || ''}`}
               </span>
             )
           }

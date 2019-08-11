@@ -407,22 +407,47 @@ section#education::before {
       > .social--icon__item {
         font-size: 30px;
         margin: 0 1rem 1rem;
+        a {
+          i {
+            background-size: 30px;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            color: #fff;
+
+            &.phone {
+              background-image: url("/assets/media/phone.svg");
+            }
+            &.github {
+              background-image: url("/assets/media/github.svg");
+            }
+            &.linkedin {
+              background-image: url("/assets/media/linkedin.svg");
+            }
+            &.instagram {
+              background-image: url("/assets/media/instagram.svg");
+            }
+            &.email {
+              background-image: url("/assets/media/email.svg");
+            }
+          }
+        }
         &:hover {
           > a {
             color: #fff;
-            > .fa-github {
+            > .github {
               color: #777777;
             }
-            > .fa-instagram {
+            > .instagram {
               color: #fb92ae;
             }
-            > .fa-linkedin {
+            > .linkedin {
               color: #5fbaea;
             }
-            > .fa-envelope {
+            > .envelope {
               color: #cba9df;
             }
-            > .fa-phone {
+            > .phone {
               color: #5098f7;
             }
           }
@@ -849,7 +874,7 @@ section#education::before {
 
 .skillcard.react {
   &::before {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png");
+    background-image: url("/assets/media/react.svg");
     background-size: 160px;
   }
 }
@@ -1010,7 +1035,7 @@ $skillcard-width: 180px;
     }
 
     &.react::before {
-      background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png);
+      background-image: url(/assets/media/react.svg);
       background-size: 70px;
     }
 
