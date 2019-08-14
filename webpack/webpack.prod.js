@@ -1,7 +1,6 @@
 const merge = require('webpack-merge');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const webpack = require('webpack');
 const commonConfig = require('./webpack.common.js');
@@ -54,7 +53,13 @@ module.exports = merge(commonConfig, {
             // or node_modules/packageName
             const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
             // npm package names are URL-safe, but some servers don't like @ symbols
-            return `npm.${packageName.replace('@', '')}`;
+            let bundleName = packageName.replace('@', '');
+            // if (['react-dom', 'prop-types', 'react'].includes(bundleName)) {
+            //   bundleName = 'react';
+            // } else {
+            bundleName = 'vendors';
+            // }
+            return `npm.${bundleName}`;
           },
         },
       },
@@ -72,7 +77,7 @@ module.exports = merge(commonConfig, {
         nameCache: null,
         ie8: false,
         keep_fnames: false,
-      }
+      },
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'),
