@@ -2,8 +2,6 @@ const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CompressionPlugin = require('compression-webpack-plugin');
-const BrotliPlugin = require('brotli-webpack-plugin');
 
 const devMode = process.env.NODE_ENV !== 'production';
 const projectRoot = path.resolve(__dirname, '..');
@@ -98,19 +96,6 @@ module.exports = {
     ],
   },
   plugins: [
-    new CompressionPlugin({
-      filename: '[path].gz[query]',
-      algorithm: 'gzip',
-      test: /\.js$|\.css$|\.html|\.svg$/,
-      threshold: (10240 / 4),
-      minRatio: 1,
-    }),
-    new BrotliPlugin({
-      asset: '[path].br[query]',
-      test: /\.js$|\.css$|\.html|\.svg$/,
-      threshold: (10240 / 4),
-      minRatio: 1,
-    }),
     new CleanWebpackPlugin(['assets/js/*.*', 'assets/main*.js', 'assets/main*.js.gz', 'assets/main*.js.br'], {
       root: projectRoot,
     }),

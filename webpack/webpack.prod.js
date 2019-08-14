@@ -1,6 +1,8 @@
 const merge = require('webpack-merge');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const BrotliPlugin = require('brotli-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 const webpack = require('webpack');
 const commonConfig = require('./webpack.common.js');
@@ -66,6 +68,19 @@ module.exports = merge(commonConfig, {
     },
   },
   plugins: [
+    new CompressionPlugin({
+      filename: '[path].gz[query]',
+      algorithm: 'gzip',
+      test: /\.js$|\.css$|\.html|\.svg$/,
+      threshold: (10240 / 4),
+      minRatio: 1,
+    }),
+    new BrotliPlugin({
+      asset: '[path].br[query]',
+      test: /\.js$|\.css$|\.html|\.svg$/,
+      threshold: (10240 / 4),
+      minRatio: 1,
+    }),
     new UglifyJSPlugin({
       sourceMap: false,
       parallel: true,
