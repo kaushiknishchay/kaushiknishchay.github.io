@@ -1,13 +1,9 @@
 import React from 'react';
-import Loadable from 'react-loadable';
 import Skills from '../constants/skills';
 import Loading from '../Loading';
 
 
-const SkillCard = Loadable({
-  loader: () => import(/* webpackChunkName: "SkillCard" */ '../components/SkillCard'),
-  loading: Loading,
-});
+const SkillCard = React.lazy(() => import(/* webpackChunkName: "SkillCard" */ '../components/SkillCard'));
 
 const {
   frontEndSkills, backEndSkills, programmingSkills, mobileSkills,
@@ -15,45 +11,44 @@ const {
 
 const SkillCardSection = () => (
   <section id="skills" className="light--content" aria-label="Technial Skills section">
-    <h3 className="content--title">
-
-      Skills
-    </h3>
+    <h3 className="content--title">Skills</h3>
 
     <div className="content--body skill-part">
       <div className="item">
-        <h2 className="heading">
-
-          Frontend & Backend
-        </h2>
+        <h2 className="heading">Frontend & Backend</h2>
         <br />
         <div className="row">
           {frontEndSkills.map(({
             name, percent, color, type,
           }) => (
-            <SkillCard
-              type={type}
-              key={name}
-              percent={percent}
-              name={name}
-              color={color}
-            />
+            <React.Suspense fallback={<Loading />}>
+              <SkillCard
+                type={type}
+                key={name}
+                percent={percent}
+                name={name}
+                color={color}
+              />
+            </React.Suspense>
           ))}
           {backEndSkills.map(({
             name, percent, color, type,
           }) => (
-            <SkillCard
-              type={type}
-              key={name}
-              percent={percent}
-              name={name}
-              color={color}
-            />
+            <React.Suspense fallback={<Loading />}>
+              <SkillCard
+                type={type}
+                key={name}
+                percent={percent}
+                name={name}
+                color={color}
+              />
+            </React.Suspense>
           ))}
         </div>
       </div>
       <div className="item">
         <h2 className="heading">
+
 
           Programming
         </h2>
@@ -62,18 +57,21 @@ const SkillCardSection = () => (
           {programmingSkills.map(({
             name, percent, color, type,
           }) => (
-            <SkillCard
-              type={type}
-              key={name}
-              percent={percent}
-              name={name}
-              color={color}
-            />
+            <React.Suspense fallback={<Loading />}>
+              <SkillCard
+                type={type}
+                key={name}
+                percent={percent}
+                name={name}
+                color={color}
+              />
+            </React.Suspense>
           ))}
         </div>
       </div>
       <div className="item">
         <h2 className="heading">
+
 
           Mobile
         </h2>
@@ -82,13 +80,15 @@ const SkillCardSection = () => (
           {mobileSkills.map(({
             name, percent, color, type,
           }) => (
-            <SkillCard
-              type={type}
-              key={name}
-              percent={percent}
-              name={name}
-              color={color}
-            />
+            <React.Suspense fallback={<Loading />}>
+              <SkillCard
+                type={type}
+                key={name}
+                percent={percent}
+                name={name}
+                color={color}
+              />
+            </React.Suspense>
           ))}
         </div>
       </div>

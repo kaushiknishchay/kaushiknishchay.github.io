@@ -1,43 +1,19 @@
 /* eslint-disable no-param-reassign,jsx-a11y/label-has-for */
 import React, { Component } from 'react';
-import Loadable from 'react-loadable';
-
-import Loading from './Loading';
 import './assets/scss/styles.scss';
 import HeaderBar from './components/HeaderBar';
 import Footer from './sections/FooterSection';
+import Loading from './Loading';
 
+const AboutSection = React.lazy(() => import(/* webpackChunkName: "AboutSection" */ './sections/AboutSection'));
 
-const AboutSection = Loadable({
-  loader: () => import(/* webpackChunkName: "AboutSection" */ './sections/AboutSection'),
-  loading: Loading,
-});
+const ProjectSection = React.lazy(() => import(/* webpackChunkName: "ProjectSection" */ './sections/ProjectSection'));
 
-const ProjectSection = Loadable({
-  loader: () => import(/* webpackChunkName: "ProjectSection" */ './sections/ProjectSection'),
-  loading: Loading,
-});
+const SkillCardSection = React.lazy(() => import(/* webpackChunkName: "SkillCardSection" */ './sections/SkillCardSection'));
 
-const SkillCardSection = Loadable({
-  loader: () => import(/* webpackChunkName: "SkillCardSection" */ './sections/SkillCardSection'),
-  loading: Loading,
-});
+const EducationSection = React.lazy(() => import(/* webpackChunkName: "EducationSection" */ './sections/EducationSection'));
 
-const EducationSection = Loadable({
-  loader: () => import(/* webpackChunkName: "EducationSection" */ './sections/EducationSection'),
-  loading: Loading,
-});
-
-const ExperienceSection = Loadable({
-  loader: () => import(/* webpackChunkName: "ExperienceSection" */ './sections/ExperienceSection'),
-  loading: Loading,
-});
-
-// const ParticleBg = Loadable({
-//   loader: () => import(/* webpackChunkName: "ParticleBg" */ './ParticleBg'),
-//   loading: Loading,
-// });
-
+const ExperienceSection = React.lazy(() => import(/* webpackChunkName: "ExperienceSection" */ './sections/ExperienceSection'));
 
 export default class App extends Component {
   constructor(props) {
@@ -144,7 +120,7 @@ export default class App extends Component {
                 <a
                   href="./resume_new.pdf"
                   className="download_cv"
-                  onClick={"ga('send', 'event', 'Download', 'resume', 'version 1');"}
+                  onClick={'ga(\'send\', \'event\', \'Download\', \'resume\', \'version 1\');'}
                 >
 
 
@@ -161,16 +137,26 @@ export default class App extends Component {
             )
           }
         </div>
+        <React.Suspense fallback={<Loading />}>
+          <ExperienceSection />
+        </React.Suspense>
 
-        <ExperienceSection />
+        <React.Suspense fallback={<Loading />}>
+          <SkillCardSection />
+        </React.Suspense>
 
-        <SkillCardSection />
+        <React.Suspense fallback={<Loading />}>
+          <ProjectSection />
+        </React.Suspense>
 
-        <ProjectSection />
+        <React.Suspense fallback={<Loading />}>
 
-        <EducationSection />
+          <EducationSection />
+        </React.Suspense>
 
-        <AboutSection />
+        <React.Suspense fallback={<Loading />}>
+          <AboutSection />
+        </React.Suspense>
         <Footer />
       </div>
     );
