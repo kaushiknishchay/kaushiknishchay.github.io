@@ -6,6 +6,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const BrotliPlugin = require('brotli-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { GenerateSW } = require('workbox-webpack-plugin');
 const commonConfig = require('./webpack.common.js');
 
 const projectRoot = path.resolve(__dirname, '..');
@@ -71,7 +72,7 @@ module.exports = merge(commonConfig, {
     },
   },
   plugins: [
-    new CleanWebpackPlugin(['assets/js/*.*', 'assets/main*.js', 'assets/main*.js.gz', 'assets/main*.js.br'], {
+    new CleanWebpackPlugin(['assets/js/*.*', 'assets/main*.js', 'assets/main*.js.gz', 'assets/main*.js.br', 'precache-manifest*'], {
       root: projectRoot,
     }),
     new CompressionPlugin({
@@ -102,6 +103,44 @@ module.exports = merge(commonConfig, {
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'),
+    }),
+    new GenerateSW({
+      include: [/\.html$/, /\.js$/, /\.css$/, /\.svg$/, /\.png$/],
+      clientsClaim: true,
+      skipWaiting: true,
+      // Define runtime caching rules.
+      runtimeCaching: [{
+        // Match any request that ends with .png, .jpg, .jpeg or .svg.
+        urlPattern: /\.(?:png|jpg|jpeg|svg)$/,
+
+        // Apply a cache-first strategy.
+        handler: 'CacheFirst',
+
+        options: {
+          // Use a custom cache name.
+          cacheName: 'images',
+
+          // Only cache 10 images.
+          expiration: {
+            maxEntries: 20,
+          },
+        },
+      }, {
+        urlPattern: /\.(?:css|js)$/,
+
+        // Apply a cache-first strategy.
+        handler: 'CacheFirst',
+
+        options: {
+          // Use a custom cache name.
+          cacheName: 'js-css',
+
+          // Only cache 10 js-css.
+          expiration: {
+            maxEntries: 10,
+          },
+        },
+      }],
     }),
   ],
 });
