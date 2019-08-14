@@ -3,20 +3,38 @@ export default [
     title: 'Software Development Engineer - I',
     subTitle: 'HackerRank',
     date: '2019 - PRESENT',
-    desc: 'Working on React.JS, Backbone.JS, CoffeeScript and a lot more.',
+    desc: `
+<ul class="desc__list">
+  <li>Works on creating UIs using React, Backbone & CoffeeScript</li>
+  <li>Explored Theia IDE source code to build extensions as per the business need</li>
+  <li>Built PoCs using various technologies for verifying business requirements</li>
+  <li>Integration of analytics using GA 360 and Helped other teams with it</li>
+  <li>Occasionally worked with Ruby on Rails backend to make small changes when required</li>
+</ul>
+`,
   },
   {
-    title: 'Software Developer',
+    title: 'Software Engineer',
     subTitle: 'CodeBrahma Technologies',
     date: 'MARCH 2018 - JANUARY 2019',
-    desc: 'Worked as a React.JS developer to create WebApps and PWAs and as a React Native developer to create mobile apps both for Android and iOS.',
+    desc: `
+<ul class="desc__list">
+  <li>Created complex & reusable UIs/Components using React.JS and 3rd party libraries</li>
+  <li>Developed Single-Codebase web & mobile apps using React JS & React Native</li>
+</ul>
+`,
   },
   {
     title: 'Assistant System Engineer',
     subTitle: 'Tata Consultancy Services',
     date: 'FEB 2017 - MARCH 2018',
-    desc:
-      'Oracle Siebel Developer. Unit Tested and worked on Siebel OpenUI Framework.',
+    desc: `    
+<ul class="desc__list">
+  <li>Worked on Oracle Siebel CRM Software</li>
+  <li>Created Workflows, Business Components, Applets</li>
+  <li>Worked on the OpenUI framework using JavaScript and created PM/PR files to implement business logic</li>
+</ul>
+`,
   },
   {
     title: 'Freelance Developer',

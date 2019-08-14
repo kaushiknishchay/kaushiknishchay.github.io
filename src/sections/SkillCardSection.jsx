@@ -6,7 +6,7 @@ import Loading from '../Loading';
 const SkillCard = React.lazy(() => import(/* webpackChunkName: "SkillCard" */ '../components/SkillCard'));
 
 const {
-  frontEndSkills, backEndSkills, programmingSkills, mobileSkills,
+  frontEndSkills, backEndSkills, programmingSkills,
 } = Skills;
 
 const SkillCardSection = () => (
@@ -55,29 +55,6 @@ const SkillCardSection = () => (
         <br />
         <div className="row">
           {programmingSkills.map(({
-            name, percent, color, type,
-          }) => (
-            <React.Suspense fallback={<Loading />}>
-              <SkillCard
-                type={type}
-                key={name}
-                percent={percent}
-                name={name}
-                color={color}
-              />
-            </React.Suspense>
-          ))}
-        </div>
-      </div>
-      <div className="item">
-        <h2 className="heading">
-
-
-          Mobile
-        </h2>
-        <br />
-        <div className="row">
-          {mobileSkills.map(({
             name, percent, color, type,
           }) => (
             <React.Suspense fallback={<Loading />}>

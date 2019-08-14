@@ -5,8 +5,6 @@ import HeaderBar from './components/HeaderBar';
 import Footer from './sections/FooterSection';
 import Loading from './Loading';
 
-const AboutSection = React.lazy(() => import(/* webpackChunkName: "AboutSection" */ './sections/AboutSection'));
-
 const ProjectSection = React.lazy(() => import(/* webpackChunkName: "ProjectSection" */ './sections/ProjectSection'));
 
 const SkillCardSection = React.lazy(() => import(/* webpackChunkName: "SkillCardSection" */ './sections/SkillCardSection'));
@@ -22,7 +20,7 @@ export default class App extends Component {
     this.state = {
       introText: `
         I'm a Bengaluru (India) based developer.
-        I work on React.JS, React Native, Node.JS, Python, Android, PHP, Angular.
+        I work on JavaScript, React.JS, React Native, Node.JS, Python.
       `,
 
       lastUpdated: null,
@@ -150,13 +148,9 @@ export default class App extends Component {
         </React.Suspense>
 
         <React.Suspense fallback={<Loading />}>
-
           <EducationSection />
         </React.Suspense>
 
-        <React.Suspense fallback={<Loading />}>
-          <AboutSection />
-        </React.Suspense>
         <Footer />
       </div>
     );

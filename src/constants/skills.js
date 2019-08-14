@@ -2,13 +2,13 @@ export default {
   frontEndSkills: [
     {
       name: 'HTML / CSS / JS',
-      percent: '85',
+      percent: '90',
       color: '#f47721',
       type: 'html',
     },
     {
       name: 'React.JS + Redux',
-      percent: '80',
+      percent: '85',
       color: '#00aeff',
       type: 'react',
     },
@@ -36,7 +36,7 @@ export default {
   programmingSkills: [
     {
       name: 'C, C++, Core Java',
-      percent: '70',
+      percent: '65',
       color: '#788cb6',
       type: 'java',
     },
