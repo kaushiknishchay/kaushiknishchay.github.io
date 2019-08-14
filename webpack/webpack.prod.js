@@ -1,11 +1,14 @@
+const path = require('path');
 const merge = require('webpack-merge');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const BrotliPlugin = require('brotli-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const webpack = require('webpack');
 const commonConfig = require('./webpack.common.js');
+const projectRoot = path.resolve(__dirname, '..');
 
 module.exports = merge(commonConfig, {
   mode: 'production',
@@ -68,6 +71,9 @@ module.exports = merge(commonConfig, {
     },
   },
   plugins: [
+    new CleanWebpackPlugin(['assets/js/*.*', 'assets/main*.js', 'assets/main*.js.gz', 'assets/main*.js.br'], {
+      root: projectRoot,
+    }),
     new CompressionPlugin({
       filename: '[path].gz[query]',
       algorithm: 'gzip',
