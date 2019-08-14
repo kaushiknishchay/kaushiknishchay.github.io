@@ -100,7 +100,7 @@ module.exports = {
       filename: './index.html',
     }),
     new MiniCssExtractPlugin({
-      // filename: devMode ? '[name].css' : '[name].css',
+      filename: devMode ? '[name].css' : './assets/css/app.css',
       chunkFilename: devMode ? '[id].css' : './assets/css/app.css',
     }),
   ],
