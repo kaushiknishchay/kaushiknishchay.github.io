@@ -1,42 +1,42 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "74953a298ca8ca7228fc",
+    "revision": "ed93619ed517d546011f",
     "url": "./assets/css/app.css"
   },
   {
-    "revision": "4ec770393846c0f04d74",
+    "revision": "966911fb94f7475d2ee2",
     "url": "./assets/js/EducationSection.js"
   },
   {
-    "revision": "7528208b38d6d3c2a9dc",
+    "revision": "6c01c21b50b334d836c6",
     "url": "./assets/js/ExperienceSection.js"
   },
   {
-    "revision": "9d334e923a3fa945357c",
+    "revision": "1c8bbe0498f838e03cf8",
     "url": "./assets/js/ProjectItem.js"
   },
   {
-    "revision": "3f648ebfab19174f973e",
+    "revision": "d17ab6979af7b37498d0",
     "url": "./assets/js/ProjectSection.js"
   },
   {
-    "revision": "0233b45aa01d2cfebbc6",
+    "revision": "ec0ccdeb7257df9d4ac9",
     "url": "./assets/js/SkillCard.js"
   },
   {
-    "revision": "a082059f533387a7e257",
+    "revision": "c3bf9fc898edf8ba6e2f",
     "url": "./assets/js/SkillCardSection.js"
   },
   {
-    "revision": "add657864848b24296e5",
+    "revision": "fb6c175e35afb1863f35",
     "url": "./assets/js/Timeline.js"
   },
   {
-    "revision": "cf49d14ff7ff76cb1c38",
+    "revision": "7a5e451f5f597e57755d",
     "url": "./assets/js/npm.vendors.js"
   },
   {
-    "revision": "74953a298ca8ca7228fc",
+    "revision": "ed93619ed517d546011f",
     "url": "./assets/main.bundle.js"
   },
   {
