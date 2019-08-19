@@ -4,7 +4,7 @@
 
 A React PWA website
 - implements code splitting
-- lazy loading
+- lazy loading via React.lazy & Suspense
 - CI (Travis CI)
-- Gzipped bundles
-- Offline use with service worker
+- Gzipped bundles, Brotli
+- Offline use with service worker, generated via Workbox
