@@ -4,7 +4,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./assets/css/app.css"
   },
   {
-    "revision": "966911fb94f7475d2ee2",
+    "revision": "5f2cfc3e70d5777d6ff7",
     "url": "./assets/js/EducationSection.js"
   },
   {
@@ -24,7 +24,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./assets/js/SkillCard.js"
   },
   {
-    "revision": "c3bf9fc898edf8ba6e2f",
+    "revision": "9e3b0ca42fb8408ec17f",
     "url": "./assets/js/SkillCardSection.js"
   },
   {
