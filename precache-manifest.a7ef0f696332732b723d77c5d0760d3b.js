@@ -32,7 +32,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./assets/js/Timeline.js"
   },
   {
-    "revision": "7a5e451f5f597e57755d",
+    "revision": "d919085751262124cc69",
     "url": "./assets/js/npm.vendors.js"
   },
   {
