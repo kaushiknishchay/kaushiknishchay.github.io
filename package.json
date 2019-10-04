@@ -45,7 +45,7 @@
     "mini-css-extract-plugin": "^0.8.0",
     "optimize-css-assets-webpack-plugin": "^5.0.0",
     "prop-types": "^15.6.2",
-    "react": "^16.10.1",
+    "react": "^16.10.2",
     "react-dom": "^16.10.1",
     "react-particles-js": "^2.2.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
