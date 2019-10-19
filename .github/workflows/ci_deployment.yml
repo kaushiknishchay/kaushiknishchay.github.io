@@ -1,0 +1,28 @@
+name: Build website
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [8.11.3]
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install Dependencies
+      run: npm ci
+      env:
+        CI: true
+    - name: Run Linting
+      run: npm run lint
+      env:
+        CI: true
+    - name: Build Prod bundle
+      run: npm run build:prod
+      env:
+        CI: true
