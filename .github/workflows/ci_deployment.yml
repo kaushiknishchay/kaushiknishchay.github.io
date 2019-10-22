@@ -26,3 +26,13 @@ jobs:
       run: npm run build:prod
       env:
         CI: true
+    - name: Do deploy
+      run: |
+        git config --global user.email "github_actions@github.com"
+        git config --global user.name "Github Actions Bot"
+        git status
+        git add .
+        git commit -m "Deploying to github-pages"
+        git log
+        git push origin master
+        
