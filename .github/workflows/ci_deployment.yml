@@ -1,7 +1,9 @@
 name: Build website
 
-on: [push]
-
+on:
+  push:
+    branches:
+    - '!master'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -26,6 +28,10 @@ jobs:
       run: npm run build:prod
       env:
         CI: true
+  delpoy:
+    runs-on: ubuntu-latest
+    if: github.ref == 'master'
+    steps:
     - name: Do deploy
       run: |
         echo $PWD
@@ -45,4 +51,4 @@ jobs:
         git push origin master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
+
