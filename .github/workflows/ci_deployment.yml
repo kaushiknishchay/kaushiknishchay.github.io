@@ -34,9 +34,12 @@ jobs:
         git config --global user.email "github_actions@github.com"
         git config --global user.name "Github Actions Bot"
         git remote -v
+        git branch
         git status
         git add .
         git commit -m "Deploying to github-pages"
         git log -n 5 --oneline
-        git push origin master
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
