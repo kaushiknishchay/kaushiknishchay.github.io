@@ -28,11 +28,13 @@ jobs:
         CI: true
     - name: Do deploy
       run: |
+        echo $PWD
         git config --global user.email "github_actions@github.com"
         git config --global user.name "Github Actions Bot"
+        git remote -v
         git status
         git add .
         git commit -m "Deploying to github-pages"
-        git log
+        git log -n 5 --onelineg
         git push origin master
         
