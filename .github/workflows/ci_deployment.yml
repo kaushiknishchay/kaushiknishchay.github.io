@@ -33,13 +33,16 @@ jobs:
         git config credential.helper 'cache --timeout=120'
         git config --global user.email "github_actions@github.com"
         git config --global user.name "Github Actions Bot"
+        git checkout master
+        git remote rm origin
+        git remote add origin https://github_action:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git
         git remote -v
         git branch
         git status
         git add .
         git commit -m "Deploying to github-pages"
-        git log -n 5 --oneline
-        git push
+        git log -n 5
+        git push origin master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
