@@ -25,7 +25,7 @@
     "dotenv": "^8.2.0",
     "file-loader": "^4.2.0",
     "html-loader": "^0.5.5",
-    "node-sass": "^4.9.2",
+    "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
     "workbox-webpack-plugin": "^4.3.1"
