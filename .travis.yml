@@ -1,12 +1,15 @@
 language: node_js
 node_js:
-  - 8.11.3
+  - 10
 cache:
   directories:
   - node_modules
+before_install:
+  - npm install -g @lhci/cli@0.3.x
 script:
   - npm run lint
   - npm run build:prod
+  - lhci autorun # run lighthouse CI
 deploy:
   target-branch: master
   provider: pages
@@ -15,3 +18,5 @@ deploy:
   keep-history: true
   on:
     branch: master
+addons:
+  chrome: stable # make sure you have Chrome available
