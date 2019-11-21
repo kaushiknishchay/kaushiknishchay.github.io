@@ -4,12 +4,17 @@ node_js:
 cache:
   directories:
   - node_modules
+addons:
+  chrome: stable # make sure you have Chrome available
 before_install:
   - npm install -g @lhci/cli@0.3.x
 script:
+  - npm ci
   - npm run lint
   - npm run build:prod
-  - lhci autorun # run lighthouse CI
+after_success:
+  - lhci autorun --assert.preset=lighthouse:recommended
+  - lhci autorun --upload.target=temporary-public-storage
 deploy:
   target-branch: master
   provider: pages
@@ -18,5 +23,3 @@ deploy:
   keep-history: true
   on:
     branch: master
-addons:
-  chrome: stable # make sure you have Chrome available
