@@ -2,32 +2,32 @@
   {
     "name": "minScore",
     "expected": 0.9,
-    "actual": 0.83,
+    "actual": 0.88,
     "values": [
-      0.83,
-      0.68,
-      0.78
+      0.88,
+      0.81,
+      0.74
     ],
     "operator": ">=",
     "auditId": "mainthread-work-breakdown",
     "level": "warn",
-    "url": "http://localhost:36487/index.html",
+    "url": "http://localhost:35653/index.html",
     "auditTitle": "Minimize main-thread work",
     "auditDocumentationLink": "https://web.dev/mainthread-work-breakdown"
   },
   {
     "name": "minScore",
     "expected": 0.9,
-    "actual": 0.69,
+    "actual": 0.73,
     "values": [
-      0.69,
       0.61,
-      0.61
+      0.73,
+      0.45
     ],
     "operator": ">=",
     "auditId": "max-potential-fid",
     "level": "warn",
-    "url": "http://localhost:36487/index.html",
+    "url": "http://localhost:35653/index.html",
     "auditTitle": "Max Potential First Input Delay",
     "auditDocumentationLink": "https://developers.google.com/web/updates/2018/05/first-input-delay"
   },
@@ -36,14 +36,14 @@
     "expected": 0,
     "actual": 2,
     "values": [
-      3,
+      2,
       2,
       3
     ],
     "operator": "<=",
     "auditId": "uses-rel-preconnect",
     "level": "error",
-    "url": "http://localhost:36487/index.html",
+    "url": "http://localhost:35653/index.html",
     "auditTitle": "Preconnect to required origins",
     "auditDocumentationLink": "https://web.dev/uses-rel-preconnect"
   },
@@ -59,7 +59,7 @@
     "operator": "<=",
     "auditId": "render-blocking-resources",
     "level": "warn",
-    "url": "http://localhost:36487/index.html",
+    "url": "http://localhost:35653/index.html",
     "auditTitle": "Eliminate render-blocking resources",
     "auditDocumentationLink": "https://web.dev/render-blocking-resources"
   },
@@ -75,7 +75,7 @@
     "operator": "<=",
     "auditId": "uses-long-cache-ttl",
     "level": "warn",
-    "url": "http://localhost:36487/index.html",
+    "url": "http://localhost:35653/index.html",
     "auditTitle": "Uses efficient cache policy on static assets",
     "auditDocumentationLink": "https://web.dev/uses-long-cache-ttl"
   },
@@ -91,7 +91,7 @@
     "operator": ">=",
     "auditId": "redirects-http",
     "level": "warn",
-    "url": "http://localhost:36487/index.html",
+    "url": "http://localhost:35653/index.html",
     "auditTitle": "Does not redirect HTTP traffic to HTTPS",
     "auditDocumentationLink": "https://web.dev/redirects-http"
   },
@@ -107,7 +107,7 @@
     "operator": ">=",
     "auditId": "uses-http2",
     "level": "warn",
-    "url": "http://localhost:36487/index.html",
+    "url": "http://localhost:35653/index.html",
     "auditTitle": "Does not use HTTP/2 for all of its resources",
     "auditDocumentationLink": "https://web.dev/uses-http2"
   },
@@ -123,7 +123,7 @@
     "operator": ">=",
     "auditId": "tap-targets",
     "level": "error",
-    "url": "http://localhost:36487/index.html",
+    "url": "http://localhost:35653/index.html",
     "auditTitle": "Tap targets are not sized appropriately",
     "auditDocumentationLink": "https://web.dev/tap-targets"
   }
