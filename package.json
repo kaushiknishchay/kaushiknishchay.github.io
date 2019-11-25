@@ -23,7 +23,7 @@
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "css-loader": "^3.2.0",
     "dotenv": "^8.2.0",
-    "file-loader": "^4.3.0",
+    "file-loader": "^5.0.1",
     "html-loader": "^0.5.5",
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",
