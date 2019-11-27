@@ -9,12 +9,10 @@ addons:
 before_install:
   - npm install -g @lhci/cli@0.3.x
 script:
-  - npm ci
   - npm run lint
   - npm run build:prod
 after_success:
-  - lhci autorun --assert.preset=lighthouse:recommended
-  - lhci autorun --upload.target=temporary-public-storage
+  - lhci autorun
 deploy:
   target-branch: master
   provider: pages
