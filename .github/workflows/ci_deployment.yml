@@ -26,7 +26,3 @@ jobs:
       run: npm run build:prod
       env:
         CI: true
-    - name: Audit URLs using Lighthouse
-      uses: treosh/lighthouse-ci-action@v2
-      with:
-        configPath: './lighthouserc.json'
