@@ -4,15 +4,9 @@ node_js:
 cache:
   directories:
   - node_modules
-addons:
-  chrome: stable # make sure you have Chrome available
-before_install:
-  - npm install -g @lhci/cli@0.3.x
 script:
   - npm run lint
   - npm run build:prod
-after_success:
-  - lhci autorun
 deploy:
   target-branch: master
   provider: pages
