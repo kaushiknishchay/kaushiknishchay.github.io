@@ -9,7 +9,6 @@ export default [
   <li>Explored Theia IDE source code to build extensions as per the business need</li>
   <li>Built PoCs using various technologies for verifying business requirements</li>
   <li>Integration of analytics using GA 360 and Helped other teams with it</li>
-  <li>Occasionally worked with Ruby on Rails backend to make small changes when required</li>
 </ul>
 `,
   },
