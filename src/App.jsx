@@ -106,7 +106,7 @@ export default class App extends Component {
           <HeaderBar />
           <div className="heading--title">
             <h1 className="main--heading">Nishchay Kaushik</h1>
-            <h2 className="sub--heading">Software Development Engineer - I</h2>
+            <h2 className="sub--heading">Software Development Engineer - II</h2>
 
             <div className="description">
               {introText}
