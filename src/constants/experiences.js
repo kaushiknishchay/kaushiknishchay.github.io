@@ -1,8 +1,8 @@
 export default [
   {
-    title: 'Software Development Engineer - I',
+    title: 'Software Development Engineer - II',
     subTitle: 'HackerRank',
-    date: '2019 - PRESENT',
+    date: 'JANUARY 2019 - PRESENT',
     desc: `
 <ul class="desc__list">
   <li>Works on creating UIs using React, Backbone & CoffeeScript</li>
