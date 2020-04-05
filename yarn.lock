@@ -5812,6 +5812,11 @@ path-type@^2.0.0:
   dependencies:
     pify "^2.0.0"
 
+pathseg@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/pathseg/-/pathseg-1.2.0.tgz#22af051e28037671e7799e296fe96c5dcbe53acd"
+  integrity sha512-+pQS7lTaoVIXhaCW7R3Wd/165APzZHWzYVqe7dxzdupxQwebgpBaCmf0/XZwmoA/rkDq3qvzO0qv4d5oFVrBRw==
+
 pbkdf2@^3.0.3:
   version "3.0.17"
   resolved "https://registry.yarnpkg.com/pbkdf2/-/pbkdf2-3.0.17.tgz#976c206530617b14ebb32114239f7b09336e93a6"
@@ -6467,12 +6472,13 @@ react-is@^16.8.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.9.0.tgz#21ca9561399aad0ff1a7701c01683e8ca981edcb"
   integrity sha512-tJBzzzIgnnRfEm046qRcURvwQnZVXmuCbscxUO5RWrGTXpon2d4c8mI0D8WE6ydVIm29JiLB6+RslkIvym9Rjw==
 
-react-particles-js@^2.2.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/react-particles-js/-/react-particles-js-2.7.0.tgz#1b13a85d948e63016cb2b400f734758b0a985727"
-  integrity sha512-gsYIr55plOMB6nZW2iBjgXoqOZqBvggW9trNTk0mYHkvqQUpuxhcCDGwRwnts10XQ442PjzxZbklwMlhSOcfgA==
+react-particles-js@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/react-particles-js/-/react-particles-js-3.0.1.tgz#8b4559d9a84a1d563ccb033413aa5b707eb8f082"
+  integrity sha512-cIO3PwZBn7WQFymPA8mf/VaAKAjbkvKPE5It93mnuRG2xYPFFZsrfIbnOkZgirGe0yBkWKGGw65j3k2mWoQo4w==
   dependencies:
     lodash "^4.17.11"
+    tsparticles "^1.12.5"
 
 react@^16.12.0:
   version "16.12.0"
@@ -7739,6 +7745,13 @@ tslib@^1.9.0:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
   integrity sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
+
+tsparticles@^1.12.5:
+  version "1.12.5"
+  resolved "https://registry.yarnpkg.com/tsparticles/-/tsparticles-1.12.5.tgz#78ee03b6197cb23f7b897c281ae024d4e5c5e09a"
+  integrity sha512-Jd/H/Ed190L8ZWg+1fpQmRzaUHfC4mIDz3wtq6XcLZGuUW/UJ0XpIQ0ndwNK2BXogVdpEplCl80AxMPUM+aKJQ==
+  dependencies:
+    pathseg "^1.2.0"
 
 tty-browserify@0.0.0:
   version "0.0.0"
