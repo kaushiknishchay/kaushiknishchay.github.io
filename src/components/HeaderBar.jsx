@@ -15,7 +15,7 @@ const socialLinks = [
     name: 'kaushiknishchay',
     icon: 'github',
     url: 'https://github.com/kaushiknishchay',
-  }
+  },
 ];
 
 const HeaderBar = () => (
