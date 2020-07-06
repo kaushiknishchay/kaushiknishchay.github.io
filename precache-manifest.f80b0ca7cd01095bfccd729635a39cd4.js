@@ -1,14 +1,14 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6b3879f3f1f70af86a81",
+    "revision": "e9e4e8c5c374df782de1",
     "url": "./assets/css/app.css"
   },
   {
-    "revision": "5f2cfc3e70d5777d6ff7",
+    "revision": "c7850a6dea4a99392665",
     "url": "./assets/js/EducationSection.js"
   },
   {
-    "revision": "71d2d3a05afcde1b035a",
+    "revision": "e5f1ec0eaa95e37705f7",
     "url": "./assets/js/ExperienceSection.js"
   },
   {
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./assets/js/ProjectItem.js"
   },
   {
-    "revision": "d17ab6979af7b37498d0",
+    "revision": "a1117e7429a0ef9fcebb",
     "url": "./assets/js/ProjectSection.js"
   },
   {
@@ -24,7 +24,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./assets/js/SkillCard.js"
   },
   {
-    "revision": "9e3b0ca42fb8408ec17f",
+    "revision": "1c59ee27f0177255624c",
     "url": "./assets/js/SkillCardSection.js"
   },
   {
@@ -36,7 +36,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./assets/js/npm.vendors.js"
   },
   {
-    "revision": "6b3879f3f1f70af86a81",
+    "revision": "e9e4e8c5c374df782de1",
     "url": "./assets/main.bundle.js"
   },
   {
