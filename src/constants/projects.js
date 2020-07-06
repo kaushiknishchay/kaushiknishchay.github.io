@@ -141,7 +141,7 @@ the gesture detected e.g., Mouse Left or Right Click.
               based authentication.
           `,
   }, {
-    name: 'nkaushik.in',
+    name: 'Kaushik.tech',
     position: 'Web Developer (React)',
     type: 'react',
     link: 'https://github.com/kaushiknishchay/kaushiknishchay.github.io',

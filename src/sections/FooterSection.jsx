@@ -7,10 +7,12 @@ const FooterSection = ({ children }) => (
   <footer className="footer-section">
     {children}
     <div className="disclaimer">
+
       Disclaimer: Images used on the website belong to their respective owners.
     </div>
     <p>
-      &copy; nkaushik.in
+
+      &copy; kaushik.tech
       <span>
         {`2017 - ${(new Date()).getFullYear()}`}
       </span>
