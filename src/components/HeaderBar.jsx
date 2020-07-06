@@ -15,17 +15,7 @@ const socialLinks = [
     name: 'kaushiknishchay',
     icon: 'github',
     url: 'https://github.com/kaushiknishchay',
-  },
-  {
-    name: 'kaushiknishchay',
-    icon: 'email',
-    url: 'mailto:n.kaushik.tech@gmail.com',
-  },
-  {
-    name: 'kaushiknishchay',
-    icon: 'phone',
-    url: 'tel:+917976334650',
-  },
+  }
 ];
 
 const HeaderBar = () => (
