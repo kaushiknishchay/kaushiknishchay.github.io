@@ -50,10 +50,11 @@ jobs:
     # ✏️ If the Autobuild fails above, remove it and uncomment the following three lines
     #    and modify them (or add more) to build your code if your project
     #    uses a compiled language
+    - name: Install Deps
+      run: npm install
+
     - name: Build
-      run: |
-        npm install
-        npm build:prod 
+      run: npm build:prod 
     #- run: |
     #   make bootstrap
     #   make release
