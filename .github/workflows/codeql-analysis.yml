@@ -54,7 +54,7 @@ jobs:
       run: npm install
 
     - name: Build
-      run: npm build:prod 
+      run: npm run build:prod 
     #- run: |
     #   make bootstrap
     #   make release
