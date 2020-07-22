@@ -118,6 +118,7 @@ export default class App extends Component {
                 <a
                   href="./resume_new.pdf"
                   className="download_cv"
+                  target=""
                   onClick={'ga(\'send\', \'event\', \'Download\', \'resume\', \'version 1\');'}
                 >
 
