@@ -116,9 +116,9 @@ export default class App extends Component {
                 }}
               >
                 <a
-                  href="./resume_new.pdf"
+                  href="https://nkaushik.in/resume_new.pdf"
                   className="download_cv"
-                  target=""
+                  target="_blank"
                   onClick={'ga(\'send\', \'event\', \'Download\', \'resume\', \'version 1\');'}
                 >
 
