@@ -122,7 +122,22 @@ export default class App extends Component {
                 >
 
 
-                  Download Resume
+                  Resume (Frontend)
+                </a>
+              </p>
+              <p
+                style={{
+                  marginTop: '3em',
+                }}
+              >
+                <a
+                  href="./resume_backend.pdf"
+                  className="download_cv"
+                  onClick={'ga(\'send\', \'event\', \'Download\', \'resume backend\', \'version 1\');'}
+                >
+
+
+                  Resume (Backend)
                 </a>
               </p>
             </div>
