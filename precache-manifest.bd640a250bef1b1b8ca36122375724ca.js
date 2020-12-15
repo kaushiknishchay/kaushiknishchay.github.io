@@ -40,7 +40,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./assets/main.bundle.js"
   },
   {
-    "revision": "ec94ffb32e34d554c82c3a7609089f89",
+    "revision": "c80d90252e826cb6c0eee470554a8781",
     "url": "./index.html"
   }
 ]);
