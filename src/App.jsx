@@ -135,23 +135,6 @@ export default class App extends Component {
             )
           }
         </div>
-        <React.Suspense fallback={<Loading />}>
-          <ExperienceSection />
-        </React.Suspense>
-
-        <React.Suspense fallback={<Loading />}>
-          <SkillCardSection />
-        </React.Suspense>
-
-        <React.Suspense fallback={<Loading />}>
-          <ProjectSection />
-        </React.Suspense>
-
-        <React.Suspense fallback={<Loading />}>
-          <EducationSection />
-        </React.Suspense>
-
-        <Footer />
       </div>
     );
   }

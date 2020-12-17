@@ -21,43 +21,6 @@ const socialLinks = [
 const HeaderBar = () => (
   <div className="header-bar" role="navigation">
     <div className="header-bar--links">
-      <ul className="header-bar--links__list">
-        <li className="header-bar--links__item">
-          <a href="#experiences" title="experiences">
-
-
-            Experiences
-          </a>
-        </li>
-        <li className="header-bar--links__item">
-          <a href="#skills" title="skills">
-
-
-            Skills
-          </a>
-        </li>
-        <li className="header-bar--links__item">
-          <a href="#projects" title="projects">
-
-
-            Projects
-          </a>
-        </li>
-        <li className="header-bar--links__item">
-          <a href="#education" title="education">
-
-
-            Education
-          </a>
-        </li>
-        <li className="header-bar--links__item">
-          <a href="#info" title="personal info">
-
-
-            Info
-          </a>
-        </li>
-      </ul>
     </div>
     <div className="social--icons">
       {socialLinks.map(link => (
