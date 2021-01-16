@@ -160,6 +160,10 @@ module.exports = merge(commonConfig, {
           from: "resume/*.pdf",
           to: path.resolve(projectRoot, "dist"),
         },
+        {
+          from: "../manifest.json",
+          to: path.resolve(projectRoot, "dist"),
+        },
       ],
     }),
   ],
