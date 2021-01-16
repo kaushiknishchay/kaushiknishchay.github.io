@@ -1,0 +1,32 @@
+$icon-size: 50px;
+
+.side_item {
+  background: var(--bg-invert);
+  border-radius: 30px;
+  color: var(--bg-invert-text);
+  padding: 20px 25px;
+  margin: 20px 0;
+
+  &--dark {
+    background: var(--bg);
+    border: 2px solid var(--sub-text);
+    color: var(--text);
+  }
+
+  .flex {
+    height: 100%;
+  }
+
+  .github_stats {
+    width: 100%;
+  }
+
+  .social_link {
+    margin: auto;
+  }
+
+  .social_icon {
+    width: $icon-size;
+    height: $icon-size;
+  }
+}
