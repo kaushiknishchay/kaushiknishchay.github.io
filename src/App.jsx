@@ -1,17 +1,8 @@
 /* eslint-disable no-param-reassign,jsx-a11y/label-has-for */
 import React, { Component } from 'react';
-import './assets/scss/styles.scss';
 import HeaderBar from './components/HeaderBar';
-import Footer from './sections/FooterSection';
-import Loading from './Loading';
 
-const ProjectSection = React.lazy(() => import(/* webpackChunkName: "ProjectSection" */ './sections/ProjectSection'));
-
-const SkillCardSection = React.lazy(() => import(/* webpackChunkName: "SkillCardSection" */ './sections/SkillCardSection'));
-
-const EducationSection = React.lazy(() => import(/* webpackChunkName: "EducationSection" */ './sections/EducationSection'));
-
-const ExperienceSection = React.lazy(() => import(/* webpackChunkName: "ExperienceSection" */ './sections/ExperienceSection'));
+import './style/styles.scss';
 
 export default class App extends Component {
   constructor(props) {
@@ -25,10 +16,7 @@ export default class App extends Component {
 
       lastUpdated: null,
     };
-    window.addEventListener('load', this.callbackFunc);
-    window.addEventListener('scroll', this.callbackFunc);
   }
-
 
   componentDidMount() {
     fetch('https://api.github.com/repos/kaushiknishchay/kaushiknishchay.github.io')
@@ -45,54 +33,7 @@ export default class App extends Component {
         // Error
       });
   }
-
-
-  callbackFunc = () => {
-    const items = document.querySelectorAll(
-      '.timeline--container > ul.timeline--line > li > .timeline_item--content',
-    );
-
-    for (let i = 0; i < items.length; i += 1) {
-      if (
-        this.elementInViewport2(items[i])
-        || this.isElementInViewport(items[i])
-      ) {
-        items[i].parentElement.classList.add('in-view');
-      }
-    }
-  };
-
-  elementInViewport2 = (el) => {
-    let top = el.offsetTop;
-    let left = el.offsetLeft;
-    const width = el.offsetWidth;
-    const height = el.offsetHeight;
-
-    while (el.offsetParent) {
-      el = el.offsetParent;
-      top += el.offsetTop;
-      left += el.offsetLeft;
-    }
-
-    return (
-      top < window.pageYOffset + window.innerHeight
-      && left < window.pageXOffset + window.innerWidth
-      && top + height > window.pageYOffset
-      && left + width > window.pageXOffset
-    );
-  };
-
-  isElementInViewport = (el) => {
-    const rect = el.getBoundingClientRect();
-    return (
-      rect.top >= 0
-      && rect.left >= 0
-      && rect.bottom
-      <= (window.innerHeight || document.documentElement.clientHeight)
-      && rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  };
-
+  
   render() {
     const {
       introText,
@@ -116,12 +57,10 @@ export default class App extends Component {
                 }}
               >
                 <a
-                  href="./resume_new.pdf"
+                  href={"/resume/NishchayKaushik_Resume.pdf"}
                   className="download_cv"
                   onClick={'ga(\'send\', \'event\', \'Download\', \'resume\', \'version 1\');'}
                 >
-
-
                   Resume
                 </a>
               </p>

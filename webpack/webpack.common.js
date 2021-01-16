@@ -1,20 +1,21 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const devMode = process.env.NODE_ENV !== 'production';
-const projectRoot = path.resolve(__dirname, '..');
+const devMode = process.env.NODE_ENV !== "production";
+const projectRoot = path.resolve(__dirname, "..");
+const distPath = path.resolve(projectRoot, "dist");
 
 module.exports = {
-  context: path.resolve(projectRoot, 'src'),
-  entry: './index.jsx',
+  context: path.resolve(projectRoot, "src"),
+  entry: "./index.jsx",
   output: {
-    filename: './assets/[name].bundle.js',
-    path: path.resolve(projectRoot),
-    chunkFilename: './assets/js/[name].js',
+    filename: "./js/[name].bundle.[chunkhash].js",
+    path: distPath,
+    chunkFilename: "./js/[name].[chunkhash].js",
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: [".js", ".jsx"],
   },
   module: {
     noParse: /jquery|lodash/,
@@ -25,48 +26,50 @@ module.exports = {
         include: /src/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react'],
-            plugins: ['@babel/plugin-syntax-dynamic-import', '@babel/plugin-proposal-class-properties'],
+            presets: ["@babel/preset-env", "@babel/preset-react"],
+            plugins: [
+              "@babel/plugin-syntax-dynamic-import",
+              "@babel/plugin-proposal-class-properties",
+            ],
           },
         },
       },
       {
         // setup for creating a new index file on each build
         test: /\.html$/,
-        use: ['html-loader'],
+        use: ["html-loader"],
       },
       {
         test: /\.css$/,
         include: /src/,
         exclude: /node_modules/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-        ],
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
         // setup for auto compiling and injecting styles in index.html
         test: /\.(sass|scss|css)$/,
-        include: path.resolve(projectRoot, 'src'),
+        include: path.resolve(projectRoot, "src"),
         exclude: /node_modules/,
         use: [
-          devMode ? 'style-loader' : {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              publicPath: './assets/css/',
-              outputPath: './assets/css/',
-            },
-          },
+          devMode
+            ? "style-loader"
+            : {
+                loader: MiniCssExtractPlugin.loader,
+                options: {
+                  publicPath: path.resolve(distPath, "css"),
+                  outputPath: path.resolve(distPath, "css"),
+                },
+              },
           {
-            loader: 'css-loader',
+            loader: "css-loader",
             options: {
               sourceMap: false,
             },
           },
           {
-            loader: 'sass-loader',
+            loader: "sass-loader",
             options: {
               sourceMap: false,
             },
@@ -75,33 +78,29 @@ module.exports = {
       },
       // file-loader(for images)
       {
-        test: /\.(jpg|png|gif|svg)$/,
-        include: /src/,
+        test: /\.(jpg|png|gif|svg|ico)$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
-              name: '[name].[ext]',
-              outputPath: './assets/media/',
+              name: "[name].[ext]",
+              outputPath: "assets/",
+              publicPath: "/assets/",
+              useRelativePaths: true,
             },
           },
         ],
       },
-      // // file-loader(for fonts)
-      // {
-      //   test: /\.(woff|woff2|eot|ttf|otf)$/,
-      //   use: ['file-loader'],
-      // },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'index.html',
-      filename: './index.html',
+      template: "index.html",
+      filename: "./index.html",
     }),
     new MiniCssExtractPlugin({
-      filename: devMode ? '[name].css' : './assets/css/app.css',
-      chunkFilename: devMode ? '[id].css' : './assets/css/app.css',
+      filename: devMode ? "[name].css" : "app.[contenthash].css",
+      chunkFilename: devMode ? "[id].css" : "app.[contenthash].css",
     }),
   ],
 };
