@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5068954fdfc326ac5e918397e701d8bf",
+    "revision": "bd9c5c433f296dd5afbf3802f08578f0",
     "url": "./index.html"
   },
   {
-    "url": "./js/main.bundle.db4a2149c3fc17c747ea.js"
+    "url": "./js/main.bundle.cf15af48605940acdcca.js"
   },
   {
     "url": "./js/npm.react-dom.492d8b2c0f1bd7cffcda.js"
@@ -13,8 +13,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./js/npm.react.e4de0758e46a4c046769.js"
   },
   {
-    "revision": "db4a2149c3fc17c747ea",
-    "url": "app.aa26ab39175074bf3817.css"
+    "revision": "cf15af48605940acdcca",
+    "url": "app.84bb4f5ef12aba8994d3.css"
+  },
+  {
+    "revision": "a49ee3da1a9c7c091956e0e6db18c50d",
+    "url": "assets/blog.svg"
   },
   {
     "revision": "a38a1b932c1aea9724019a280f48d8e8",
@@ -73,15 +77,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "assets/icons/icon-96x96.png"
   },
   {
-    "revision": "23c5041ab992081a9d4264ba8679e9d3",
-    "url": "assets/instagram.svg"
-  },
-  {
     "revision": "c13bb41bbbeb065897dc1b62f10c5516",
     "url": "assets/linkedin.svg"
-  },
-  {
-    "revision": "8c14a8ebc8c5920b5ae8e602b6b1a57d",
-    "url": "assets/person_bg.svg"
   }
 ]);
