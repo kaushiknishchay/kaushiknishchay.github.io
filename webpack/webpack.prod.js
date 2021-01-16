@@ -6,7 +6,7 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const BrotliPlugin = require("brotli-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const { GenerateSW } = require("workbox-webpack-plugin");
 const commonConfig = require("./webpack.common.js");
 
@@ -76,13 +76,11 @@ module.exports = merge(commonConfig, {
     },
   },
   plugins: [
-    new CleanWebpackPlugin(["dist/*"], {
-      root: projectRoot,
-    }),
+    new CleanWebpackPlugin(),
     new CompressionPlugin({
-      filename: "[path].gz[query]",
+      filename: "[path].gz",
       algorithm: "gzip",
-      test: /\.js$|\.css$|\.svg$/,
+      test: /\.(js|css|svg)$/,
       threshold: 10240 / 4,
       minRatio: 1,
     }),
