@@ -191,6 +191,11 @@ $content-padding: 80px;
       position: absolute;
       width: 10px;
       height: 10px;
+      top: 50%;
+      z-index: -10;
+    }
+
+    &-bubbles {
       box-shadow: 0 100px 0 50px rgba(190, 167, 226, 0.9),
       10vw 120px 0 10px #abe2a7,
       20vw -469px 0 20px rgba(116, 84, 167, 0.9),
@@ -200,8 +205,6 @@ $content-padding: 80px;
       90vw -290px 0 70px #865148,
       100vw -90px 0 10px #e2d3a7,
       87vw -681px 0 12px rgba(179, 176, 100, 0.4), 72vw -314px 0 39px rgba(57, 150, 18, 0.4), 92vw 669px 0 28px rgba(17, 22, 136, 0.4), 85vw 655px 0 11px rgba(56, 2, 105, 0.4), 57vw 262px 0 8px rgba(76, 115, 9, 0.4), 63vw -411px 0 40px rgba(34, 169, 139, 0.4), 3vw -403px 0 35px rgba(78, 36, 200, 0.4), 13vw 596px 0 38px rgba(90, 156, 248, 0.4), 8vw 307px 0 48px rgba(228, 241, 47, 0.4), 10vw 252px 0 33px rgba(95, 178, 80, 0.4), 72vw 680px 0 3px rgba(177, 202, 96, 0.4), 39vw 190px 0 39px rgba(173, 6, 42, 0.4), 7vw -609px 0 6px rgba(172, 239, 11, 0.4), 84vw 349px 0 49px rgba(254, 186, 64, 0.4), 89vw -451px 0 23px rgba(203, 176, 81, 0.4), 60vw 374px 0 48px rgba(90, 248, 233, 0.4), 90vw -317px 0 32px rgba(205, 13, 161, 0.4), 45vw -48px 0 6px rgba(255, 170, 124, 0.4), 11vw 124px 0 18px rgba(69, 163, 99, 0.4), 64vw -256px 0 1px rgba(137, 112, 115, 0.4), 42vw 144px 0 5px rgba(4, 241, 63, 0.4), 46vw 788px 0 12px rgba(218, 42, 217, 0.4), 77vw 654px 0 31px rgba(47, 103, 135, 0.4), 52vw 633px 0 22px rgba(34, 218, 66, 0.4), 61vw -172px 0 6px rgba(160, 145, 118, 0.4), 18vw 252px 0 40px rgba(130, 235, 50, 0.4), 66vw 423px 0 46px rgba(178, 4, 165, 0.4), 46vw -678px 0 13px rgba(52, 71, 10, 0.4), 12vw 160px 0 17px rgba(67, 172, 116, 0.4), 31vw -235px 0 37px rgba(121, 247, 32, 0.4), 17vw -534px 0 9px rgba(27, 162, 106, 0.4), 14vw 582px 0 21px rgba(25, 95, 255, 0.4), 41vw -145px 0 45px rgba(138, 146, 210, 0.4), 93vw -496px 0 36px rgba(217, 64, 255, 0.4), 628px 0 36px rgba(149, 126, 37, 0.4), 60vw 252px 0 28px rgba(139, 49, 22, 0.4), 94vw -48px 0 22px rgba(72, 80, 114, 0.4), 90vw 326px 0 43px rgba(16, 149, 81, 0.4), 27vw -41px 0 20px rgba(226, 255, 223, 0.4), 95vw 576px 0 9px rgba(237, 84, 113, 0.4), 14vw 555px 0 19px rgba(126, 218, 26, 0.4), 57vw -610px 0 27px rgba(155, 169, 54, 0.4), 16vw 352px 0 30px rgba(17, 182, 82, 0.4), 86vw -656px 0 13px rgba(42, 152, 9, 0.4), 21vw 722px 0 22px rgba(70, 198, 36, 0.4), 28vw 239px 0 45px rgba(26, 140, 97, 0.4), 36vw -451px 0 28px rgba(146, 234, 107, 0.4), 98vw 519px 0 45px rgba(255, 182, 156, 0.4), 6vw 590px 0 44px rgba(203, 227, 202, 0.4), 81vw 364px 0 41px rgba(116, 198, 122, 0.4), 78vw -687px 0 3px rgba(155, 144, 158, 0.4), 19vw -49px 0 38px rgba(21, 212, 107, 0.4), 7vw 599px 0 25px rgba(194, 61, 9, 0.4), 82vw 125px 0 13px rgba(22, 58, 90, 0.4), 88vw -778px 0 35px rgba(184, 187, 42, 0.4);
-      top: 50%;
-      z-index: -10;
     }
   }
 }
