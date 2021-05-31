@@ -52,7 +52,7 @@ export default class App extends Component {
               Nishchay Kaushik
             </h1>
             <h2 className="job_text">
-              SDE 2 @ HackerRank
+              SDE 2 @ Swiggy
             </h2>
             <div className="other_info">
               <p>
