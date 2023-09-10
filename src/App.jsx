@@ -58,7 +58,7 @@ export default class App extends Component {
               <p>
                 I
                 am an Engineer with {Math.floor((new Date()).getFullYear() - 2017)}+ years of experience. I primarily work with
-                JavaScript(ES6) &amp; React and have hands-on experience with Node.JS, Ruby on
+                JavaScript/TypeScript(ES6) &amp; React and have hands-on experience with Node.JS, Ruby on
                 Rails, Python, Java and Golang.
                 <br />
                 <br />
