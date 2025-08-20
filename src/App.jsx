@@ -28,7 +28,7 @@ export default class App extends Component {
         }
       })
       .catch(() => {
-      // Error
+        // Error
       });
   }
 
@@ -52,14 +52,14 @@ export default class App extends Component {
               Nishchay Kaushik
             </h1>
             <h2 className="job_text">
-              SDE 3 @ Swiggy
+              Senior Software Engineer @ Atlassian
             </h2>
             <div className="other_info">
               <p>
                 I
                 am an Engineer with {Math.floor((new Date()).getFullYear() - 2017)}+ years of experience. I primarily work with
-                JavaScript/TypeScript(ES6) &amp; React and have hands-on experience with Node.JS, Ruby on
-                Rails, Python, Java and Golang.
+                JavaScript/TypeScript(ES6) &amp; React and have hands-on experience with Node.JS, Golang, Python, Ruby on
+                Rails, Java.
                 <br />
                 <br />
               </p>
