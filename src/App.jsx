@@ -98,7 +98,7 @@ export default class App extends Component {
                 <a href="https://linkedin.com/in/kaushiknishchay" className="social_link">
                   <img src={linkedInIcon} alt="LinkedIn profile" className="social_icon" />
                 </a>
-                <a href="https://medium.com/@kaushik.tech" className="social_link">
+                <a href="https://blog.nkaushik.in" className="social_link">
                   <img src={blogIcon} alt="blog @medium" className="social_icon" />
                 </a>
               </div>
@@ -109,3 +109,4 @@ export default class App extends Component {
     );
   }
 }
+
