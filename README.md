@@ -4,7 +4,12 @@
 
 [![Build Status](https://travis-ci.org/kaushiknishchay/kaushiknishchay.github.io.svg?branch=master)](https://travis-ci.org/kaushiknishchay/kaushiknishchay.github.io)
 
+
+
 ![Stats](./profile/stats.svg)
+![Top Languages](./profile/top-langs.svg)
+![Pinned](./profile/pin-readme-tools-github-readme-stats.svg)
+
 
 A React PWA website
 - implements code splitting
@@ -12,4 +17,5 @@ A React PWA website
 - CI (Travis CI)
 - Gzipped bundles
 - Offline use with service worker
+
 
