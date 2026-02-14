@@ -86,7 +86,7 @@ export default class App extends Component {
             <SideItem light>
               <img
                 className="github_stats"
-                src="https://github-readme-stats.vercel.app/api/top-langs/?hide_border=true&username=kaushiknishchay&layout=compact&langs_count=20"
+                src="https://github.com/kaushiknishchay/kaushiknishchay.github.io/raw/master/profile/top-langs.svg"
                 alt="github lang stats"
               />
             </SideItem>
@@ -109,4 +109,5 @@ export default class App extends Component {
     );
   }
 }
+
 
