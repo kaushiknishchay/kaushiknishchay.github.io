@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Nishchay Kaushik's GitHub Stats, Rank: B</title>
-        <desc id="descId">Total Stars Earned: 51, Total Commits  (last year) : 12, Total PRs: 138, Total Issues: 4, Contributed to (last year): 1</desc>
+        <desc id="descId">Total Stars Earned: 51, Total Commits  (last year) : 14, Total PRs: 139, Total Issues: 4, Contributed to (last year): 1</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 135.14394364465662;
+        stroke-dashoffset: 134.79219201859033;
       }
     }
   
@@ -177,7 +177,7 @@
         x="219.01"
         y="12.5"
         data-testid="commits"
-      >12</text>
+      >14</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
@@ -192,7 +192,7 @@
         x="219.01"
         y="12.5"
         data-testid="prs"
-      >138</text>
+      >139</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
