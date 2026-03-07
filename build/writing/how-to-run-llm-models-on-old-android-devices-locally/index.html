@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v5.16.8"><!-- SEO tags injected via slot --><!-- Page Title --><title>Running LLM Models on Old Android Devices | Nishchay Kaushik</title><!-- Meta Description --><meta name="description" content="Learn how to run AI models on older Android devices using Termux and llama.cpp for local inference and repurposing outdated technology"><!-- Canonical URL --><link rel="canonical" href="https://nkaushik.in/writing/how-to-run-llm-models-on-old-android-devices-locally/"><!-- Author --><meta name="author" content="Nishchay Kaushik"><!-- Open Graph Tags --><meta property="og:type" content="article"><meta property="og:url" content="https://nkaushik.in/writing/how-to-run-llm-models-on-old-android-devices-locally/"><meta property="og:title" content="Running LLM Models on Old Android Devices"><meta property="og:description" content="Learn how to run AI models on older Android devices using Termux and llama.cpp for local inference and repurposing outdated technology"><meta property="og:image" content="https://nkaushik.in/og-image.png"><meta property="og:site_name" content="Nishchay Kaushik | Engineering Leader &#38; Full-Stack Engineer"><!-- Article-specific Open Graph tags --><meta property="article:published_time" content="2026-02-13T20:16:51.412Z"><!-- Twitter Card Tags --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://nkaushik.in/writing/how-to-run-llm-models-on-old-android-devices-locally/"><meta name="twitter:title" content="Running LLM Models on Old Android Devices"><meta name="twitter:description" content="Learn how to run AI models on older Android devices using Termux and llama.cpp for local inference and repurposing outdated technology"><meta name="twitter:image" content="https://nkaushik.in/og-image.png"><meta name="twitter:site" content="@kkaushikkn"><meta name="twitter:creator" content="@kkaushikkn"><!-- Favicon --><link rel="icon" type="image/svg+xml" href="/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#0a0a0a"><script async src="https://www.googletagmanager.com/gtag/js?id=G-2N9VE1LSYK"></script><script>(function(){const gaId = "G-2N9VE1LSYK";
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v5.16.8"><!-- SEO tags injected via slot --><!-- Page Title --><title>Running LLM Models on Old Android Devices | Nishchay Kaushik</title><!-- Meta Description --><meta name="description" content="Learn how to run AI models on older Android devices using Termux and llama.cpp for local inference and repurposing outdated technology"><!-- Canonical URL --><link rel="canonical" href="https://nkaushik.in/writing/how-to-run-llm-models-on-old-android-devices-locally/"><!-- Author --><meta name="author" content="Nishchay Kaushik"><!-- Open Graph Tags --><meta property="og:type" content="article"><meta property="og:url" content="https://nkaushik.in/writing/how-to-run-llm-models-on-old-android-devices-locally/"><meta property="og:title" content="Running LLM Models on Old Android Devices"><meta property="og:description" content="Learn how to run AI models on older Android devices using Termux and llama.cpp for local inference and repurposing outdated technology"><meta property="og:image" content="https://nkaushik.in/og-image.png"><meta property="og:site_name" content="Nishchay Kaushik | Engineering Leader &#38; Full-Stack Engineer"><!-- Article-specific Open Graph tags --><meta property="article:published_time" content="2026-02-13T20:16:51.412Z"><!-- Twitter Card Tags --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://nkaushik.in/writing/how-to-run-llm-models-on-old-android-devices-locally/"><meta name="twitter:title" content="Running LLM Models on Old Android Devices"><meta name="twitter:description" content="Learn how to run AI models on older Android devices using Termux and llama.cpp for local inference and repurposing outdated technology"><meta name="twitter:image" content="https://nkaushik.in/og-image.png"><meta name="twitter:site" content="@kkaushikkn"><meta name="twitter:creator" content="@kkaushikkn"><!-- Favicon --><link rel="icon" type="image/svg+xml" href="/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#0a0a0a"><script src="https://honey.nkaushik.in/api/script.js" data-site-id="d5ba6d688c09" data-session-replay="true" defer></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-2N9VE1LSYK"></script><script>(function(){const gaId = "G-2N9VE1LSYK";
 
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -14,77 +14,88 @@
         });
       });
     })();</script><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CDGfc0hd.js"></script><!-- Prevent flash of wrong theme --><script>
-      (function() {
+      (function () {
         const getTheme = () => {
-          if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-            return localStorage.getItem('theme');
+          if (
+            typeof localStorage !== "undefined" &&
+            localStorage.getItem("theme")
+          ) {
+            return localStorage.getItem("theme");
           }
-          if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-            return 'light';
+          if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+            return "light";
           }
-          return 'dark';
+          return "dark";
         };
         const theme = getTheme();
-        document.documentElement.setAttribute('data-theme', theme);
+        document.documentElement.setAttribute("data-theme", theme);
       })();
     </script><!-- Preserve theme during View Transitions --><script>
-      document.addEventListener('astro:before-swap', (e) => {
-        const theme = document.documentElement.getAttribute('data-theme');
-        e.newDocument.documentElement.setAttribute('data-theme', theme);
+      document.addEventListener("astro:before-swap", (e) => {
+        const theme = document.documentElement.getAttribute("data-theme");
+        e.newDocument.documentElement.setAttribute("data-theme", theme);
       });
     </script><!-- Fix for mobile scroll/focus restoration issues on refresh --><script>
-      (function() {
-        window.addEventListener('load', () => {
-          if (!window.location.hash) {
-            // Force scroll to top on refresh if no hash is present
-            // some mobile browsers try to restore scroll to the last active element
-            window.scrollTo(0, 0);
-            if (document.activeElement && document.activeElement.tagName === 'A') {
-              document.activeElement.blur();
+      (function () {
+        window.addEventListener(
+          "load",
+          () => {
+            if (!window.location.hash) {
+              // Force scroll to top on refresh if no hash is present
+              // some mobile browsers try to restore scroll to the last active element
+              window.scrollTo(0, 0);
+              if (
+                document.activeElement &&
+                document.activeElement.tagName === "A"
+              ) {
+                document.activeElement.blur();
+              }
             }
-          }
-        }, { once: true });
+          },
+          { once: true },
+        );
       })();
     </script><!-- Global Loading Indicator --><script>
-      (function() {
+      (function () {
         let progressBar;
-        
+
         function getProgressBar() {
-          return document.getElementById('global-loading-bar');
+          return document.getElementById("global-loading-bar");
         }
-        
+
         function showLoading() {
           const bar = getProgressBar();
           if (!bar) return;
-          
-          bar.style.transition = 'none';
-          bar.style.width = '0%';
-          bar.style.opacity = '1';
-          
+
+          bar.style.transition = "none";
+          bar.style.width = "0%";
+          bar.style.opacity = "1";
+
           // Force reflow
           bar.offsetHeight;
-          
-          bar.style.transition = 'width 10s cubic-bezier(0.1, 0.05, 0, 1), opacity 0.3s ease';
-          bar.style.width = '90%';
+
+          bar.style.transition =
+            "width 10s cubic-bezier(0.1, 0.05, 0, 1), opacity 0.3s ease";
+          bar.style.width = "90%";
         }
 
         function hideLoading() {
           const bar = getProgressBar();
           if (!bar) return;
-          
-          bar.style.transition = 'width 0.3s ease, opacity 0.3s ease';
-          bar.style.width = '100%';
-          
+
+          bar.style.transition = "width 0.3s ease, opacity 0.3s ease";
+          bar.style.width = "100%";
+
           setTimeout(() => {
-            bar.style.opacity = '0';
+            bar.style.opacity = "0";
             setTimeout(() => {
-              bar.style.width = '0%';
+              bar.style.width = "0%";
             }, 300);
           }, 300);
         }
 
-        document.addEventListener('astro:before-preparation', showLoading);
-        document.addEventListener('astro:page-load', hideLoading);
+        document.addEventListener("astro:before-preparation", showLoading);
+        document.addEventListener("astro:page-load", hideLoading);
       })();
     </script><link rel="stylesheet" href="/_astro/contact.zrQpVCt4.css">
 <link rel="stylesheet" href="/_astro/_slug_.SGfGZYgS.css">
@@ -243,7 +254,7 @@
 	animation-duration: 180ms;
 	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
 	animation-fill-mode: both;
-	animation-name: astroFadeIn; }</style></head> <body> <vercel-speed-insights data-props="{}" data-params="{&#34;slug&#34;:&#34;how-to-run-llm-models-on-old-android-devices-locally&#34;}" data-pathname="/writing/how-to-run-llm-models-on-old-android-devices-locally/"></vercel-speed-insights> <script type="module">var o="@vercel/speed-insights",u="1.3.1",f=()=>{window.si||(window.si=function(...r){(window.siq=window.siq||[]).push(r)})};function l(){return typeof window<"u"}function h(){try{const e="production"}catch{}return"production"}function d(){return h()==="development"}function v(e,r){if(!e||!r)return e;let n=e;try{const t=Object.entries(r);for(const[s,i]of t)if(!Array.isArray(i)){const a=c(i);a.test(n)&&(n=n.replace(a,`/[${s}]`))}for(const[s,i]of t)if(Array.isArray(i)){const a=c(i.join("/"));a.test(n)&&(n=n.replace(a,`/[...${s}]`))}return n}catch{return e}}function c(e){return new RegExp(`/${g(e)}(?=[/?#]|$)`)}function g(e){return e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}function m(e){return e.scriptSrc?e.scriptSrc:d()?"https://va.vercel-scripts.com/v1/speed-insights/script.debug.js":e.dsn?"https://va.vercel-scripts.com/v1/speed-insights/script.js":e.basePath?`${e.basePath}/speed-insights/script.js`:"/_vercel/speed-insights/script.js"}function w(e={}){var r;if(!l()||e.route===null)return null;f();const n=m(e);if(document.head.querySelector(`script[src*="${n}"]`))return null;e.beforeSend&&((r=window.si)==null||r.call(window,"beforeSend",e.beforeSend));const t=document.createElement("script");return t.src=n,t.defer=!0,t.dataset.sdkn=o+(e.framework?`/${e.framework}`:""),t.dataset.sdkv=u,e.sampleRate&&(t.dataset.sampleRate=e.sampleRate.toString()),e.route&&(t.dataset.route=e.route),e.endpoint?t.dataset.endpoint=e.endpoint:e.basePath&&(t.dataset.endpoint=`${e.basePath}/speed-insights/vitals`),e.dsn&&(t.dataset.dsn=e.dsn),d()&&e.debug===!1&&(t.dataset.debug="false"),t.onerror=()=>{console.log(`[Vercel Speed Insights] Failed to load script from ${n}. Please check if any content blockers are enabled and try again.`)},document.head.appendChild(t),{setRoute:s=>{t.dataset.route=s??void 0}}}function p(){try{return}catch{}}customElements.define("vercel-speed-insights",class extends HTMLElement{constructor(){super();try{const r=JSON.parse(this.dataset.props??"{}"),n=JSON.parse(this.dataset.params??"{}"),t=v(this.dataset.pathname??"",n);w({route:t,...r,framework:"astro",basePath:p(),beforeSend:window.speedInsightsBeforeSend})}catch(r){throw new Error(`Failed to parse SpeedInsights properties: ${r}`)}}});</script> <div id="global-loading-bar" class="global-loading-bar" data-astro-transition-persist="astro-m5zzbc3a-5"></div> <header class="site-header" data-astro-transition-persist="astro-ugxeuutm-6"> <nav class="site-nav" aria-label="Main navigation" data-astro-cid-pux6a34n> <div class="nav-scroll" data-astro-cid-pux6a34n> <ul class="nav-list" data-astro-cid-pux6a34n> <li class="nav-item" data-astro-cid-pux6a34n> <a href="/" class="nav-link" data-astro-cid-pux6a34n> Home </a> </li><li class="nav-item" data-astro-cid-pux6a34n> <a href="/experience" class="nav-link" data-astro-cid-pux6a34n> Experience </a> </li><li class="nav-item" data-astro-cid-pux6a34n> <a href="/writing" class="nav-link nav-link--active" aria-current="page" data-astro-cid-pux6a34n> Blog </a> </li><li class="nav-item" data-astro-cid-pux6a34n> <a href="/contact" class="nav-link" data-astro-cid-pux6a34n> Contact </a> </li><li class="nav-item" data-astro-cid-pux6a34n> <a href="/p/projects" class="nav-link" data-astro-cid-pux6a34n> Projects </a> </li> </ul> </div> <div class="nav-end" data-astro-cid-pux6a34n> <button class="theme-toggle" type="button" aria-label="Toggle theme" title="Toggle theme" data-astro-cid-x3pjskd3> <svg class="icon icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-x3pjskd3> <circle cx="12" cy="12" r="5" data-astro-cid-x3pjskd3></circle> <line x1="12" y1="1" x2="12" y2="3" data-astro-cid-x3pjskd3></line> <line x1="12" y1="21" x2="12" y2="23" data-astro-cid-x3pjskd3></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" data-astro-cid-x3pjskd3></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" data-astro-cid-x3pjskd3></line> <line x1="1" y1="12" x2="3" y2="12" data-astro-cid-x3pjskd3></line> <line x1="21" y1="12" x2="23" y2="12" data-astro-cid-x3pjskd3></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" data-astro-cid-x3pjskd3></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" data-astro-cid-x3pjskd3></line> </svg> <svg class="icon icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-x3pjskd3> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" data-astro-cid-x3pjskd3></path> </svg> </button>  <script type="module">const o=()=>{const e=localStorage.getItem("theme");return e==="light"||e==="dark"?e:window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"},t=e=>{document.documentElement.setAttribute("data-theme",e),localStorage.setItem("theme",e)},c=()=>{const e=document.documentElement.getAttribute("data-theme");t(e==="dark"?"light":"dark")};document.addEventListener("click",e=>{e.target.closest(".theme-toggle")&&c()});window.matchMedia("(prefers-color-scheme: light)").addEventListener("change",e=>{localStorage.getItem("theme")||t(e.matches?"light":"dark")});t(o());</script> </div> </nav> <script type="module">function i(){const n=window.location.pathname;document.querySelectorAll(".nav-link").forEach(t=>{const a=t.getAttribute("href");let e=!1;a==="/"?e=n==="/":a&&(e=n.startsWith(a)),t.classList.toggle("nav-link--active",e),e?t.setAttribute("aria-current","page"):t.removeAttribute("aria-current")})}function o(){document.querySelectorAll('a[href="/contact"]').forEach(c=>{c.addEventListener("click",()=>{typeof gtag=="function"&&gtag("event","click_contact_nav",{event_category:"navigation",event_label:"Contact Navigation Link"})})})}document.addEventListener("astro:page-load",()=>{i(),o()});</script>  </header> <main>   <script type="application/ld+json">{
+	animation-name: astroFadeIn; }</style></head> <body> <vercel-speed-insights data-props="{}" data-params="{&#34;slug&#34;:&#34;how-to-run-llm-models-on-old-android-devices-locally&#34;}" data-pathname="/writing/how-to-run-llm-models-on-old-android-devices-locally/"></vercel-speed-insights> <script type="module">var o="@vercel/speed-insights",u="1.3.1",f=()=>{window.si||(window.si=function(...r){(window.siq=window.siq||[]).push(r)})};function l(){return typeof window<"u"}function h(){try{const e="production"}catch{}return"production"}function d(){return h()==="development"}function v(e,r){if(!e||!r)return e;let n=e;try{const t=Object.entries(r);for(const[s,i]of t)if(!Array.isArray(i)){const a=c(i);a.test(n)&&(n=n.replace(a,`/[${s}]`))}for(const[s,i]of t)if(Array.isArray(i)){const a=c(i.join("/"));a.test(n)&&(n=n.replace(a,`/[...${s}]`))}return n}catch{return e}}function c(e){return new RegExp(`/${g(e)}(?=[/?#]|$)`)}function g(e){return e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}function m(e){return e.scriptSrc?e.scriptSrc:d()?"https://va.vercel-scripts.com/v1/speed-insights/script.debug.js":e.dsn?"https://va.vercel-scripts.com/v1/speed-insights/script.js":e.basePath?`${e.basePath}/speed-insights/script.js`:"/_vercel/speed-insights/script.js"}function w(e={}){var r;if(!l()||e.route===null)return null;f();const n=m(e);if(document.head.querySelector(`script[src*="${n}"]`))return null;e.beforeSend&&((r=window.si)==null||r.call(window,"beforeSend",e.beforeSend));const t=document.createElement("script");return t.src=n,t.defer=!0,t.dataset.sdkn=o+(e.framework?`/${e.framework}`:""),t.dataset.sdkv=u,e.sampleRate&&(t.dataset.sampleRate=e.sampleRate.toString()),e.route&&(t.dataset.route=e.route),e.endpoint?t.dataset.endpoint=e.endpoint:e.basePath&&(t.dataset.endpoint=`${e.basePath}/speed-insights/vitals`),e.dsn&&(t.dataset.dsn=e.dsn),d()&&e.debug===!1&&(t.dataset.debug="false"),t.onerror=()=>{console.log(`[Vercel Speed Insights] Failed to load script from ${n}. Please check if any content blockers are enabled and try again.`)},document.head.appendChild(t),{setRoute:s=>{t.dataset.route=s??void 0}}}function p(){try{return}catch{}}customElements.define("vercel-speed-insights",class extends HTMLElement{constructor(){super();try{const r=JSON.parse(this.dataset.props??"{}"),n=JSON.parse(this.dataset.params??"{}"),t=v(this.dataset.pathname??"",n);w({route:t,...r,framework:"astro",basePath:p(),beforeSend:window.speedInsightsBeforeSend})}catch(r){throw new Error(`Failed to parse SpeedInsights properties: ${r}`)}}});</script> <div id="global-loading-bar" class="global-loading-bar" data-astro-transition-persist="astro-ugxeuutm-5"></div> <header class="site-header" data-astro-transition-persist="astro-jgysxpi6-6"> <nav class="site-nav" aria-label="Main navigation" data-astro-cid-pux6a34n> <div class="nav-scroll" data-astro-cid-pux6a34n> <ul class="nav-list" data-astro-cid-pux6a34n> <li class="nav-item" data-astro-cid-pux6a34n> <a href="/" class="nav-link" data-astro-cid-pux6a34n> Home </a> </li><li class="nav-item" data-astro-cid-pux6a34n> <a href="/experience" class="nav-link" data-astro-cid-pux6a34n> Experience </a> </li><li class="nav-item" data-astro-cid-pux6a34n> <a href="/writing" class="nav-link nav-link--active" aria-current="page" data-astro-cid-pux6a34n> Blog </a> </li><li class="nav-item" data-astro-cid-pux6a34n> <a href="/contact" class="nav-link" data-astro-cid-pux6a34n> Contact </a> </li><li class="nav-item" data-astro-cid-pux6a34n> <a href="/p/projects" class="nav-link" data-astro-cid-pux6a34n> Projects </a> </li> </ul> </div> <div class="nav-end" data-astro-cid-pux6a34n> <button class="theme-toggle" type="button" aria-label="Toggle theme" title="Toggle theme" data-astro-cid-x3pjskd3> <svg class="icon icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-x3pjskd3> <circle cx="12" cy="12" r="5" data-astro-cid-x3pjskd3></circle> <line x1="12" y1="1" x2="12" y2="3" data-astro-cid-x3pjskd3></line> <line x1="12" y1="21" x2="12" y2="23" data-astro-cid-x3pjskd3></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" data-astro-cid-x3pjskd3></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" data-astro-cid-x3pjskd3></line> <line x1="1" y1="12" x2="3" y2="12" data-astro-cid-x3pjskd3></line> <line x1="21" y1="12" x2="23" y2="12" data-astro-cid-x3pjskd3></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" data-astro-cid-x3pjskd3></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" data-astro-cid-x3pjskd3></line> </svg> <svg class="icon icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-x3pjskd3> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" data-astro-cid-x3pjskd3></path> </svg> </button>  <script type="module">const o=()=>{const e=localStorage.getItem("theme");return e==="light"||e==="dark"?e:window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"},t=e=>{document.documentElement.setAttribute("data-theme",e),localStorage.setItem("theme",e)},c=()=>{const e=document.documentElement.getAttribute("data-theme");t(e==="dark"?"light":"dark")};document.addEventListener("click",e=>{e.target.closest(".theme-toggle")&&c()});window.matchMedia("(prefers-color-scheme: light)").addEventListener("change",e=>{localStorage.getItem("theme")||t(e.matches?"light":"dark")});t(o());</script> </div> </nav> <script type="module">function i(){const n=window.location.pathname;document.querySelectorAll(".nav-link").forEach(t=>{const a=t.getAttribute("href");let e=!1;a==="/"?e=n==="/":a&&(e=n.startsWith(a)),t.classList.toggle("nav-link--active",e),e?t.setAttribute("aria-current","page"):t.removeAttribute("aria-current")})}function o(){document.querySelectorAll('a[href="/contact"]').forEach(c=>{c.addEventListener("click",()=>{typeof gtag=="function"&&gtag("event","click_contact_nav",{event_category:"navigation",event_label:"Contact Navigation Link"})})})}document.addEventListener("astro:page-load",()=>{i(),o()});</script>  </header> <main>   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Running LLM Models on Old Android Devices",
