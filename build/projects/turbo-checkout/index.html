@@ -17,28 +17,28 @@
       (function () {
         const getTheme = () => {
           if (
-            typeof localStorage !== "undefined" &&
-            localStorage.getItem("theme")
+            typeof localStorage !== 'undefined' &&
+            localStorage.getItem('theme')
           ) {
-            return localStorage.getItem("theme");
+            return localStorage.getItem('theme');
           }
-          if (window.matchMedia("(prefers-color-scheme: light)").matches) {
-            return "light";
+          if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+            return 'light';
           }
-          return "dark";
+          return 'dark';
         };
         const theme = getTheme();
-        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.setAttribute('data-theme', theme);
       })();
     </script><!-- Preserve theme during View Transitions --><script>
-      document.addEventListener("astro:before-swap", (e) => {
-        const theme = document.documentElement.getAttribute("data-theme");
-        e.newDocument.documentElement.setAttribute("data-theme", theme);
+      document.addEventListener('astro:before-swap', (e) => {
+        const theme = document.documentElement.getAttribute('data-theme');
+        e.newDocument.documentElement.setAttribute('data-theme', theme);
       });
     </script><!-- Fix for mobile scroll/focus restoration issues on refresh --><script>
       (function () {
         window.addEventListener(
-          "load",
+          'load',
           () => {
             if (!window.location.hash) {
               // Force scroll to top on refresh if no hash is present
@@ -46,13 +46,13 @@
               window.scrollTo(0, 0);
               if (
                 document.activeElement &&
-                document.activeElement.tagName === "A"
+                document.activeElement.tagName === 'A'
               ) {
                 document.activeElement.blur();
               }
             }
           },
-          { once: true },
+          { once: true }
         );
       })();
     </script><!-- Global Loading Indicator --><script>
@@ -60,44 +60,44 @@
         let progressBar;
 
         function getProgressBar() {
-          return document.getElementById("global-loading-bar");
+          return document.getElementById('global-loading-bar');
         }
 
         function showLoading() {
           const bar = getProgressBar();
           if (!bar) return;
 
-          bar.style.transition = "none";
-          bar.style.width = "0%";
-          bar.style.opacity = "1";
+          bar.style.transition = 'none';
+          bar.style.width = '0%';
+          bar.style.opacity = '1';
 
           // Force reflow
           bar.offsetHeight;
 
           bar.style.transition =
-            "width 10s cubic-bezier(0.1, 0.05, 0, 1), opacity 0.3s ease";
-          bar.style.width = "90%";
+            'width 10s cubic-bezier(0.1, 0.05, 0, 1), opacity 0.3s ease';
+          bar.style.width = '90%';
         }
 
         function hideLoading() {
           const bar = getProgressBar();
           if (!bar) return;
 
-          bar.style.transition = "width 0.3s ease, opacity 0.3s ease";
-          bar.style.width = "100%";
+          bar.style.transition = 'width 0.3s ease, opacity 0.3s ease';
+          bar.style.width = '100%';
 
           setTimeout(() => {
-            bar.style.opacity = "0";
+            bar.style.opacity = '0';
             setTimeout(() => {
-              bar.style.width = "0%";
+              bar.style.width = '0%';
             }, 300);
           }, 300);
         }
 
-        document.addEventListener("astro:before-preparation", showLoading);
-        document.addEventListener("astro:page-load", hideLoading);
+        document.addEventListener('astro:before-preparation', showLoading);
+        document.addEventListener('astro:page-load', hideLoading);
       })();
-    </script><link rel="stylesheet" href="/_astro/SEO.DCF7FvB4.css">
+    </script><link rel="stylesheet" href="/_astro/SEO.D7H03j46.css">
 <style>.scroll-to-top[data-astro-cid-73562bqz]{position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:var(--color-bg-secondary);border:1px solid var(--color-border);border-radius:var(--border-radius-sm);color:var(--color-text-secondary);cursor:pointer;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .2s ease,visibility .2s ease,transform .2s ease,background .2s ease,color .2s ease,border-color .2s ease;z-index:50}.scroll-to-top[data-astro-cid-73562bqz]:hover{background:var(--color-bg-elevated);color:var(--color-text);border-color:var(--color-text-muted)}.scroll-to-top[data-astro-cid-73562bqz]:focus-visible{outline:2px solid var(--color-accent);outline-offset:2px}.scroll-to-top[data-astro-cid-73562bqz].is-visible{opacity:1;visibility:visible;transform:translateY(0)}@media(max-width:640px){.scroll-to-top[data-astro-cid-73562bqz]{bottom:1.5rem;right:1.5rem;width:40px;height:40px}}
 .back-link-container[data-astro-cid-c4cqltiy]{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--color-border)}.back-link[data-astro-cid-c4cqltiy]{display:inline-flex;align-items:center;gap:.5rem;font-size:.9375rem;font-weight:500;color:var(--color-text-muted);text-decoration:none;transition:color .2s ease}.back-link[data-astro-cid-c4cqltiy]:hover{color:var(--color-text)}.back-icon[data-astro-cid-c4cqltiy]{width:16px;height:16px;transition:transform .2s ease}.back-link[data-astro-cid-c4cqltiy]:hover .back-icon[data-astro-cid-c4cqltiy]{transform:translate(-3px)}
 </style>
@@ -156,5 +156,7 @@
   "keywords": "React Native, TypeScript, Java, Node.js, DynamoDB",
   "about": "Complex checkout flows and frequent payment failures were the leading causes of cart abandonment.",
   "result": "Transformed the checkout experience into a major competitive advantage for Swiggy."
-}</script> <main class="case-study" data-astro-cid-ovxcmftc> <nav class="breadcrumb" aria-label="Breadcrumb" data-astro-transition-scope="astro-sie7fnzq-1"> <ol class="breadcrumb-list">  <li class="breadcrumb-item"> <a href="/projects" class="breadcrumb-link"> Projects </a> </li> <li class="breadcrumb-separator" aria-hidden="true">/</li> <li class="breadcrumb-item"> <span class="breadcrumb-current" aria-current="page"> Turbo Checkout &amp; Auto-pay </span> </li>  </ol> </nav> <!-- Case Study Header --> <header class="case-study-header" data-astro-cid-ovxcmftc> <div class="header-badges" data-astro-cid-ovxcmftc>  </div> <h1 data-astro-cid-ovxcmftc>Turbo Checkout &amp; Auto-pay</h1> <div class="case-study-meta" data-astro-cid-ovxcmftc> <span class="meta-item" data-astro-cid-ovxcmftc>SDE 3</span> <span class="meta-separator" data-astro-cid-ovxcmftc>·</span> <span class="meta-item" data-astro-cid-ovxcmftc>2022</span>   <span class="meta-separator" data-astro-cid-ovxcmftc>·</span> <span class="meta-item" data-astro-cid-ovxcmftc>1 min read</span> </div> <p class="outcome-summary" data-astro-cid-ovxcmftc>Improved checkout conversion by 15% and reduced payment failures by implementing a streamlined, automated payment experience for millions of Swiggy users.</p> </header> <!-- Overview Section --> <section class="case-study-section" data-astro-cid-ovxcmftc> <h2 data-astro-cid-ovxcmftc>Overview</h2> <p data-astro-cid-ovxcmftc>Led the core checkout and payment experience teams at Swiggy, focusing on reducing friction in the food ordering funnel.</p> </section> <!-- Problem Section --> <section class="case-study-section" data-astro-cid-ovxcmftc> <h2 data-astro-cid-ovxcmftc>Problem</h2> <p data-astro-cid-ovxcmftc>Complex checkout flows and frequent payment failures were the leading causes of cart abandonment.</p> </section> <!-- Constraints Section --> <section class="case-study-section" data-astro-cid-ovxcmftc> <h2 data-astro-cid-ovxcmftc>Constraints</h2> <ul class="constraints-list" data-astro-cid-ovxcmftc> <li data-astro-cid-ovxcmftc>High-scale concurrency (thousands of orders per second)</li><li data-astro-cid-ovxcmftc>Strict financial compliance and security requirements</li><li data-astro-cid-ovxcmftc>Fragmented Android ecosystem performance</li> </ul> </section> <!-- Approach Section --> <section class="case-study-section" data-astro-cid-ovxcmftc> <h2 data-astro-cid-ovxcmftc>Approach</h2> <p data-astro-cid-ovxcmftc>Simplified the checkout UI to a single-click experience for frequent users and implemented smart retry logic for payments.</p> </section> <!-- Key Decisions Section --> <section class="case-study-section" data-astro-cid-ovxcmftc> <h2 data-astro-cid-ovxcmftc>Key Decisions</h2> <div class="decisions-list" data-astro-cid-ovxcmftc> <div class="decision-item" data-astro-cid-ovxcmftc> <h3 class="decision-title" data-astro-cid-ovxcmftc>Build a native checkout experience in React Native</h3> <div class="decision-reasoning" data-astro-cid-ovxcmftc> <strong data-astro-cid-ovxcmftc>Reasoning:</strong> <p data-astro-cid-ovxcmftc>Native performance was critical for the high-intensity checkout moment, especially on entry-level mobile devices.</p> </div>  </div><div class="decision-item" data-astro-cid-ovxcmftc> <h3 class="decision-title" data-astro-cid-ovxcmftc>Implement server-side payment orchestration</h3> <div class="decision-reasoning" data-astro-cid-ovxcmftc> <strong data-astro-cid-ovxcmftc>Reasoning:</strong> <p data-astro-cid-ovxcmftc>Centralizing payment logic allowed for faster experimentation with new gateways without requiring app updates.</p> </div>  </div> </div> </section> <!-- Tech Stack Section --> <section class="case-study-section" data-astro-cid-ovxcmftc> <h2 data-astro-cid-ovxcmftc>Tech Stack</h2> <ul class="tech-stack-list" data-astro-cid-ovxcmftc> <li data-astro-cid-ovxcmftc>React Native</li><li data-astro-cid-ovxcmftc>TypeScript</li><li data-astro-cid-ovxcmftc>Java</li><li data-astro-cid-ovxcmftc>Node.js</li><li data-astro-cid-ovxcmftc>DynamoDB</li> </ul> </section> <!-- Result/Impact Section --> <section class="case-study-section" data-astro-cid-ovxcmftc> <h2 data-astro-cid-ovxcmftc>Result & Impact</h2>  <ul class="impact-metrics" data-astro-cid-llilynjk> <li class="metric-item" data-astro-cid-llilynjk> <div class="metric-value" data-astro-cid-llilynjk>15%</div> <div class="metric-label" data-astro-cid-llilynjk>Conversion Lift</div> </li><li class="metric-item" data-astro-cid-llilynjk> <div class="metric-value" data-astro-cid-llilynjk>+8%</div> <div class="metric-label" data-astro-cid-llilynjk>Payment Success Rate</div> </li> </ul> <p class="impact-qualitative" data-astro-cid-ovxcmftc>Transformed the checkout experience into a major competitive advantage for Swiggy.</p> </section> <!-- Learnings Section --> <section class="case-study-section" data-astro-cid-ovxcmftc> <h2 data-astro-cid-ovxcmftc>Learnings</h2> <ul class="learnings-list" data-astro-cid-ovxcmftc> <li data-astro-cid-ovxcmftc>Micro-interactions at the final stage of a funnel have massive business impact.</li><li data-astro-cid-ovxcmftc>Handling edge cases in payments is a significant engineering challenge at scale.</li> </ul> </section> <!-- Additional MDX Content (if any) --> <section class="case-study-content" data-astro-cid-ovxcmftc> <h1 id="turbo-checkout--auto-pay">Turbo Checkout &amp; Auto-pay</h1>
+}</script> <main class="case-study" data-astro-cid-ovxcmftc> <nav class="breadcrumb" aria-label="Breadcrumb" data-astro-transition-scope="astro-sie7fnzq-1"> <ol class="breadcrumb-list">  <li class="breadcrumb-item"> <a href="/projects" class="breadcrumb-link"> Projects </a> </li> <li class="breadcrumb-separator" aria-hidden="true">
+/
+</li> <li class="breadcrumb-item"> <span class="breadcrumb-current" aria-current="page"> Turbo Checkout &amp; Auto-pay </span> </li>  </ol> </nav> <!-- Case Study Header --> <header class="case-study-header" data-astro-cid-ovxcmftc> <div class="header-badges" data-astro-cid-ovxcmftc>  </div> <h1 data-astro-cid-ovxcmftc>Turbo Checkout &amp; Auto-pay</h1> <div class="case-study-meta" data-astro-cid-ovxcmftc> <span class="meta-item" data-astro-cid-ovxcmftc>SDE 3</span> <span class="meta-separator" data-astro-cid-ovxcmftc>·</span> <span class="meta-item" data-astro-cid-ovxcmftc>2022</span>   <span class="meta-separator" data-astro-cid-ovxcmftc>·</span> <span class="meta-item" data-astro-cid-ovxcmftc>1 min read</span> </div> <p class="outcome-summary" data-astro-cid-ovxcmftc>Improved checkout conversion by 15% and reduced payment failures by implementing a streamlined, automated payment experience for millions of Swiggy users.</p> </header> <!-- Overview Section --> <section class="case-study-section" data-astro-cid-ovxcmftc> <h2 data-astro-cid-ovxcmftc>Overview</h2> <p data-astro-cid-ovxcmftc>Led the core checkout and payment experience teams at Swiggy, focusing on reducing friction in the food ordering funnel.</p> </section> <!-- Problem Section --> <section class="case-study-section" data-astro-cid-ovxcmftc> <h2 data-astro-cid-ovxcmftc>Problem</h2> <p data-astro-cid-ovxcmftc>Complex checkout flows and frequent payment failures were the leading causes of cart abandonment.</p> </section> <!-- Constraints Section --> <section class="case-study-section" data-astro-cid-ovxcmftc> <h2 data-astro-cid-ovxcmftc>Constraints</h2> <ul class="constraints-list" data-astro-cid-ovxcmftc> <li data-astro-cid-ovxcmftc>High-scale concurrency (thousands of orders per second)</li><li data-astro-cid-ovxcmftc>Strict financial compliance and security requirements</li><li data-astro-cid-ovxcmftc>Fragmented Android ecosystem performance</li> </ul> </section> <!-- Approach Section --> <section class="case-study-section" data-astro-cid-ovxcmftc> <h2 data-astro-cid-ovxcmftc>Approach</h2> <p data-astro-cid-ovxcmftc>Simplified the checkout UI to a single-click experience for frequent users and implemented smart retry logic for payments.</p> </section> <!-- Key Decisions Section --> <section class="case-study-section" data-astro-cid-ovxcmftc> <h2 data-astro-cid-ovxcmftc>Key Decisions</h2> <div class="decisions-list" data-astro-cid-ovxcmftc> <div class="decision-item" data-astro-cid-ovxcmftc> <h3 class="decision-title" data-astro-cid-ovxcmftc>Build a native checkout experience in React Native</h3> <div class="decision-reasoning" data-astro-cid-ovxcmftc> <strong data-astro-cid-ovxcmftc>Reasoning:</strong> <p data-astro-cid-ovxcmftc>Native performance was critical for the high-intensity checkout moment, especially on entry-level mobile devices.</p> </div>  </div><div class="decision-item" data-astro-cid-ovxcmftc> <h3 class="decision-title" data-astro-cid-ovxcmftc>Implement server-side payment orchestration</h3> <div class="decision-reasoning" data-astro-cid-ovxcmftc> <strong data-astro-cid-ovxcmftc>Reasoning:</strong> <p data-astro-cid-ovxcmftc>Centralizing payment logic allowed for faster experimentation with new gateways without requiring app updates.</p> </div>  </div> </div> </section> <!-- Tech Stack Section --> <section class="case-study-section" data-astro-cid-ovxcmftc> <h2 data-astro-cid-ovxcmftc>Tech Stack</h2> <ul class="tech-stack-list" data-astro-cid-ovxcmftc> <li data-astro-cid-ovxcmftc>React Native</li><li data-astro-cid-ovxcmftc>TypeScript</li><li data-astro-cid-ovxcmftc>Java</li><li data-astro-cid-ovxcmftc>Node.js</li><li data-astro-cid-ovxcmftc>DynamoDB</li> </ul> </section> <!-- Result/Impact Section --> <section class="case-study-section" data-astro-cid-ovxcmftc> <h2 data-astro-cid-ovxcmftc>Result & Impact</h2>  <ul class="impact-metrics" data-astro-cid-llilynjk> <li class="metric-item" data-astro-cid-llilynjk> <div class="metric-value" data-astro-cid-llilynjk>15%</div> <div class="metric-label" data-astro-cid-llilynjk>Conversion Lift</div> </li><li class="metric-item" data-astro-cid-llilynjk> <div class="metric-value" data-astro-cid-llilynjk>+8%</div> <div class="metric-label" data-astro-cid-llilynjk>Payment Success Rate</div> </li> </ul> <p class="impact-qualitative" data-astro-cid-ovxcmftc>Transformed the checkout experience into a major competitive advantage for Swiggy.</p> </section> <!-- Learnings Section --> <section class="case-study-section" data-astro-cid-ovxcmftc> <h2 data-astro-cid-ovxcmftc>Learnings</h2> <ul class="learnings-list" data-astro-cid-ovxcmftc> <li data-astro-cid-ovxcmftc>Micro-interactions at the final stage of a funnel have massive business impact.</li><li data-astro-cid-ovxcmftc>Handling edge cases in payments is a significant engineering challenge at scale.</li> </ul> </section> <!-- Additional MDX Content (if any) --> <section class="case-study-content" data-astro-cid-ovxcmftc> <h1 id="turbo-checkout--auto-pay">Turbo Checkout &amp; Auto-pay</h1>
 <p>Detailed case study content coming soon…</p> </section> <!-- Related Content -->  <div class="back-link-container" data-astro-cid-c4cqltiy> <a href="/projects" class="back-link" data-astro-cid-c4cqltiy> <svg class="back-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-astro-cid-c4cqltiy> <path d="M9.70711 17.2929C10.0976 17.6834 10.0976 18.3166 9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929L8.29289 5.29289C8.68342 4.90237 9.31658 4.90237 9.70711 5.29289C10.0976 5.68342 10.0976 6.31658 9.70711 6.70711L5.41421 11L21 11C21.5523 11 22 11.4477 22 12C22 12.5523 21.5523 13 21 13L5.41422 13L9.70711 17.2929Z" data-astro-cid-c4cqltiy></path> </svg> All projects </a> </div> </main> <button class="scroll-to-top" type="button" aria-label="Scroll to top" title="Scroll to top" data-astro-cid-73562bqz> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-73562bqz> <polyline points="18 15 12 9 6 15" data-astro-cid-73562bqz></polyline> </svg> </button>  <script type="module">function i(){const o=document.querySelector(".scroll-to-top");if(!o)return;const e=300;function t(){o&&(window.scrollY>e?o.classList.add("is-visible"):o.classList.remove("is-visible"))}function s(){window.scrollTo({top:0,behavior:"smooth"})}window.addEventListener("scroll",t,{passive:!0}),o.addEventListener("click",s),t()}i();document.addEventListener("astro:after-swap",i);</script>  </main> <footer class="site-footer" data-astro-cid-sz7xmlte> <div class="footer-container" data-astro-cid-sz7xmlte> <span class="copyright" data-astro-cid-sz7xmlte>© 2026 Nishchay Kaushik</span> <div class="footer-links" data-astro-cid-sz7xmlte> <div class="footer-social" data-astro-cid-sz7xmlte>  <a href="https://github.com/kaushiknishchay" target="_blank" rel="noopener noreferrer" data-astro-cid-sz7xmlte> Github </a> <span class="separator" data-astro-cid-sz7xmlte>·</span>  <a href="https://linkedin.com/in/kaushiknishchay" target="_blank" rel="noopener noreferrer" data-astro-cid-sz7xmlte> Linkedin </a> <span class="separator" data-astro-cid-sz7xmlte>·</span>  <a href="https://x.com/kkaushikkn" target="_blank" rel="noopener noreferrer" data-astro-cid-sz7xmlte> Twitter </a> <span class="separator" data-astro-cid-sz7xmlte>·</span>  </div> <a href="/sitemap-index.xml" class="sitemap-link" data-astro-cid-sz7xmlte>Sitemap</a> </div> </div> </footer> </body></html>

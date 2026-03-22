@@ -17,28 +17,28 @@
       (function () {
         const getTheme = () => {
           if (
-            typeof localStorage !== "undefined" &&
-            localStorage.getItem("theme")
+            typeof localStorage !== 'undefined' &&
+            localStorage.getItem('theme')
           ) {
-            return localStorage.getItem("theme");
+            return localStorage.getItem('theme');
           }
-          if (window.matchMedia("(prefers-color-scheme: light)").matches) {
-            return "light";
+          if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+            return 'light';
           }
-          return "dark";
+          return 'dark';
         };
         const theme = getTheme();
-        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.setAttribute('data-theme', theme);
       })();
     </script><!-- Preserve theme during View Transitions --><script>
-      document.addEventListener("astro:before-swap", (e) => {
-        const theme = document.documentElement.getAttribute("data-theme");
-        e.newDocument.documentElement.setAttribute("data-theme", theme);
+      document.addEventListener('astro:before-swap', (e) => {
+        const theme = document.documentElement.getAttribute('data-theme');
+        e.newDocument.documentElement.setAttribute('data-theme', theme);
       });
     </script><!-- Fix for mobile scroll/focus restoration issues on refresh --><script>
       (function () {
         window.addEventListener(
-          "load",
+          'load',
           () => {
             if (!window.location.hash) {
               // Force scroll to top on refresh if no hash is present
@@ -46,13 +46,13 @@
               window.scrollTo(0, 0);
               if (
                 document.activeElement &&
-                document.activeElement.tagName === "A"
+                document.activeElement.tagName === 'A'
               ) {
                 document.activeElement.blur();
               }
             }
           },
-          { once: true },
+          { once: true }
         );
       })();
     </script><!-- Global Loading Indicator --><script>
@@ -60,44 +60,44 @@
         let progressBar;
 
         function getProgressBar() {
-          return document.getElementById("global-loading-bar");
+          return document.getElementById('global-loading-bar');
         }
 
         function showLoading() {
           const bar = getProgressBar();
           if (!bar) return;
 
-          bar.style.transition = "none";
-          bar.style.width = "0%";
-          bar.style.opacity = "1";
+          bar.style.transition = 'none';
+          bar.style.width = '0%';
+          bar.style.opacity = '1';
 
           // Force reflow
           bar.offsetHeight;
 
           bar.style.transition =
-            "width 10s cubic-bezier(0.1, 0.05, 0, 1), opacity 0.3s ease";
-          bar.style.width = "90%";
+            'width 10s cubic-bezier(0.1, 0.05, 0, 1), opacity 0.3s ease';
+          bar.style.width = '90%';
         }
 
         function hideLoading() {
           const bar = getProgressBar();
           if (!bar) return;
 
-          bar.style.transition = "width 0.3s ease, opacity 0.3s ease";
-          bar.style.width = "100%";
+          bar.style.transition = 'width 0.3s ease, opacity 0.3s ease';
+          bar.style.width = '100%';
 
           setTimeout(() => {
-            bar.style.opacity = "0";
+            bar.style.opacity = '0';
             setTimeout(() => {
-              bar.style.width = "0%";
+              bar.style.width = '0%';
             }, 300);
           }, 300);
         }
 
-        document.addEventListener("astro:before-preparation", showLoading);
-        document.addEventListener("astro:page-load", hideLoading);
+        document.addEventListener('astro:before-preparation', showLoading);
+        document.addEventListener('astro:page-load', hideLoading);
       })();
-    </script><link rel="stylesheet" href="/_astro/SEO.DCF7FvB4.css">
+    </script><link rel="stylesheet" href="/_astro/SEO.D7H03j46.css">
 <link rel="stylesheet" href="/_astro/_slug_@_@astro.D23JSPHG.css">
 <style>.scroll-to-top[data-astro-cid-73562bqz]{position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:var(--color-bg-secondary);border:1px solid var(--color-border);border-radius:var(--border-radius-sm);color:var(--color-text-secondary);cursor:pointer;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .2s ease,visibility .2s ease,transform .2s ease,background .2s ease,color .2s ease,border-color .2s ease;z-index:50}.scroll-to-top[data-astro-cid-73562bqz]:hover{background:var(--color-bg-elevated);color:var(--color-text);border-color:var(--color-text-muted)}.scroll-to-top[data-astro-cid-73562bqz]:focus-visible{outline:2px solid var(--color-accent);outline-offset:2px}.scroll-to-top[data-astro-cid-73562bqz].is-visible{opacity:1;visibility:visible;transform:translateY(0)}@media(max-width:640px){.scroll-to-top[data-astro-cid-73562bqz]{bottom:1.5rem;right:1.5rem;width:40px;height:40px}}
 .back-link-container[data-astro-cid-c4cqltiy]{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--color-border)}.back-link[data-astro-cid-c4cqltiy]{display:inline-flex;align-items:center;gap:.5rem;font-size:.9375rem;font-weight:500;color:var(--color-text-muted);text-decoration:none;transition:color .2s ease}.back-link[data-astro-cid-c4cqltiy]:hover{color:var(--color-text)}.back-icon[data-astro-cid-c4cqltiy]{width:16px;height:16px;transition:transform .2s ease}.back-link[data-astro-cid-c4cqltiy]:hover .back-icon[data-astro-cid-c4cqltiy]{transform:translate(-3px)}
@@ -109,7 +109,7 @@
 		script.src = '/_vercel/insights/script.js';
 		var head = document.querySelector('head');
 		head.appendChild(script);
-	</script><style>[data-astro-transition-scope="astro-i6w6x242-1"] { view-transition-name: writing-cover-self-hosting-on-a-budget-what-i-run-on-my-mini-pc; }@layer astro { ::view-transition-old(writing-cover-self-hosting-on-a-budget-what-i-run-on-my-mini-pc) { 
+	</script><style>[data-astro-transition-scope="astro-5ghquiwc-1"] { view-transition-name: writing-cover-self-hosting-on-a-budget-what-i-run-on-my-mini-pc; }@layer astro { ::view-transition-old(writing-cover-self-hosting-on-a-budget-what-i-run-on-my-mini-pc) { 
 	animation-duration: 180ms;
 	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
 	animation-fill-mode: both;
@@ -125,23 +125,23 @@
 	animation-duration: 180ms;
 	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
 	animation-fill-mode: both;
-	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-i6w6x242-1"],
-			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-i6w6x242-1"] { 
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-5ghquiwc-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-5ghquiwc-1"] { 
 	animation-duration: 180ms;
 	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
 	animation-fill-mode: both;
-	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-i6w6x242-1"],
-			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-i6w6x242-1"] { 
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-5ghquiwc-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-5ghquiwc-1"] { 
 	animation-duration: 180ms;
 	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
 	animation-fill-mode: both;
-	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-i6w6x242-1"],
-			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-i6w6x242-1"] { 
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-5ghquiwc-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-5ghquiwc-1"] { 
 	animation-duration: 180ms;
 	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
 	animation-fill-mode: both;
-	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-i6w6x242-1"],
-			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-i6w6x242-1"] { 
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-5ghquiwc-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-5ghquiwc-1"] { 
 	animation-duration: 180ms;
 	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
 	animation-fill-mode: both;
@@ -277,7 +277,11 @@
   },
   "keywords": "Homelab, homelabbing, self-hosted, #selfhosted, Google Photos, Immich, adguardhome, services, Mini PC",
   "inLanguage": "en"
-}</script> <main class="article" data-astro-cid-jxnjfbl4> <nav class="breadcrumb" aria-label="Breadcrumb" data-astro-transition-scope="astro-sie7fnzq-2"> <ol class="breadcrumb-list">  <li class="breadcrumb-item"> <a href="/writing" class="breadcrumb-link"> Blog </a> </li> <li class="breadcrumb-separator" aria-hidden="true">/</li> <li class="breadcrumb-item"> <a href="/writing/series/homelab" class="breadcrumb-link"> Homelab </a> </li> <li class="breadcrumb-separator" aria-hidden="true">/</li> <li class="breadcrumb-item"> <span class="breadcrumb-current" aria-current="page"> Self‑Hosting on a Budget: What I Run on My Mini PC </span> </li>  </ol> </nav> <!-- Article Header --> <header class="article-header" data-astro-cid-jxnjfbl4> <div class="article-series" data-astro-cid-jxnjfbl4> <a href="/writing/series/homelab" class="series-link" data-astro-cid-jxnjfbl4>Homelab</a> </div> <div class="article-cover-container" data-astro-cid-jxnjfbl4 data-astro-transition-scope="astro-i6w6x242-1"> <img src="/_astro/fb3c3e02-38bd-4c64-824a-23bae12b5172_Z2vHdbv.webp" alt="Article cover" onload="this.dataset.loaded = 'true'; this.parentElement.dataset.loaded = 'true';" data-astro-cid-jxnjfbl4="true" loading="lazy" decoding="async" width="1100" height="620" class="article-cover"> </div> <h1 data-astro-cid-jxnjfbl4>Self‑Hosting on a Budget: What I Run on My Mini PC</h1> <div class="article-meta" data-astro-cid-jxnjfbl4> <time class="publish-date" datetime="2026-03-12T13:30:00.000Z" data-astro-cid-jxnjfbl4> March 12, 2026 </time> <span class="meta-separator" data-astro-cid-jxnjfbl4>·</span> <span class="reading-time" data-astro-cid-jxnjfbl4>1 min read</span> </div> <div class="article-author" data-astro-cid-jxnjfbl4> <img src="/_astro/a229a9b0-1a30-4479-9e5f-271f97ea88c0_S3T1a.webp" alt="Nishchay Kaushik" data-astro-cid-jxnjfbl4="true" loading="lazy" decoding="async" width="50" height="50" class="author-avatar"> <span class="author-name" data-astro-cid-jxnjfbl4>Nishchay Kaushik</span> </div> </header> <!-- Table of Contents and Article Content Layout --> <div class="article-layout-container" data-astro-cid-jxnjfbl4> <aside class="article-sidebar" data-astro-cid-jxnjfbl4> <nav class="table-of-contents" aria-label="Table of contents" data-astro-cid-xvrfupwn><button class="toc-toggle" type="button" aria-expanded="false" aria-controls="toc-list" data-astro-cid-xvrfupwn><span class="toc-title" data-astro-cid-xvrfupwn>Table of Contents</span><span class="toc-count" data-astro-cid-xvrfupwn>1 sections</span><svg class="toc-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-xvrfupwn><polyline points="6 9 12 15 18 9" data-astro-cid-xvrfupwn></polyline></svg></button><ul class="toc-list is-open-desktop" id="toc-list" data-astro-cid-xvrfupwn><li class="toc-item toc-depth-2" data-astro-cid-xvrfupwn><a href="#to-begin" class="toc-link" data-astro-cid-xvrfupwn>To Begin</a></li></ul></nav><script type="module">function c(){const t=document.querySelector(".toc-toggle"),n=document.querySelector(".toc-list");if(!t||!n)return;t.addEventListener("click",()=>{const e=t.getAttribute("aria-expanded")==="true";t.setAttribute("aria-expanded",String(!e)),n.classList.toggle("is-open")}),document.querySelectorAll(".toc-link").forEach(e=>{e.addEventListener("click",i=>{i.preventDefault();const o=e.getAttribute("href");if(!o)return;const r=document.querySelector(o);if(!r)return;const s=document.querySelector(".site-header")?.offsetHeight||0,d=r.getBoundingClientRect().top+window.scrollY-s-20;window.scrollTo({top:d,behavior:"smooth"}),history.pushState(null,"",o)})})}c();document.addEventListener("astro:after-swap",c);</script> </aside> <article class="article-content" data-astro-cid-jxnjfbl4> <p>Last year, I decided to buy a second-hand mini PC, and I couldn't be happier with that choice!</p>
+}</script> <main class="article" data-astro-cid-jxnjfbl4> <nav class="breadcrumb" aria-label="Breadcrumb" data-astro-transition-scope="astro-sie7fnzq-2"> <ol class="breadcrumb-list">  <li class="breadcrumb-item"> <a href="/writing" class="breadcrumb-link"> Blog </a> </li> <li class="breadcrumb-separator" aria-hidden="true">
+/
+</li> <li class="breadcrumb-item"> <a href="/writing/series/homelab" class="breadcrumb-link"> Homelab </a> </li> <li class="breadcrumb-separator" aria-hidden="true">
+/
+</li> <li class="breadcrumb-item"> <span class="breadcrumb-current" aria-current="page"> Self‑Hosting on a Budget: What I Run on My Mini PC </span> </li>  </ol> </nav> <!-- Article Header --> <header class="article-header" data-astro-cid-jxnjfbl4> <div class="article-series" data-astro-cid-jxnjfbl4> <a href="/writing/series/homelab" class="series-link" data-astro-cid-jxnjfbl4> Homelab </a> </div> <div class="article-cover-container" data-astro-cid-jxnjfbl4 data-astro-transition-scope="astro-5ghquiwc-1"> <img src="/_astro/fb3c3e02-38bd-4c64-824a-23bae12b5172_Z2vHdbv.webp" alt="Article cover" onload="this.dataset.loaded = 'true'; this.parentElement.dataset.loaded = 'true';" data-astro-cid-jxnjfbl4="true" loading="lazy" decoding="async" width="1100" height="620" class="article-cover"> </div> <h1 data-astro-cid-jxnjfbl4>Self‑Hosting on a Budget: What I Run on My Mini PC</h1> <div class="article-meta" data-astro-cid-jxnjfbl4> <time class="publish-date" datetime="2026-03-12T13:30:00.000Z" data-astro-cid-jxnjfbl4> March 12, 2026 </time> <span class="meta-separator" data-astro-cid-jxnjfbl4>·</span> <span class="reading-time" data-astro-cid-jxnjfbl4>1 min read</span> </div> <div class="article-author" data-astro-cid-jxnjfbl4> <img src="/_astro/a229a9b0-1a30-4479-9e5f-271f97ea88c0_S3T1a.webp" alt="Nishchay Kaushik" data-astro-cid-jxnjfbl4="true" loading="lazy" decoding="async" width="50" height="50" class="author-avatar"> <span class="author-name" data-astro-cid-jxnjfbl4>Nishchay Kaushik</span> </div> </header> <!-- Table of Contents and Article Content Layout --> <div class="article-layout-container" data-astro-cid-jxnjfbl4> <aside class="article-sidebar" data-astro-cid-jxnjfbl4> <nav class="table-of-contents" aria-label="Table of contents" data-astro-cid-xvrfupwn><button class="toc-toggle" type="button" aria-expanded="false" aria-controls="toc-list" data-astro-cid-xvrfupwn><span class="toc-title" data-astro-cid-xvrfupwn>Table of Contents</span><span class="toc-count" data-astro-cid-xvrfupwn>1 sections</span><svg class="toc-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-xvrfupwn><polyline points="6 9 12 15 18 9" data-astro-cid-xvrfupwn></polyline></svg></button><ul class="toc-list is-open-desktop" id="toc-list" data-astro-cid-xvrfupwn><li class="toc-item toc-depth-2" data-astro-cid-xvrfupwn><a href="#to-begin" class="toc-link" data-astro-cid-xvrfupwn>To Begin</a></li></ul></nav><script type="module">function c(){const t=document.querySelector(".toc-toggle"),n=document.querySelector(".toc-list");if(!t||!n)return;t.addEventListener("click",()=>{const e=t.getAttribute("aria-expanded")==="true";t.setAttribute("aria-expanded",String(!e)),n.classList.toggle("is-open")}),document.querySelectorAll(".toc-link").forEach(e=>{e.addEventListener("click",i=>{i.preventDefault();const o=e.getAttribute("href");if(!o)return;const r=document.querySelector(o);if(!r)return;const s=document.querySelector(".site-header")?.offsetHeight||0,d=r.getBoundingClientRect().top+window.scrollY-s-20;window.scrollTo({top:d,behavior:"smooth"}),history.pushState(null,"",o)})})}c();document.addEventListener("astro:after-swap",c);</script> </aside> <article class="article-content" data-astro-cid-jxnjfbl4> <p>Last year, I decided to buy a second-hand mini PC, and I couldn't be happier with that choice!</p>
 <p>Why? Because it opened the door to the world of self-hosting. Initially, my goal was simply to organize my photo library, which had been tucked away on my hard disk drive. However, I ended up running over 35 services in Docker containers!</p>
 <p>[Here's a preview of all the services I currently run on my server.]</p>
 <img src="https://cdn.hashnode.com/uploads/covers/6984dc9e559eb2d777b15a66/a98f263a-41a6-4f79-a93c-e58a0fddf68b.jpg" alt="Image showing multiple charts with text" style="display:block;margin:0 auto" />

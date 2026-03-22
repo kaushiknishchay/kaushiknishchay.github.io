@@ -17,28 +17,28 @@
       (function () {
         const getTheme = () => {
           if (
-            typeof localStorage !== "undefined" &&
-            localStorage.getItem("theme")
+            typeof localStorage !== 'undefined' &&
+            localStorage.getItem('theme')
           ) {
-            return localStorage.getItem("theme");
+            return localStorage.getItem('theme');
           }
-          if (window.matchMedia("(prefers-color-scheme: light)").matches) {
-            return "light";
+          if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+            return 'light';
           }
-          return "dark";
+          return 'dark';
         };
         const theme = getTheme();
-        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.setAttribute('data-theme', theme);
       })();
     </script><!-- Preserve theme during View Transitions --><script>
-      document.addEventListener("astro:before-swap", (e) => {
-        const theme = document.documentElement.getAttribute("data-theme");
-        e.newDocument.documentElement.setAttribute("data-theme", theme);
+      document.addEventListener('astro:before-swap', (e) => {
+        const theme = document.documentElement.getAttribute('data-theme');
+        e.newDocument.documentElement.setAttribute('data-theme', theme);
       });
     </script><!-- Fix for mobile scroll/focus restoration issues on refresh --><script>
       (function () {
         window.addEventListener(
-          "load",
+          'load',
           () => {
             if (!window.location.hash) {
               // Force scroll to top on refresh if no hash is present
@@ -46,13 +46,13 @@
               window.scrollTo(0, 0);
               if (
                 document.activeElement &&
-                document.activeElement.tagName === "A"
+                document.activeElement.tagName === 'A'
               ) {
                 document.activeElement.blur();
               }
             }
           },
-          { once: true },
+          { once: true }
         );
       })();
     </script><!-- Global Loading Indicator --><script>
@@ -60,44 +60,44 @@
         let progressBar;
 
         function getProgressBar() {
-          return document.getElementById("global-loading-bar");
+          return document.getElementById('global-loading-bar');
         }
 
         function showLoading() {
           const bar = getProgressBar();
           if (!bar) return;
 
-          bar.style.transition = "none";
-          bar.style.width = "0%";
-          bar.style.opacity = "1";
+          bar.style.transition = 'none';
+          bar.style.width = '0%';
+          bar.style.opacity = '1';
 
           // Force reflow
           bar.offsetHeight;
 
           bar.style.transition =
-            "width 10s cubic-bezier(0.1, 0.05, 0, 1), opacity 0.3s ease";
-          bar.style.width = "90%";
+            'width 10s cubic-bezier(0.1, 0.05, 0, 1), opacity 0.3s ease';
+          bar.style.width = '90%';
         }
 
         function hideLoading() {
           const bar = getProgressBar();
           if (!bar) return;
 
-          bar.style.transition = "width 0.3s ease, opacity 0.3s ease";
-          bar.style.width = "100%";
+          bar.style.transition = 'width 0.3s ease, opacity 0.3s ease';
+          bar.style.width = '100%';
 
           setTimeout(() => {
-            bar.style.opacity = "0";
+            bar.style.opacity = '0';
             setTimeout(() => {
-              bar.style.width = "0%";
+              bar.style.width = '0%';
             }, 300);
           }, 300);
         }
 
-        document.addEventListener("astro:before-preparation", showLoading);
-        document.addEventListener("astro:page-load", hideLoading);
+        document.addEventListener('astro:before-preparation', showLoading);
+        document.addEventListener('astro:page-load', hideLoading);
       })();
-    </script><link rel="stylesheet" href="/_astro/SEO.DCF7FvB4.css">
+    </script><link rel="stylesheet" href="/_astro/SEO.D7H03j46.css">
 <style>.scroll-to-top[data-astro-cid-73562bqz]{position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:var(--color-bg-secondary);border:1px solid var(--color-border);border-radius:var(--border-radius-sm);color:var(--color-text-secondary);cursor:pointer;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .2s ease,visibility .2s ease,transform .2s ease,background .2s ease,color .2s ease,border-color .2s ease;z-index:50}.scroll-to-top[data-astro-cid-73562bqz]:hover{background:var(--color-bg-elevated);color:var(--color-text);border-color:var(--color-text-muted)}.scroll-to-top[data-astro-cid-73562bqz]:focus-visible{outline:2px solid var(--color-accent);outline-offset:2px}.scroll-to-top[data-astro-cid-73562bqz].is-visible{opacity:1;visibility:visible;transform:translateY(0)}@media(max-width:640px){.scroll-to-top[data-astro-cid-73562bqz]{bottom:1.5rem;right:1.5rem;width:40px;height:40px}}
 .back-link-container[data-astro-cid-c4cqltiy]{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--color-border)}.back-link[data-astro-cid-c4cqltiy]{display:inline-flex;align-items:center;gap:.5rem;font-size:.9375rem;font-weight:500;color:var(--color-text-muted);text-decoration:none;transition:color .2s ease}.back-link[data-astro-cid-c4cqltiy]:hover{color:var(--color-text)}.back-icon[data-astro-cid-c4cqltiy]{width:16px;height:16px;transition:transform .2s ease}.back-link[data-astro-cid-c4cqltiy]:hover .back-icon[data-astro-cid-c4cqltiy]{transform:translate(-3px)}
 .page-header[data-astro-cid-f3iwrppf]{margin-bottom:3rem;padding-bottom:2rem;border-bottom:1px solid var(--color-border)}.page-title[data-astro-cid-f3iwrppf]{font-size:3rem;font-weight:700;letter-spacing:-.02em;line-height:1.2}.page-content[data-astro-cid-f3iwrppf]{font-size:1.125rem;line-height:1.75;color:var(--color-text)}.page-content[data-astro-cid-f3iwrppf] h2{font-size:1.75rem;margin-top:3rem;margin-bottom:1.25rem;font-weight:700}.page-content[data-astro-cid-f3iwrppf] p{margin-bottom:1.5rem;color:var(--color-text-secondary)}.page-content[data-astro-cid-f3iwrppf] ul,.page-content[data-astro-cid-f3iwrppf] ol{margin-bottom:1.5rem;padding-left:1.5rem}.page-content[data-astro-cid-f3iwrppf] li{margin-bottom:.5rem}.page-content[data-astro-cid-f3iwrppf] a{color:var(--color-accent);text-decoration:underline}.page-content[data-astro-cid-f3iwrppf] code:not(pre code){font-family:ui-monospace,JetBrains Mono,Cascadia Code,Menlo,Consolas,Courier New,monospace;font-size:.9em;background:var(--color-bg-secondary);padding:.2em .4em;border-radius:3px;color:var(--color-accent-secondary);font-weight:500}.page-content[data-astro-cid-f3iwrppf] iframe{max-width:100%;border-radius:8px}@media(max-width:768px){.page-title[data-astro-cid-f3iwrppf]{font-size:2.25rem}}
