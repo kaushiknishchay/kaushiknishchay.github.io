@@ -63,7 +63,7 @@ The Immich documentation is an excellent starting point, offering a straightforw
 
 Follow the steps here: [https://docs.immich.app/install/docker-compose](https://docs.immich.app/install/docker-compose)
 
-> :warning:
+> ⚠️
 > 
 > While you can have Immich store the photos library on either SSD or HDD, make sure you setup Immich and most importantly the database Immich uses on a SSD, this ensures everything stays snappy.
 > 
@@ -79,7 +79,7 @@ While **Immich** is meant for doing backup from your devices, It doesn’t mean 
 
 Here’s an example of the docker-compose.yml file that I use:
 
-```docker
+```yaml
 services:
   immich_server:
     container_name: immich_server
@@ -124,7 +124,7 @@ The path you add here is from your docker compose file which you previously adde
 
 Example:
 
-```bash
+```yaml
 - /media/PhotosStorage:/mnt/media/og-photo-albums
 ```
 
@@ -241,7 +241,7 @@ Now it should look like something below.
 
 You can now add the URL in your “Networking” section of the Immich app settings.
 
-You should see a green check-mark :white\_check\_mark: next to it if the app is able to access it.
+You should see a green check-mark ✅️ next to it if the app is able to access it.
 
 Congrats your Immich app is now ready. 🎉
 
@@ -267,7 +267,7 @@ After defining the service Tailscale should give you a command to run.
 
 It might look like
 
-```bash
+```shell
 tailscale serve --service=svc:immich --https=443 127.0.0.1:2283
 ```
 
