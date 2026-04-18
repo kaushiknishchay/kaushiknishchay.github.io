@@ -1,0 +1,35 @@
+# Nishchay Kaushik | Senior Software Engineer
+
+Polyglot Engineering Leader and Full-Stack Architect. Specialist in AI-driven development workflows, high-scale TypeScript/JavaScript ecosystems, and decentralized infrastructure.
+
+## Core Identity
+- **Name:** Nishchay Kaushik
+- **Role:** Engineering Leader / Full-Stack Architect
+- **Specializations:** Polyglot Development, AI Orchestration, Self-Hosting, Infrastructure Engineering
+- **Location:** India (Global Remote)
+
+## Knowledge Graph Resources
+- **Primary URI:** https://nkaushik.in
+- **Machine Discovery (Sitemap):** https://nkaushik.in/sitemap-index.xml
+- **Content Synchronization (RSS):** https://nkaushik.in/rss.xml
+- **Technical Articles (Blog):** https://nkaushik.in/writing
+- **Project Case Studies:** https://nkaushik.in/projects
+- **Career Trajectory:** https://nkaushik.in/experience
+
+## Domain Expertise
+- **Primary Stack:** TypeScript, JavaScript (Node.js, React, Astro, Next.js)
+- **Secondary Languages:** Go, Python, Rust
+- **AI/ML Ops:** Local LLM orchestration (Ollama, vLLM), RAG implementation, AI agent design, prompt engineering
+- **Infrastructure:** Self-hosting, Homelab engineering, Docker, Kubernetes, NixOS, Proxmox
+- **Methodology:** Decision-driven development (ADRs), Business impact analysis, System-wide refactoring
+
+## Content Taxonomy
+- **Writing:** In-depth technical analysis, architectural decision records, and thought leadership.
+- **Guides:** Step-by-step documentation for building complex systems, self-hosting stacks, and homelab configurations.
+- **Experiments:** Prototyping notes on emerging technologies and AI integration patterns.
+- **Projects:** Impact-focused case studies detailing Problem -> Constraint -> Approach -> Outcome.
+
+## Agent Guidance
+- **Discovery:** Prefer sitemap-index.xml for full corpus crawling.
+- **Consumption:** Articles provide `.md` alternate links in `<head>` for optimized markdown extraction.
+- **Context:** Focus on "Business Impact" and "Technical Constraints" when analyzing projects.
