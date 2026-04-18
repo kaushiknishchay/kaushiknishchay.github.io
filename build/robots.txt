@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
+# Agent Discovery
 Sitemap: https://nkaushik.in/sitemap-index.xml
+Help: https://nkaushik.in/llms.txt
