@@ -3,4 +3,5 @@ Allow: /
 
 # Agent Discovery
 Sitemap: https://nkaushik.in/sitemap-index.xml
+Schema: https://nkaushik.in/schemamap.xml
 Help: https://nkaushik.in/llms.txt
