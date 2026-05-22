@@ -74,31 +74,19 @@
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/series/weekend-projects</loc>
+    <loc>https://nkaushik.in/writing/series/hello-world</loc>
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/series/local-ai</loc>
+    <loc>https://nkaushik.in/writing/series/ai</loc>
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/homelab</loc>
+    <loc>https://nkaushik.in/writing/tag/ads</loc>
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/selfhosted</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/selfhosting</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/adguardhome</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/adguard</loc>
+    <loc>https://nkaushik.in/writing/tag/security</loc>
     <type>WebPage</type>
   </entry>
   <entry>
@@ -110,11 +98,7 @@
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/security</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/ads</loc>
+    <loc>https://nkaushik.in/writing/tag/homelab</loc>
     <type>WebPage</type>
   </entry>
   <entry>
@@ -122,15 +106,35 @@
     <type>WebPage</type>
   </entry>
   <entry>
+    <loc>https://nkaushik.in/writing/tag/adguardhome</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/selfhosted</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/selfhosting</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/adguard</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
     <loc>https://nkaushik.in/writing/tag/parental-control</loc>
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/astro</loc>
+    <loc>https://nkaushik.in/writing/tag/blog</loc>
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/satori</loc>
+    <loc>https://nkaushik.in/writing/tag/javascript</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/frontend</loc>
     <type>WebPage</type>
   </entry>
   <entry>
@@ -142,23 +146,11 @@
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/frontend-development</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/opengraph</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/sharp</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/javascript</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
     <loc>https://nkaushik.in/writing/tag/typescript</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/frontend-development</loc>
     <type>WebPage</type>
   </entry>
   <entry>
@@ -166,11 +158,19 @@
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/frontend</loc>
+    <loc>https://nkaushik.in/writing/tag/opengraph</loc>
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/blog</loc>
+    <loc>https://nkaushik.in/writing/tag/astro</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/sharp</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/satori</loc>
     <type>WebPage</type>
   </entry>
   <entry>
@@ -178,7 +178,7 @@
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/golang</loc>
+    <loc>https://nkaushik.in/writing/tag/software-development</loc>
     <type>WebPage</type>
   </entry>
   <entry>
@@ -186,11 +186,11 @@
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/git</loc>
+    <loc>https://nkaushik.in/writing/tag/golang</loc>
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/software-development</loc>
+    <loc>https://nkaushik.in/writing/tag/git</loc>
     <type>WebPage</type>
   </entry>
   <entry>
@@ -226,19 +226,7 @@
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/beginner-homelab-guide</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/home</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/self-hosted</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/immich</loc>
+    <loc>https://nkaushik.in/writing/tag/docker</loc>
     <type>WebPage</type>
   </entry>
   <entry>
@@ -246,23 +234,7 @@
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/beginner-developers</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/self-hosting</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/home-lab</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/docker</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/docker-compose</loc>
+    <loc>https://nkaushik.in/writing/tag/beginners</loc>
     <type>WebPage</type>
   </entry>
   <entry>
@@ -270,11 +242,43 @@
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/guide2026</loc>
+    <loc>https://nkaushik.in/writing/tag/self-hosted</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/home</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/docker-compose</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/home-lab</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/immich</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/self-hosting</loc>
     <type>WebPage</type>
   </entry>
   <entry>
     <loc>https://nkaushik.in/writing/tag/lmmich</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/beginner-homelab-guide</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/guide2026</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/programming-blogs</loc>
     <type>WebPage</type>
   </entry>
   <entry>
@@ -286,47 +290,7 @@
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/programming-blogs</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/gemma-4</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/gemma</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/gemma4</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/llm</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/local-ai</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/local-llm</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/termux</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/llamacpp</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/llama-server</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/android</loc>
+    <loc>https://nkaushik.in/writing/tag/ai</loc>
     <type>WebPage</type>
   </entry>
   <entry>
@@ -334,11 +298,51 @@
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/ai</loc>
+    <loc>https://nkaushik.in/writing/tag/android</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/termux</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/llm</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/edge-ai</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/local-llm</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/llamacpp</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/gemma</loc>
     <type>WebPage</type>
   </entry>
   <entry>
     <loc>https://nkaushik.in/writing/tag/anythingllm</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/local-ai</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/llama-server</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/gemma4</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/gemma-4</loc>
     <type>WebPage</type>
   </entry>
   <entry>
@@ -350,7 +354,11 @@
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/edge-ai</loc>
+    <loc>https://nkaushik.in/writing/tag/cloudflare</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/opensource</loc>
     <type>WebPage</type>
   </entry>
   <entry>
@@ -358,11 +366,11 @@
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/google-photos</loc>
+    <loc>https://nkaushik.in/writing/tag/open-source</loc>
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/open-source</loc>
+    <loc>https://nkaushik.in/writing/tag/google-photos</loc>
     <type>WebPage</type>
   </entry>
   <entry>
@@ -370,15 +378,7 @@
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/cloudflare</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/local-ai-models</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/qwen</loc>
+    <loc>https://nkaushik.in/writing/tag/tutorial</loc>
     <type>WebPage</type>
   </entry>
   <entry>
@@ -386,19 +386,23 @@
     <type>WebPage</type>
   </entry>
   <entry>
+    <loc>https://nkaushik.in/writing/tag/qwen</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
     <loc>https://nkaushik.in/writing/tag/on-device-ai</loc>
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/tutorial</loc>
+    <loc>https://nkaushik.in/writing/tag/local-ai-models</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/llama-cpp</loc>
     <type>WebPage</type>
   </entry>
   <entry>
     <loc>https://nkaushik.in/writing/tag/old-android</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/homelabbing</loc>
     <type>WebPage</type>
   </entry>
   <entry>
@@ -410,15 +414,19 @@
     <type>WebPage</type>
   </entry>
   <entry>
+    <loc>https://nkaushik.in/writing/tag/homelabbing</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
     <loc>https://nkaushik.in/writing/tag/artificial-intelligence</loc>
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/ollama</loc>
+    <loc>https://nkaushik.in/writing/tag/machine-learning</loc>
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/machine-learning</loc>
+    <loc>https://nkaushik.in/writing/tag/ollama</loc>
     <type>WebPage</type>
   </entry>
 </schemamap>
