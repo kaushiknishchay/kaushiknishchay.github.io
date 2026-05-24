@@ -50,6 +50,10 @@
     <type>Article</type>
   </entry>
   <entry>
+    <loc>https://nkaushik.in/writing/install-ollama-in-termux-android-2026-guide</loc>
+    <type>Article</type>
+  </entry>
+  <entry>
     <loc>https://nkaushik.in/writing/replace-google-photos-self-host-immich-in-2026</loc>
     <type>Article</type>
   </entry>
@@ -354,6 +358,22 @@
     <type>WebPage</type>
   </entry>
   <entry>
+    <loc>https://nkaushik.in/writing/tag/ollama</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/qwen</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/machine-learning</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/tutorial</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
     <loc>https://nkaushik.in/writing/tag/cloudflare</loc>
     <type>WebPage</type>
   </entry>
@@ -378,15 +398,7 @@
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/tutorial</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
     <loc>https://nkaushik.in/writing/tag/personal-ai</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/qwen</loc>
     <type>WebPage</type>
   </entry>
   <entry>
@@ -419,14 +431,6 @@
   </entry>
   <entry>
     <loc>https://nkaushik.in/writing/tag/artificial-intelligence</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/machine-learning</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/ollama</loc>
     <type>WebPage</type>
   </entry>
 </schemamap>
