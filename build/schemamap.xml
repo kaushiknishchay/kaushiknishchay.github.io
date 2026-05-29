@@ -30,6 +30,10 @@
     <type>Article</type>
   </entry>
   <entry>
+    <loc>https://nkaushik.in/writing/automating-social-images-with-satori-and-sharp</loc>
+    <type>Article</type>
+  </entry>
+  <entry>
     <loc>https://nkaushik.in/writing/building-your-own-github-like-platform-using-golang</loc>
     <type>Article</type>
   </entry>
@@ -183,6 +187,14 @@
   </entry>
   <entry>
     <loc>https://nkaushik.in/writing/tag/astro-js</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/vercel</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/nextjs</loc>
     <type>WebPage</type>
   </entry>
   <entry>
