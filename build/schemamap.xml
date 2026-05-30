@@ -42,6 +42,10 @@
     <type>Article</type>
   </entry>
   <entry>
+    <loc>https://nkaushik.in/writing/from-vibe-coding-to-structured-ai-specs</loc>
+    <type>Article</type>
+  </entry>
+  <entry>
     <loc>https://nkaushik.in/writing/getting-started-with-self-hosting-in-2026</loc>
     <type>Article</type>
   </entry>
@@ -86,11 +90,11 @@
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/series/hello-world</loc>
+    <loc>https://nkaushik.in/writing/series/ai</loc>
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/series/ai</loc>
+    <loc>https://nkaushik.in/writing/series/hello-world</loc>
     <type>WebPage</type>
   </entry>
   <entry>
@@ -246,6 +250,46 @@
     <type>WebPage</type>
   </entry>
   <entry>
+    <loc>https://nkaushik.in/writing/tag/ai</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/prompt-engineering</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/developer-experience</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/claude-code</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/spec-driven-development</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/superpowers</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/github-spec-kit</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/vibe-coding</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/bmad</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/openspec</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
     <loc>https://nkaushik.in/writing/tag/docker</loc>
     <type>WebPage</type>
   </entry>
@@ -307,10 +351,6 @@
   </entry>
   <entry>
     <loc>https://nkaushik.in/writing/tag/generative-ai</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/ai</loc>
     <type>WebPage</type>
   </entry>
   <entry>
