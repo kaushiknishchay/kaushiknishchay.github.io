@@ -74,6 +74,10 @@
     <type>Article</type>
   </entry>
   <entry>
+    <loc>https://nkaushik.in/writing/securing-your-homelab-with-crowdsec-traefik-and-docker</loc>
+    <type>Article</type>
+  </entry>
+  <entry>
     <loc>https://nkaushik.in/writing/self-hosting-on-a-budget-what-i-run-on-my-mini-pc</loc>
     <type>Article</type>
   </entry>
@@ -479,6 +483,30 @@
   </entry>
   <entry>
     <loc>https://nkaushik.in/writing/tag/google-ai-edge-gallery</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/crowdsec</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/traefik</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/ntfy</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/waf</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/appsec</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/devops</loc>
     <type>WebPage</type>
   </entry>
   <entry>
