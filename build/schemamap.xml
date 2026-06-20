@@ -62,6 +62,10 @@
     <type>Article</type>
   </entry>
   <entry>
+    <loc>https://nkaushik.in/writing/monitoring-homelab-with-beszel-and-dozzle</loc>
+    <type>Article</type>
+  </entry>
+  <entry>
     <loc>https://nkaushik.in/writing/replace-google-photos-self-host-immich-in-2026</loc>
     <type>Article</type>
   </entry>
@@ -431,6 +435,22 @@
   </entry>
   <entry>
     <loc>https://nkaushik.in/writing/tag/tutorial</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/monitoring</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/beszel</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/dozzle</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/sysadmin</loc>
     <type>WebPage</type>
   </entry>
   <entry>
