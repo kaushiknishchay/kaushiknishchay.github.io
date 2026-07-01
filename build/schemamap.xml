@@ -54,6 +54,10 @@
     <type>Article</type>
   </entry>
   <entry>
+    <loc>https://nkaushik.in/writing/how-to-install-llamacpp-windows-mac-linux-termux</loc>
+    <type>Article</type>
+  </entry>
+  <entry>
     <loc>https://nkaushik.in/writing/how-to-run-llm-models-on-old-android-devices-locally</loc>
     <type>Article</type>
   </entry>
@@ -362,7 +366,11 @@
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/ios</loc>
+    <loc>https://nkaushik.in/writing/tag/llamacpp</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/termux</loc>
     <type>WebPage</type>
   </entry>
   <entry>
@@ -370,7 +378,27 @@
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/termux</loc>
+    <loc>https://nkaushik.in/writing/tag/windows</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/linux</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/mac</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/local-llm</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/tutorial</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/ios</loc>
     <type>WebPage</type>
   </entry>
   <entry>
@@ -379,14 +407,6 @@
   </entry>
   <entry>
     <loc>https://nkaushik.in/writing/tag/edge-ai</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/local-llm</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/llamacpp</loc>
     <type>WebPage</type>
   </entry>
   <entry>
@@ -431,10 +451,6 @@
   </entry>
   <entry>
     <loc>https://nkaushik.in/writing/tag/machine-learning</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/tutorial</loc>
     <type>WebPage</type>
   </entry>
   <entry>
