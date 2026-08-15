@@ -62,6 +62,10 @@
     <type>Article</type>
   </entry>
   <entry>
+    <loc>https://nkaushik.in/writing/how-to-self-host-outline-wiki-homelab</loc>
+    <type>Article</type>
+  </entry>
+  <entry>
     <loc>https://nkaushik.in/writing/install-ollama-in-termux-android-2026-guide</loc>
     <type>Article</type>
   </entry>
@@ -442,6 +446,34 @@
     <type>WebPage</type>
   </entry>
   <entry>
+    <loc>https://nkaushik.in/writing/tag/outline</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/wiki</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/documentation</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/oidc</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/mcp</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/ai-agents</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/devops</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
     <loc>https://nkaushik.in/writing/tag/ollama</loc>
     <type>WebPage</type>
   </entry>
@@ -539,10 +571,6 @@
   </entry>
   <entry>
     <loc>https://nkaushik.in/writing/tag/appsec</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/devops</loc>
     <type>WebPage</type>
   </entry>
   <entry>
