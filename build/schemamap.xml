@@ -30,10 +30,6 @@
     <type>Article</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/automating-my-social-cards-satori-sharp-and-the-end-of-generic-previews</loc>
-    <type>Article</type>
-  </entry>
-  <entry>
     <loc>https://nkaushik.in/writing/automating-social-images-with-satori-and-sharp</loc>
     <type>Article</type>
   </entry>
@@ -54,10 +50,6 @@
     <type>Article</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/hello-world</loc>
-    <type>Article</type>
-  </entry>
-  <entry>
     <loc>https://nkaushik.in/writing/how-to-install-llamacpp-windows-mac-linux-termux</loc>
     <type>Article</type>
   </entry>
@@ -75,6 +67,10 @@
   </entry>
   <entry>
     <loc>https://nkaushik.in/writing/monitoring-homelab-with-beszel-and-dozzle</loc>
+    <type>Article</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/programmatic-video-with-remotion-react-and-ai</loc>
     <type>Article</type>
   </entry>
   <entry>
@@ -111,10 +107,6 @@
   </entry>
   <entry>
     <loc>https://nkaushik.in/writing/series/ai</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/series/hello-world</loc>
     <type>WebPage</type>
   </entry>
   <entry>
@@ -186,14 +178,6 @@
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/frontend-development</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/blogging-tools</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
     <loc>https://nkaushik.in/writing/tag/opengraph</loc>
     <type>WebPage</type>
   </entry>
@@ -207,10 +191,6 @@
   </entry>
   <entry>
     <loc>https://nkaushik.in/writing/tag/satori</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/astro-js</loc>
     <type>WebPage</type>
   </entry>
   <entry>
@@ -362,18 +342,6 @@
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/programming-blogs</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/hello-world</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
-    <loc>https://nkaushik.in/writing/tag/generative-ai</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
     <loc>https://nkaushik.in/writing/tag/llamacpp</loc>
     <type>WebPage</type>
   </entry>
@@ -506,6 +474,26 @@
     <type>WebPage</type>
   </entry>
   <entry>
+    <loc>https://nkaushik.in/writing/tag/remotion</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/react</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/video-engineering</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/gemini-flash</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/programmatic-video</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
     <loc>https://nkaushik.in/writing/tag/cloudflare</loc>
     <type>WebPage</type>
   </entry>
@@ -578,19 +566,27 @@
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/services</loc>
-    <type>WebPage</type>
-  </entry>
-  <entry>
     <loc>https://nkaushik.in/writing/tag/mini-pc</loc>
     <type>WebPage</type>
   </entry>
   <entry>
-    <loc>https://nkaushik.in/writing/tag/homelabbing</loc>
+    <loc>https://nkaushik.in/writing/tag/cloudflare-tunnels</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/rclone</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/jellyfin</loc>
     <type>WebPage</type>
   </entry>
   <entry>
     <loc>https://nkaushik.in/writing/tag/artificial-intelligence</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/generative-ai</loc>
     <type>WebPage</type>
   </entry>
 </schemamap>

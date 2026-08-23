@@ -1,11 +1,11 @@
 ---
-title: Self‑Hosting on a Budget: What I Run on My Mini PC
-description: How I built a budget mini PC homelab running 35+ Docker services, replaced Google Photos, and run AdGuard, Immich, Jellyfin & Outline Wiki.
-date: 2026-03-12T13:30:00.000Z
+title: Self‑Hosting on a Budget: What I Run on My HP EliteDesk Mini PC
+description: How I built a quiet, low-power homelab running 35+ Docker services on a refurbished HP EliteDesk Mini with Debian 13, Tailscale, Cloudflare & Rclone.
+date: 2026-08-23T07:45:00.000Z
 author: Nishchay Kaushik
-tags: services, self-hosted, homelab, google-photos, adguardhome, selfhosted, mini-pc, immich, homelabbing
+tags: homelab, self-hosting, mini-pc, debian, docker, tailscale, cloudflare-tunnels, rclone, immich, jellyfin, adguardhome
 ---
 
-# Self‑Hosting on a Budget: What I Run on My Mini PC
+# Self‑Hosting on a Budget: What I Run on My HP EliteDesk Mini PC
 
 
