@@ -66,6 +66,10 @@
     <type>Article</type>
   </entry>
   <entry>
+    <loc>https://nkaushik.in/writing/migrating-og-image-generation-from-satori-to-takumi</loc>
+    <type>Article</type>
+  </entry>
+  <entry>
     <loc>https://nkaushik.in/writing/monitoring-homelab-with-beszel-and-dozzle</loc>
     <type>Article</type>
   </entry>
@@ -455,6 +459,22 @@
   </entry>
   <entry>
     <loc>https://nkaushik.in/writing/tag/machine-learning</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/astros</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/takumi</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/performance</loc>
+    <type>WebPage</type>
+  </entry>
+  <entry>
+    <loc>https://nkaushik.in/writing/tag/rust</loc>
     <type>WebPage</type>
   </entry>
   <entry>
