@@ -1,7 +1,8 @@
 User-agent: *
 Allow: /
 
-# Agent Discovery
+# Agent & Search Discovery
 Sitemap: https://nkaushik.in/sitemap-index.xml
+Sitemap: https://nkaushik.in/image-sitemap.xml
 Schema: https://nkaushik.in/schemamap.xml
 Help: https://nkaushik.in/llms.txt
